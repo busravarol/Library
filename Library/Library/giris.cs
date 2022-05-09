@@ -21,5 +21,31 @@ namespace Library
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtUsername_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (txtUsername.Text == "Username") {
+                txtUsername.Clear();    
+            }
+        }
+
+        private void txtSifre_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            if(txtSifre.Text == "Password")
+            {
+                txtSifre.Clear();   
+                txtSifre.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
