@@ -34,16 +34,17 @@ namespace Library
 
         private void txtUsername_MouseClick(object sender, MouseEventArgs e)
         {
-            if (txtUsername.Text == "Username") {
-                txtUsername.Clear();    
+            if (txtUsername.Text == "Username")
+            {
+                txtUsername.Clear();
             }
         }
 
         private void txtSifre_MouseClick_1(object sender, MouseEventArgs e)
         {
-            if(txtSifre.Text == "Password")
+            if (txtSifre.Text == "Password")
             {
-                txtSifre.Clear();   
+                txtSifre.Clear();
                 txtSifre.UseSystemPasswordChar = true;
             }
         }
@@ -60,14 +61,14 @@ namespace Library
             baglanti.Open();
             MySqlCommand komutum = new MySqlCommand();
             komutum.Connection = baglanti;
-            komutum.CommandText= "select * from tbl_giris where kullanýcýadi ='"+txtUsername.Text+"' and sifre ='"+txtSifre.Text+"'";
+            komutum.CommandText = "select * from tbl_giris where kullanýcýadi ='" + txtUsername.Text + "' and sifre ='" + txtSifre.Text + "'";
             komutum.ExecuteNonQuery();
 
             MySqlDataAdapter da = new SqlDataAdapter(komutum);
             DataSet ds = new DataSet();
             da.Fill(ds);
 
-            if(ds.Tables[0].Rows.Count != 0) 
+            if (ds.Tables[0].Rows.Count != 0)
             {
                 this.Hide();
                 Form2 anasayfa = new Form2();
@@ -75,9 +76,10 @@ namespace Library
             }
             else
             {
-                MessageBox.Show("Yanlýþ Kullanýcý Adý ya da Þifre", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Yanlýþ Kullanýcý Adý ya da Þifre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
-
+    }
+}
    
