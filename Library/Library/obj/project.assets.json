@@ -1136,11 +1136,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\enesa\\Libary\\Library\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\enesa\\Desktop\\Libary\\Library\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "C:\\Users\\enesa\\Libary\\Library\\Library\\Library.csproj",
+      "projectPath": "C:\\Users\\enesa\\Desktop\\Libary\\Library\\Library\\Library.csproj",
       "packagesPath": "C:\\Users\\enesa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\enesa\\Libary\\Library\\Library\\obj\\",
+      "outputPath": "C:\\Users\\enesa\\Desktop\\Libary\\Library\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\enesa\\AppData\\Roaming\\NuGet\\NuGet.Config",

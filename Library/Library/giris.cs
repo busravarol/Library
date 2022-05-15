@@ -56,23 +56,23 @@ namespace Library
 
         private void btngiris_Click(object sender, EventArgs e)
         {
-            MySqlConnection baglanti = new MySqlConnection();
-            baglanti.ConnectionString = "Server=172.21.54.3; uid=Banipal; pwd=Banipal12345.; database=tbl_giris";
+            SqlConnection baglanti = new SqlConnection();
+            baglanti.ConnectionString = "Server=172.21.54.3; user Id=admin; password=admin; database=Banipal";
             baglanti.Open();
-            MySqlCommand komutum = new MySqlCommand();
+            SqlCommand komutum = new SqlCommand();
             komutum.Connection = baglanti;
             komutum.CommandText = "select * from tbl_giris where kullanýcýadi ='" + txtUsername.Text + "' and sifre ='" + txtSifre.Text + "'";
             komutum.ExecuteNonQuery();
 
-            MySqlDataAdapter da = new SqlDataAdapter(komutum);
+            SqlDataAdapter da = new SqlDataAdapter(komutum);
             DataSet ds = new DataSet();
             da.Fill(ds);
 
             if (ds.Tables[0].Rows.Count != 0)
             {
                 this.Hide();
-                Form2 anasayfa = new Form2();
-                anasayfa.Show();
+                Form2 Form2 = new Form2();
+                Form2.Show();
             }
             else
             {

@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Yusuf Kavak\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Yusuf Kavak\\.nuget\\packages"
+      "C:\\Users\\enesa\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\enesa\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
