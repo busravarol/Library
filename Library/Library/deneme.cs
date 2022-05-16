@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class deneme : Form
+    public partial class kitap : Form
     {
-        public deneme()
+        public kitap()
         {
             InitializeComponent();
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deneme_Load(object sender, EventArgs e)
         {
 
         }
