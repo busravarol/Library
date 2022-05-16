@@ -111,11 +111,11 @@
             // 
             this.btngiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
             this.btngiris.Font = new System.Drawing.Font("Perpetua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btngiris.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btngiris.Location = new System.Drawing.Point(158, 535);
+            this.btngiris.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btngiris.Location = new System.Drawing.Point(165, 530);
             this.btngiris.Margin = new System.Windows.Forms.Padding(5);
             this.btngiris.Name = "btngiris";
-            this.btngiris.Size = new System.Drawing.Size(153, 45);
+            this.btngiris.Size = new System.Drawing.Size(151, 66);
             this.btngiris.TabIndex = 5;
             this.btngiris.Text = "Giriş Yap";
             this.btngiris.UseVisualStyleBackColor = false;
@@ -151,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(204)))), ((int)(((byte)(172)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
             this.ClientSize = new System.Drawing.Size(560, 763);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnClose);
