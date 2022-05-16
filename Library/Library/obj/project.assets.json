@@ -1136,11 +1136,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\esma\\Desktop\\uml-usecase-diyagramları\\Library\\Library\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\esma\\Desktop\\Library\\Library\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "C:\\Users\\esma\\Desktop\\uml-usecase-diyagramları\\Library\\Library\\Library\\Library.csproj",
+      "projectPath": "C:\\Users\\esma\\Desktop\\Library\\Library\\Library\\Library.csproj",
       "packagesPath": "C:\\Users\\esma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\esma\\Desktop\\uml-usecase-diyagramları\\Library\\Library\\Library\\obj\\",
+      "outputPath": "C:\\Users\\esma\\Desktop\\Library\\Library\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\esma\\AppData\\Roaming\\NuGet\\NuGet.Config",
