@@ -55,7 +55,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Bisque;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(249)))), ((int)(((byte)(253)))));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -69,7 +69,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
+            this.txtUsername.BackColor = System.Drawing.Color.White;
             this.txtUsername.Font = new System.Drawing.Font("Perpetua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUsername.Location = new System.Drawing.Point(124, 365);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(5);
@@ -82,7 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Bisque;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(249)))), ((int)(((byte)(253)))));
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -96,7 +96,7 @@
             // 
             // txtSifre
             // 
-            this.txtSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
+            this.txtSifre.BackColor = System.Drawing.Color.White;
             this.txtSifre.Font = new System.Drawing.Font("Perpetua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtSifre.Location = new System.Drawing.Point(124, 474);
             this.txtSifre.Margin = new System.Windows.Forms.Padding(5);
@@ -109,9 +109,8 @@
             // 
             // btngiris
             // 
-            this.btngiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(155)))), ((int)(((byte)(123)))));
-            this.btngiris.Font = new System.Drawing.Font("Perpetua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btngiris.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btngiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(87)))), ((int)(((byte)(126)))));
+            this.btngiris.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btngiris.Location = new System.Drawing.Point(165, 530);
             this.btngiris.Margin = new System.Windows.Forms.Padding(5);
             this.btngiris.Name = "btngiris";
@@ -151,7 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(560, 763);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnClose);
@@ -162,7 +161,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Segoe UI Historic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(196)))), ((int)(((byte)(200)))));
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "giris";

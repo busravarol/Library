@@ -50,8 +50,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -185,7 +187,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Tan;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.button1.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(21, 341);
             this.button1.Name = "button1";
@@ -196,7 +198,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Tan;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.button2.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(162, 343);
             this.button2.Name = "button2";
@@ -207,7 +209,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Tan;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.button3.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.Location = new System.Drawing.Point(311, 343);
             this.button3.Name = "button3";
@@ -219,16 +221,16 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(581, 486);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 93);
+            this.pictureBox1.Size = new System.Drawing.Size(125, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Bisque;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.button1);
@@ -248,19 +250,30 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Location = new System.Drawing.Point(116, 94);
+            this.panel1.Location = new System.Drawing.Point(116, 113);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(459, 484);
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-1, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(125, 106);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
             // kitap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(148)))), ((int)(((byte)(97)))));
-            this.ClientSize = new System.Drawing.Size(701, 612);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.ClientSize = new System.Drawing.Size(706, 605);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "kitap";
             this.Text = "kitap";
@@ -268,6 +281,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -295,5 +309,6 @@
         private Button button3;
         private PictureBox pictureBox1;
         private Panel panel1;
+        private PictureBox pictureBox2;
     }
 }
