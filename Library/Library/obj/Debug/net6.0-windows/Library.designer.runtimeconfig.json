@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\esma\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\esma\\.nuget\\packages"
+      "C:\\Users\\enesa\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\enesa\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

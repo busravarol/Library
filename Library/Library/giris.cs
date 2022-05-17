@@ -57,8 +57,9 @@ namespace Library
         private void btngiris_Click(object sender, EventArgs e)
         {
             SqlConnection baglanti = new SqlConnection();
-            baglanti.ConnectionString = "Server=172.21.54.3; user Id=admin; password=admin; database=Banipal";
+            baglanti.ConnectionString = "Server=172.21.54.3; uid=Banipal; pwd=Banipal12345.;database=Banipal";
             baglanti.Open();
+            MessageBox.Show("31");
             SqlCommand komutum = new SqlCommand();
             komutum.Connection = baglanti;
             komutum.CommandText = "select * from tbl_giris where kullanýcýadi ='" + txtUsername.Text + "' and sifre ='" + txtSifre.Text + "'";
@@ -78,7 +79,8 @@ namespace Library
             {
                 MessageBox.Show("Yanlýþ Kullanýcý Adý ya da Þifre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+           
+          
         }
     }
 }
