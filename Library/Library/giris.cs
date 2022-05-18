@@ -7,9 +7,13 @@ namespace Library
 {
     public partial class giris : Form
     {
+        MySqlConnection con;
+        MySqlCommand cmd;
+        MySqlDataReader dr;
         public giris()
         {
             InitializeComponent();
+            con = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -56,7 +60,24 @@ namespace Library
 
         private void btngiris_Click(object sender, EventArgs e)
         {
-            SqlConnection baglanti = new SqlConnection();
+            string user =txtUsername.Text;
+            string sifre =txtSifre.Text;
+            cmd = new MySqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = "Select * FROM tbl_giris where kullanýcýadi='" + txtUsername.Text + "'AND sifre='" + txtSifre.Text + "'";
+           /* dr= cmd.ExecuteReader();*/
+            if (dr.Read())
+            {
+                this.Hide();
+                Form2 form = new Form2();
+                form.Show();
+            }
+            else
+            {
+                MessageBox.Show("Kullanýcý Adý ya da Þifre yanlýþ","Eror",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+           /* SqlConnection baglanti = new SqlConnection();
             baglanti.ConnectionString = "Server=172.21.54.3; uid=Banipal; pwd=Banipal12345.;database=Banipal";
             baglanti.Open();
             MessageBox.Show("31");
@@ -80,7 +101,7 @@ namespace Library
                 MessageBox.Show("Yanlýþ Kullanýcý Adý ya da Þifre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
-          
+          */
         }
     }
 }
