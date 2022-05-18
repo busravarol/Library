@@ -127,3 +127,5 @@ Library/Library/obj/Library.csproj.nuget.g.props
 Library/Library/obj/project.assets.json
 Library/Library/obj/project.nuget.cache
 Library/Library/obj/Debug/net6.0-windows/Library.kitap.resources
+Library/.vs/Library/FileContentIndex/7111a2dd-2646-456f-a1f6-e792949935b1.vsidx
+*.vsidx
