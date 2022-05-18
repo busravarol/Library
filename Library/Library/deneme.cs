@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace Library
 {
@@ -34,7 +37,17 @@ namespace Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+           
+           /*
+            string kitapAdi = txt_Ad.Text;
+            string yazar = txt_Yazar.Text;
+            string yayinevi=txt_Yayinevi.Text;
+            string kategori=txt_Kategori.Text;
+            string tarih = eklendigi_tarih.Text;
+            int kitapID = int.Parse(txt_ID.Text);
+            int sayfaSayisi = int.Parse(txt_Ss.Text);
+            int ısbn = int.Parse(txt_ISBN.Text);
+           */
         }
     }
 }
