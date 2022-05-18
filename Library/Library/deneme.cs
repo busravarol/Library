@@ -14,10 +14,15 @@ using System.Diagnostics;
 namespace Library
 {
     public partial class kitap : Form
+
     {
+        MySqlConnection con;
+        MySqlCommand cmd;
+        MySqlDataReader dr;
         public kitap()
         {
             InitializeComponent();
+            con = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -47,6 +52,7 @@ namespace Library
             int kitapID = int.Parse(txt_ID.Text);
             int sayfaSayisi = int.Parse(txt_Ss.Text);
             int ısbn = int.Parse(txt_ISBN.Text);
+
            */
         }
     }

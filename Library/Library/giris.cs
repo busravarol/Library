@@ -65,8 +65,8 @@ namespace Library
             cmd = new MySqlCommand();
             con.Open();
             cmd.Connection = con;
-            cmd.CommandText = "Select * FROM tbl_giris where kullanýcýadi='" + txtUsername.Text + "'AND sifre='" + txtSifre.Text + "'";
-           /* dr= cmd.ExecuteReader();*/
+            cmd.CommandText = "Select * FROM tbl_giris where kullaniciadi='" + txtUsername.Text + "'AND sifre='" + txtSifre.Text + "'";
+            dr= cmd.ExecuteReader();
             if (dr.Read())
             {
                 this.Hide();
