@@ -126,11 +126,4 @@ Library/Library/obj/Library.csproj.nuget.dgspec.json
 Library/Library/obj/Library.csproj.nuget.g.props
 Library/Library/obj/project.assets.json
 Library/Library/obj/project.nuget.cache
-Library/.vs/Library/DesignTimeBuild/.dtbcache.v2
-Library/.vs/Library/DesignTimeBuild/.dtbcache.v2
-Library/.vs/Library/FileContentIndex/7111a2dd-2646-456f-a1f6-e792949935b1.vsidx
-Library/.vs/Library/FileContentIndex/89ec0e61-af9a-4aa2-88a7-70b9aa9c2e9c.vsidx
-Library/.vs/Library/FileContentIndex/merges/d4050e8e-c6ec-448f-a60f-1affd77c1ef8.vsidx
-Library/.vs/Library/v17/.suo
-Library/Library/giris.resx
-Library/.vs/Library/DesignTimeBuild/.dtbcache.v2
+Library/Library/obj/Debug/net6.0-windows/Library.kitap.resources
