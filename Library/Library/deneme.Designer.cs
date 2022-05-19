@@ -45,12 +45,11 @@
             this.txt_ISBN = new System.Windows.Forms.TextBox();
             this.txt_Kategori = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.yayin_tarihi = new System.Windows.Forms.DateTimePicker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.eklendigi_tarih = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -125,9 +124,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(269, 259);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 20);
+            this.label8.Size = new System.Drawing.Size(85, 20);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Eklendiği Tarih:";
+            this.label8.Text = "Yayın Tarihi:";
             // 
             // txt_ID
             // 
@@ -191,17 +190,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button2.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(162, 343);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 78);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "KİTAP SİL";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
@@ -212,6 +200,7 @@
             this.button3.TabIndex = 18;
             this.button3.Text = "KİTAP GÜNCELLE";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
@@ -226,11 +215,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
-            this.panel1.Controls.Add(this.eklendigi_tarih);
+            this.panel1.Controls.Add(this.yayin_tarihi);
             this.panel1.Controls.Add(this.txt_ID);
             this.panel1.Controls.Add(this.txt_Ss);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.txt_Kategori);
             this.panel1.Controls.Add(this.label3);
@@ -251,6 +239,13 @@
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // yayin_tarihi
+            // 
+            this.yayin_tarihi.Location = new System.Drawing.Point(269, 282);
+            this.yayin_tarihi.Name = "yayin_tarihi";
+            this.yayin_tarihi.Size = new System.Drawing.Size(136, 27);
+            this.yayin_tarihi.TabIndex = 19;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -260,13 +255,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
-            // 
-            // eklendigi_tarih
-            // 
-            this.eklendigi_tarih.Location = new System.Drawing.Point(269, 282);
-            this.eklendigi_tarih.Name = "eklendigi_tarih";
-            this.eklendigi_tarih.Size = new System.Drawing.Size(136, 27);
-            this.eklendigi_tarih.TabIndex = 19;
             // 
             // kitap
             // 
@@ -306,11 +294,10 @@
         private TextBox txt_ISBN;
         private TextBox txt_Kategori;
         private Button button1;
-        private Button button2;
         private Button button3;
         private PictureBox pictureBox1;
         private Panel panel1;
         private PictureBox pictureBox2;
-        private DateTimePicker eklendigi_tarih;
+        private DateTimePicker yayin_tarihi;
     }
 }
