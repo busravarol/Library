@@ -48,7 +48,7 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(124, 108);
+            this.pictureBox1.Location = new System.Drawing.Point(143, 113);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(244, 161);
@@ -63,10 +63,10 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(124, 326);
+            this.label1.Location = new System.Drawing.Point(143, 328);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 34);
+            this.label1.Size = new System.Drawing.Size(138, 27);
             this.label1.TabIndex = 1;
             this.label1.Text = "   Kullanıcı Adı:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -75,11 +75,11 @@
             // 
             this.txtUsername.BackColor = System.Drawing.Color.White;
             this.txtUsername.Font = new System.Drawing.Font("Perpetua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUsername.Location = new System.Drawing.Point(124, 365);
+            this.txtUsername.Location = new System.Drawing.Point(143, 365);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(5);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "admin";
-            this.txtUsername.Size = new System.Drawing.Size(244, 34);
+            this.txtUsername.Size = new System.Drawing.Size(244, 29);
             this.txtUsername.TabIndex = 2;
             this.txtUsername.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtUsername_MouseClick);
             // 
@@ -90,10 +90,10 @@
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(124, 435);
+            this.label2.Location = new System.Drawing.Point(143, 442);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 34);
+            this.label2.Size = new System.Drawing.Size(75, 27);
             this.label2.TabIndex = 3;
             this.label2.Text = "   Şifre:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -102,12 +102,12 @@
             // 
             this.txtSifre.BackColor = System.Drawing.Color.White;
             this.txtSifre.Font = new System.Drawing.Font("Perpetua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSifre.Location = new System.Drawing.Point(124, 474);
+            this.txtSifre.Location = new System.Drawing.Point(143, 477);
             this.txtSifre.Margin = new System.Windows.Forms.Padding(5);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '*';
             this.txtSifre.PlaceholderText = "sifre";
-            this.txtSifre.Size = new System.Drawing.Size(244, 34);
+            this.txtSifre.Size = new System.Drawing.Size(244, 29);
             this.txtSifre.TabIndex = 4;
             this.txtSifre.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSifre_MouseClick_1);
             // 
@@ -115,7 +115,7 @@
             // 
             this.btngiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(87)))), ((int)(((byte)(126)))));
             this.btngiris.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btngiris.Location = new System.Drawing.Point(165, 530);
+            this.btngiris.Location = new System.Drawing.Point(184, 541);
             this.btngiris.Margin = new System.Windows.Forms.Padding(5);
             this.btngiris.Name = "btngiris";
             this.btngiris.Size = new System.Drawing.Size(151, 66);
@@ -129,7 +129,7 @@
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(79)))), ((int)(((byte)(96)))));
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClose.ForeColor = System.Drawing.Color.Red;
-            this.btnClose.Location = new System.Drawing.Point(471, 27);
+            this.btnClose.Location = new System.Drawing.Point(498, 14);
             this.btnClose.Margin = new System.Windows.Forms.Padding(5);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(48, 55);
@@ -140,11 +140,12 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.Location = new System.Drawing.Point(56, 59);
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(87)))), ((int)(((byte)(126)))));
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Historic", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(114, 31);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(379, 39);
+            this.textBox1.Size = new System.Drawing.Size(305, 38);
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "ULUDAĞ ÜNİVERSİTESİ";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -154,9 +155,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(249)))), ((int)(((byte)(253)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(124, 328);
+            this.pictureBox2.Location = new System.Drawing.Point(143, 328);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(21, 29);
+            this.pictureBox2.Size = new System.Drawing.Size(21, 27);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -165,16 +166,16 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(249)))), ((int)(((byte)(253)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(124, 438);
+            this.pictureBox3.Location = new System.Drawing.Point(143, 442);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(21, 31);
+            this.pictureBox3.Size = new System.Drawing.Size(21, 27);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
             // giris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(560, 763);
