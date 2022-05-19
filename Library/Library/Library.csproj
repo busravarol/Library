@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="anasayfa.cs" />
+    <Compile Remove="anasayfa.Designer.cs" />
+    <Compile Remove="istatistikler.cs" />
     <Compile Remove="istatistikler.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="anasayfa.resx" />
     <EmbeddedResource Remove="istatistikler.resx" />
   </ItemGroup>
 

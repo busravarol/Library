@@ -71,5 +71,11 @@ namespace Library
             }
             
         }
+
+        private void kitapEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 deneme = new Form2();
+            deneme.Show();
+        }
     }
 }
