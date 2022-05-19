@@ -57,5 +57,19 @@ namespace Library
         {
 
         }
+
+        private void öğrenciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Çıkış yapmak istediğine emin misin?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            
+        }
     }
 }
