@@ -44,11 +44,12 @@
             this.txt_Yayinevi = new System.Windows.Forms.TextBox();
             this.txt_ISBN = new System.Windows.Forms.TextBox();
             this.txt_Kategori = new System.Windows.Forms.TextBox();
+            this.txt_Tarih = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.yayin_tarihi = new System.Windows.Forms.DateTimePicker();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -124,58 +125,65 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(269, 259);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 20);
+            this.label8.Size = new System.Drawing.Size(108, 20);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Yayın Tarihi:";
+            this.label8.Text = "Eklendiği Tarih:";
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(63, 53);
+            this.txt_ID.Location = new System.Drawing.Point(62, 53);
             this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(136, 27);
+            this.txt_ID.Size = new System.Drawing.Size(125, 27);
             this.txt_ID.TabIndex = 8;
             // 
             // txt_Ad
             // 
             this.txt_Ad.Location = new System.Drawing.Point(269, 53);
             this.txt_Ad.Name = "txt_Ad";
-            this.txt_Ad.Size = new System.Drawing.Size(136, 27);
+            this.txt_Ad.Size = new System.Drawing.Size(125, 27);
             this.txt_Ad.TabIndex = 9;
             // 
             // txt_Yazar
             // 
             this.txt_Yazar.Location = new System.Drawing.Point(63, 140);
             this.txt_Yazar.Name = "txt_Yazar";
-            this.txt_Yazar.Size = new System.Drawing.Size(136, 27);
+            this.txt_Yazar.Size = new System.Drawing.Size(125, 27);
             this.txt_Yazar.TabIndex = 10;
             // 
             // txt_Ss
             // 
             this.txt_Ss.Location = new System.Drawing.Point(269, 131);
             this.txt_Ss.Name = "txt_Ss";
-            this.txt_Ss.Size = new System.Drawing.Size(136, 27);
+            this.txt_Ss.Size = new System.Drawing.Size(125, 27);
             this.txt_Ss.TabIndex = 11;
             // 
             // txt_Yayinevi
             // 
             this.txt_Yayinevi.Location = new System.Drawing.Point(63, 210);
             this.txt_Yayinevi.Name = "txt_Yayinevi";
-            this.txt_Yayinevi.Size = new System.Drawing.Size(136, 27);
+            this.txt_Yayinevi.Size = new System.Drawing.Size(125, 27);
             this.txt_Yayinevi.TabIndex = 12;
             // 
             // txt_ISBN
             // 
             this.txt_ISBN.Location = new System.Drawing.Point(269, 210);
             this.txt_ISBN.Name = "txt_ISBN";
-            this.txt_ISBN.Size = new System.Drawing.Size(136, 27);
+            this.txt_ISBN.Size = new System.Drawing.Size(125, 27);
             this.txt_ISBN.TabIndex = 13;
             // 
             // txt_Kategori
             // 
             this.txt_Kategori.Location = new System.Drawing.Point(63, 282);
             this.txt_Kategori.Name = "txt_Kategori";
-            this.txt_Kategori.Size = new System.Drawing.Size(136, 27);
+            this.txt_Kategori.Size = new System.Drawing.Size(125, 27);
             this.txt_Kategori.TabIndex = 14;
+            // 
+            // txt_Tarih
+            // 
+            this.txt_Tarih.Location = new System.Drawing.Point(269, 282);
+            this.txt_Tarih.Name = "txt_Tarih";
+            this.txt_Tarih.Size = new System.Drawing.Size(125, 27);
+            this.txt_Tarih.TabIndex = 15;
             // 
             // button1
             // 
@@ -190,6 +198,17 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.button2.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(162, 343);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 78);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "KİTAP SİL";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
@@ -200,7 +219,6 @@
             this.button3.TabIndex = 18;
             this.button3.Text = "KİTAP GÜNCELLE";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
@@ -215,14 +233,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
-            this.panel1.Controls.Add(this.yayin_tarihi);
             this.panel1.Controls.Add(this.txt_ID);
             this.panel1.Controls.Add(this.txt_Ss);
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.txt_Kategori);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.txt_Tarih);
             this.panel1.Controls.Add(this.txt_ISBN);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label6);
@@ -238,13 +257,6 @@
             this.panel1.Size = new System.Drawing.Size(459, 484);
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // yayin_tarihi
-            // 
-            this.yayin_tarihi.Location = new System.Drawing.Point(269, 282);
-            this.yayin_tarihi.Name = "yayin_tarihi";
-            this.yayin_tarihi.Size = new System.Drawing.Size(136, 27);
-            this.yayin_tarihi.TabIndex = 19;
             // 
             // pictureBox2
             // 
@@ -293,11 +305,12 @@
         private TextBox txt_Yayinevi;
         private TextBox txt_ISBN;
         private TextBox txt_Kategori;
+        private TextBox txt_Tarih;
         private Button button1;
+        private Button button2;
         private Button button3;
         private PictureBox pictureBox1;
         private Panel panel1;
         private PictureBox pictureBox2;
-        private DateTimePicker yayin_tarihi;
     }
 }

@@ -70,7 +70,7 @@ namespace Library
             if (dr.Read())
             {
                 this.Hide();
-                anasayfa form = new anasayfa();
+                Form2 form = new Form2();
                 form.Show();
             }
             else
