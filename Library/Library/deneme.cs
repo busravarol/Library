@@ -16,7 +16,8 @@ namespace Library
     public partial class kitap : Form
     {
        
-        MySqlDataReader dr; 
+        MySqlDataReader dr;
+       
         public kitap()
 
         {
@@ -37,7 +38,7 @@ namespace Library
             }
             return con;
         }
-
+        
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -72,6 +73,7 @@ namespace Library
 
             try
             {
+                
                 command.ExecuteNonQuery();
                 MessageBox.Show("Yeni Kitap Eklendi");
             }
