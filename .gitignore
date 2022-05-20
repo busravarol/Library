@@ -215,3 +215,7 @@ Library/Library/obj/Debug/net6.0-windows/Library.csproj.FileListAbsolute.txt
 Library/Library/obj/Debug/net6.0-windows/Library.giris.resources
 Library/Library/obj/Debug/net6.0-windows/Library.OduncListesi.resources
 Library/.vs/Library/DesignTimeBuild/.dtbcache.v2
+Library/Library/OduncListesi.Designer.cs
+Library/Library/Öğrenci Ekle.cs
+Library/Library/Öğrenci Ekle.Designer.cs
+Library/Library/Öğrenci Ekle.resx
