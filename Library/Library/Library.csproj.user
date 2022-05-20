@@ -13,5 +13,11 @@
     <Compile Update="kitaplistesi.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Odunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OduncListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

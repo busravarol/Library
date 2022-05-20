@@ -108,7 +108,6 @@ C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\ref\Libr
 C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.anasayfa.resources
 C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.kitaplistesi.resources
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.csproj.AssemblyReference.cache
-C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.anasayfa.resources
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.kitap.resources
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.Form2.resources
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.giris.resources
@@ -122,7 +121,6 @@ C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.c
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.dll
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\refint\Library.dll
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.pdb
-C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.istatistikler.resources
 C:\Users\esma\Desktop\Library\Library\Library\bin\Debug\net6.0-windows\Library.exe
 C:\Users\esma\Desktop\Library\Library\Library\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
 C:\Users\esma\Desktop\Library\Library\Library\bin\Debug\net6.0-windows\Google.Protobuf.dll
@@ -139,3 +137,10 @@ C:\Users\esma\Desktop\Library\Library\Library\bin\Debug\net6.0-windows\runtimes\
 C:\Users\esma\Desktop\Library\Library\Library\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\esma\Desktop\Library\Library\Library\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.csproj.CopyComplete
+C:\Users\esma\Desktop\Library\Library\Library\bin\Debug\net6.0-windows\Library.deps.json
+C:\Users\esma\Desktop\Library\Library\Library\bin\Debug\net6.0-windows\Library.runtimeconfig.json
+C:\Users\esma\Desktop\Library\Library\Library\bin\Debug\net6.0-windows\Library.dll
+C:\Users\esma\Desktop\Library\Library\Library\bin\Debug\net6.0-windows\Library.pdb
+C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.genruntimeconfig.cache
+C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\ref\Library.dll
+C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.Odunc.resources

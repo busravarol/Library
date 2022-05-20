@@ -7,15 +7,28 @@ namespace Library
 {
     public partial class giris : Form
     {
-        MySqlConnection con;
-        MySqlCommand cmd;
+       
         MySqlDataReader dr;
         public giris()
         {
             InitializeComponent();
-            con = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
+            
         }
+        public static MySqlConnection GetConnection()
+        {
+            string sql = "Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;";
+            MySqlConnection con = new MySqlConnection(sql);
+            try
+            {
+                con.Open();
+            }
+            catch (Exception ex)
+            {
 
+                MessageBox.Show($"{ex}");
+            }
+            return con;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -60,13 +73,14 @@ namespace Library
 
         private void btngiris_Click(object sender, EventArgs e)
         {
+            string sqlCommand = "Select * FROM tbl_giris where kullaniciadi='" + txtUsername.Text + "'AND sifre='" + txtSifre.Text + "'";
             string user =txtUsername.Text;
             string sifre =txtSifre.Text;
-            cmd = new MySqlCommand();
-            con.Open();
-            cmd.Connection = con;
-            cmd.CommandText = "Select * FROM tbl_giris where kullaniciadi='" + txtUsername.Text + "'AND sifre='" + txtSifre.Text + "'";
-            dr= cmd.ExecuteReader();
+            
+             GetConnection();
+            MySqlCommand command = new MySqlCommand(sqlCommand,GetConnection());
+
+            dr= command.ExecuteReader();
             if (dr.Read())
             {
                 this.Hide();
