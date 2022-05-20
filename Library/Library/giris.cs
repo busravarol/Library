@@ -16,6 +16,7 @@ namespace Library
         }
         public static MySqlConnection GetConnection()
         {
+
             string sql = "Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;";
             MySqlConnection con = new MySqlConnection(sql);
             try

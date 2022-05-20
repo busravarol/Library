@@ -38,6 +38,43 @@ namespace Library
             }
             return con;
         }
+        public static void addBook(kitap kitap)
+        {
+            string sql = "INSERT INTO kitap VALUES (@ID,@kitap-ad, @ISBN,@kategori,@yayintarihi,@yayinevi,@sayfasayisi,@yazaradi)";
+            MySqlConnection con =GetConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("@kitap-ad", MySqlDbType.VarChar).Value = kitap.txt_Ad;
+            cmd.Parameters.Add("@ISBN", MySqlDbType.VarChar).Value = kitap.txt_ISBN;
+            cmd.Parameters.Add("@kategori", MySqlDbType.VarChar).Value = kitap.txt_Kategori;
+            cmd.Parameters.Add("@yayintarihi", MySqlDbType.Int64).Value = kitap.txt_Tarih;
+            cmd.Parameters.Add("@yayinevi", MySqlDbType.VarChar).Value = kitap.txt_Yayinevi;
+            cmd.Parameters.Add("@sayfasayisi", MySqlDbType.Int64).Value = kitap.txt_Ss;
+            cmd.Parameters.Add("@yazaradi", MySqlDbType.VarChar).Value = kitap.txt_Yazar;
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Kitap Başarıyla Eklendi");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Kitap Ekleme Başarısız"+ex.Message,"Error",MessageBoxButtons.OK);
+            }
+            con.Close();
+
+        }
+       /* public class kitap
+        {
+            string Ad;
+            string ISBN;
+            string Kategori;
+            string Tarih;
+            string Ss;
+            string Yazar;
+            public string 
+        }*/
+
+
         
         private void label2_Click(object sender, EventArgs e)
         {
@@ -56,24 +93,27 @@ namespace Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-           /* string sqlCommand = "insert into tbl_kitap(kitap-ad,ISBN,kategori,yayintarihi,yayinevi,sayfasayisi,yazaradi)" +
-                " values (" + txt_Ad.Text + ",'" + txt_ISBN.Text + "','" + txt_Kategori.Text + "','" + txt_Tarih.Text
-                + "','" + txt_Yayinevi.Text + "','" + int.Parse(txt_Ss.Text) + "','" + txt_Yazar.Text + "')";
-            Console.WriteLine(sqlCommand);
+            kitap ID =
+            kitap.kitap-Ad = txt_Ad.Text;
 
-            string kitapadi = txt_Ad.Text;
-            string yazar = txt_Yazar.Text;
-            string yayinevi = txt_Yayinevi.Text;
-            string kategori= txt_Kategori.Text;
-            int sayfasayisi = int.Parse(txt_Ss.Text);
-            string isbn = txt_ISBN.Text;
-            string yayintarihi = txt_Tarih.Text;
-            MySqlConnection con = GetConnection();
-            MySqlCommand command = new MySqlCommand(sqlCommand,con);*/
+            /* string sqlCommand = "insert into tbl_kitap(kitap-ad,ISBN,kategori,yayintarihi,yayinevi,sayfasayisi,yazaradi)" +
+                 " values (" + txt_Ad.Text + ",'" + txt_ISBN.Text + "','" + txt_Kategori.Text + "','" + txt_Tarih.Text
+                 + "','" + txt_Yayinevi.Text + "','" + int.Parse(txt_Ss.Text) + "','" + txt_Yazar.Text + "')";
+             Console.WriteLine(sqlCommand);
+
+             string kitapadi = txt_Ad.Text;
+             string yazar = txt_Yazar.Text;
+             string yayinevi = txt_Yayinevi.Text;
+             string kategori= txt_Kategori.Text;
+             int sayfasayisi = int.Parse(txt_Ss.Text);
+             string isbn = txt_ISBN.Text;
+             string yayintarihi = txt_Tarih.Text;
+             MySqlConnection con = GetConnection();
+             MySqlCommand command = new MySqlCommand(sqlCommand,con);*/
 
             try
             {
-                
+                MySqlCommand command = new MySqlCommand();
                 command.ExecuteNonQuery();
                 MessageBox.Show("Yeni Kitap Eklendi");
             }
