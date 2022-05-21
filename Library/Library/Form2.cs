@@ -77,5 +77,11 @@ namespace Library
             kitap form = new kitap();
             form.Show();
         }
+
+        private void kitapListesiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            kitaplistesi vb = new kitaplistesi();
+            vb.Show();
+        }
     }
 }

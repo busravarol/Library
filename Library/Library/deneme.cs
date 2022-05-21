@@ -93,7 +93,7 @@ namespace Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-            kitap ID =
+            /*kitap ID =
             kitap.kitap-Ad = txt_Ad.Text;
 
             /* string sqlCommand = "insert into tbl_kitap(kitap-ad,ISBN,kategori,yayintarihi,yayinevi,sayfasayisi,yazaradi)" +
