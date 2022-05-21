@@ -95,18 +95,24 @@ namespace Library
         private void button1_Click(object sender, EventArgs e)
         {
             baglanti.Open   ();
-            MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(ID,kitap-ad,ISBN,kategori,yayintarihi,yayinevi,sayfasayisi,yazaradi) values (@k1,@k2,@k3,@k4,@k5,@k6,@k7,@k8)",baglanti);
-            komut.Parameters.AddWithValue("@k1", txt_Id);
-            komut.Parameters.AddWithValue("@k2", txt_Ad);
-            komut.Parameters.AddWithValue("@k3", txt_ISBN);
-            komut.Parameters.AddWithValue("@k4", txt_Kategori);
-            komut.Parameters.AddWithValue("@k5", txt_Tarih);
-            komut.Parameters.AddWithValue("@k6", txt_Yayinevi);
-            komut.Parameters.AddWithValue("@k7", txt_Ss);
-            komut.Parameters.AddWithValue("@k8", txt_Yazar);
+            MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(ID,kitapadi,ISBN,kategori,yayintarihi,yayinevi,sayfasayisi,yazaradi) values (@k1,@k2,@k3,@k4,@k5,@k6,@k7,@k8) ", baglanti);
+            komut.Parameters.AddWithValue("@k1", txt_Id.Text);
+            komut.Parameters.AddWithValue("@k2", txt_Ad.Text);
+            komut.Parameters.AddWithValue("@k3", txt_ISBN.Text);
+            komut.Parameters.AddWithValue("@k4", txt_Kategori.Text);
+            komut.Parameters.AddWithValue("@k5", txt_Tarih.Text);
+            komut.Parameters.AddWithValue("@k6", txt_Yayinevi.Text);
+            komut.Parameters.AddWithValue("@k7", txt_Ss.Text);
+            komut.Parameters.AddWithValue("@k8", txt_Yazar.Text);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kitap Başarıyla Eklendi");
+
+
+
+
+
+
             /*kitap ID =    
             kitap.kitap-Ad = txt_Ad.Text;
 
