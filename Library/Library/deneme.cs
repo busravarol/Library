@@ -23,7 +23,8 @@ namespace Library
         {
             InitializeComponent();
         }
-        public static MySqlConnection GetConnection()
+        MySqlConnection baglanti=new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
+      /*  public static MySqlConnection GetConnection()
         {
             string sql = "Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;";
             MySqlConnection con = new MySqlConnection(sql);
@@ -93,7 +94,20 @@ namespace Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*kitap ID =
+            baglanti.Open   ();
+            MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(ID,kitap-ad,ISBN,kategori,yayintarihi,yayinevi,sayfasayisi,yazaradi) values (@k1,@k2,@k3,@k4,@k5,@k6,@k7,@k8)",baglanti);
+            komut.Parameters.AddWithValue("@k1", txt_Id);
+            komut.Parameters.AddWithValue("@k2", txt_Ad);
+            komut.Parameters.AddWithValue("@k3", txt_ISBN);
+            komut.Parameters.AddWithValue("@k4", txt_Kategori);
+            komut.Parameters.AddWithValue("@k5", txt_Tarih);
+            komut.Parameters.AddWithValue("@k6", txt_Yayinevi);
+            komut.Parameters.AddWithValue("@k7", txt_Ss);
+            komut.Parameters.AddWithValue("@k8", txt_Yazar);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Kitap Başarıyla Eklendi");
+            /*kitap ID =    
             kitap.kitap-Ad = txt_Ad.Text;
 
             /* string sqlCommand = "insert into tbl_kitap(kitap-ad,ISBN,kategori,yayintarihi,yayinevi,sayfasayisi,yazaradi)" +
@@ -109,7 +123,7 @@ namespace Library
              string isbn = txt_ISBN.Text;
              string yayintarihi = txt_Tarih.Text;
              MySqlConnection con = GetConnection();
-             MySqlCommand command = new MySqlCommand(sqlCommand,con);*/
+             MySqlCommand command = new MySqlCommand(sqlCommand,con);
 
             try
             {
@@ -121,7 +135,7 @@ namespace Library
             {
                 MessageBox.Show("Hata var kitap eklenmedi " + hata.Message);
                
-            }
+            }*/
 
         }
 
