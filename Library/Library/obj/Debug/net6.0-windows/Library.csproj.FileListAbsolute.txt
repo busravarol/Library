@@ -146,3 +146,4 @@ C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.O
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.OduncListesi.resources
 C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.Odunc.resources
 C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.OduncListesi.resources
+C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.OgrenciEkle.resources
