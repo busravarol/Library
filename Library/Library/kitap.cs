@@ -182,5 +182,10 @@ namespace Library
             Form2 Form2 = new Form2();
             Form2.Show();*/
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

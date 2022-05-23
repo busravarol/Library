@@ -46,7 +46,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_Tarih = new System.Windows.Forms.DateTimePicker();
+            this.txt_Tarih = new System.Windows.Forms.TextBox();
             this.txt_Id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -225,10 +225,11 @@
             // 
             // txt_Tarih
             // 
-            this.txt_Tarih.Location = new System.Drawing.Point(67, 291);
+            this.txt_Tarih.Location = new System.Drawing.Point(63, 304);
             this.txt_Tarih.Name = "txt_Tarih";
-            this.txt_Tarih.Size = new System.Drawing.Size(138, 27);
+            this.txt_Tarih.Size = new System.Drawing.Size(142, 27);
             this.txt_Tarih.TabIndex = 22;
+            this.txt_Tarih.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txt_Id
             // 
@@ -297,6 +298,6 @@
         private PictureBox pictureBox2;
         private TextBox txt_Id;
         private Label label1;
-        private DateTimePicker txt_Tarih;
+        private TextBox txt_Tarih;
     }
 }
