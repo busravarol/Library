@@ -1131,19 +1131,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ilkay kavak\\.nuget\\packages\\": {}
+    "C:\\Users\\esma\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilkay kavak\\Desktop\\Library\\Library\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\esma\\Desktop\\Library\\Library\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "C:\\Users\\ilkay kavak\\Desktop\\Library\\Library\\Library\\Library.csproj",
-      "packagesPath": "C:\\Users\\ilkay kavak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilkay kavak\\Desktop\\Library\\Library\\Library\\obj\\",
+      "projectPath": "C:\\Users\\esma\\Desktop\\Library\\Library\\Library\\Library.csproj",
+      "packagesPath": "C:\\Users\\esma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\esma\\Desktop\\Library\\Library\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ilkay kavak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\esma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1196,7 +1196,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
