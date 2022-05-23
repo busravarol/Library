@@ -83,5 +83,12 @@ namespace Library
             kitaplistesi vb = new kitaplistesi();
             vb.Show();
         }
+
+        private void öğrenciEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OgrenciEkle ogrenciEkle = new OgrenciEkle();
+            ogrenciEkle.Show();
+
+        }
     }
 }
