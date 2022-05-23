@@ -100,7 +100,7 @@ namespace Library
             komut.Parameters.AddWithValue("@k2", txt_Ad.Text);
             komut.Parameters.AddWithValue("@k3", txt_ISBN.Text);
             komut.Parameters.AddWithValue("@k4", txt_Kategori.Text);
-            komut.Parameters.AddWithValue("@k5", date_Time.Text);
+            komut.Parameters.AddWithValue("@k5", txt_Tarih.Text);
             komut.Parameters.AddWithValue("@k6", txt_Yayinevi.Text);
             komut.Parameters.AddWithValue("@k7", txt_Ss.Text);
             komut.Parameters.AddWithValue("@k8", txt_Yazar.Text);

@@ -46,7 +46,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.date_Time = new System.Windows.Forms.DateTimePicker();
+            this.txt_Tarih = new System.Windows.Forms.DateTimePicker();
             this.txt_Id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -199,7 +199,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
-            this.panel1.Controls.Add(this.date_Time);
+            this.panel1.Controls.Add(this.txt_Tarih);
             this.panel1.Controls.Add(this.txt_Id);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txt_Ss);
@@ -223,12 +223,12 @@
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // date_Time
+            // txt_Tarih
             // 
-            this.date_Time.Location = new System.Drawing.Point(67, 291);
-            this.date_Time.Name = "date_Time";
-            this.date_Time.Size = new System.Drawing.Size(138, 27);
-            this.date_Time.TabIndex = 22;
+            this.txt_Tarih.Location = new System.Drawing.Point(67, 291);
+            this.txt_Tarih.Name = "txt_Tarih";
+            this.txt_Tarih.Size = new System.Drawing.Size(138, 27);
+            this.txt_Tarih.TabIndex = 22;
             // 
             // txt_Id
             // 
@@ -297,6 +297,6 @@
         private PictureBox pictureBox2;
         private TextBox txt_Id;
         private Label label1;
-        private DateTimePicker date_Time;
+        private DateTimePicker txt_Tarih;
     }
 }
