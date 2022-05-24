@@ -90,5 +90,11 @@ namespace Library
             ogrenciEkle.Show();
 
         }
+
+        private void iadeKitaplarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Odunc odunc = new Odunc();
+            odunc.Show();
+        }
     }
 }

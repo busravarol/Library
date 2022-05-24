@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Odunc));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btn_KitVer = new System.Windows.Forms.Button();
+            this.dateTime_Tarih = new System.Windows.Forms.DateTimePicker();
+            this.txt_Kitap = new System.Windows.Forms.TextBox();
+            this.txt_Oad = new System.Windows.Forms.TextBox();
+            this.txt_Osoyad = new System.Windows.Forms.TextBox();
+            this.txt_tlf = new System.Windows.Forms.TextBox();
+            this.txt_Posta = new System.Windows.Forms.TextBox();
+            this.txt_Blm = new System.Windows.Forms.TextBox();
+            this.txt_No2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,8 +48,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_Arama = new System.Windows.Forms.Button();
+            this.txt_No = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -68,15 +68,15 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.btn_KitVer);
+            this.panel1.Controls.Add(this.dateTime_Tarih);
+            this.panel1.Controls.Add(this.txt_Kitap);
+            this.panel1.Controls.Add(this.txt_Oad);
+            this.panel1.Controls.Add(this.txt_Osoyad);
+            this.panel1.Controls.Add(this.txt_tlf);
+            this.panel1.Controls.Add(this.txt_Posta);
+            this.panel1.Controls.Add(this.txt_Blm);
+            this.panel1.Controls.Add(this.txt_No2);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -85,8 +85,8 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.btn_Arama);
+            this.panel1.Controls.Add(this.txt_No);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(25, 50);
             this.panel1.Name = "panel1";
@@ -103,70 +103,70 @@
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
-            // button2
+            // btn_KitVer
             // 
-            this.button2.Location = new System.Drawing.Point(329, 360);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 59);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Kitap Ver";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_KitVer.Location = new System.Drawing.Point(329, 360);
+            this.btn_KitVer.Name = "btn_KitVer";
+            this.btn_KitVer.Size = new System.Drawing.Size(134, 59);
+            this.btn_KitVer.TabIndex = 19;
+            this.btn_KitVer.Text = "Kitap Ver";
+            this.btn_KitVer.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dateTime_Tarih
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(329, 280);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(152, 27);
-            this.dateTimePicker1.TabIndex = 18;
+            this.dateTime_Tarih.Location = new System.Drawing.Point(329, 280);
+            this.dateTime_Tarih.Name = "dateTime_Tarih";
+            this.dateTime_Tarih.Size = new System.Drawing.Size(152, 27);
+            this.dateTime_Tarih.TabIndex = 18;
             // 
-            // textBox8
+            // txt_Kitap
             // 
-            this.textBox8.Location = new System.Drawing.Point(329, 243);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(152, 27);
-            this.textBox8.TabIndex = 17;
+            this.txt_Kitap.Location = new System.Drawing.Point(329, 243);
+            this.txt_Kitap.Name = "txt_Kitap";
+            this.txt_Kitap.Size = new System.Drawing.Size(152, 27);
+            this.txt_Kitap.TabIndex = 17;
             // 
-            // textBox7
+            // txt_Oad
             // 
-            this.textBox7.Location = new System.Drawing.Point(329, 67);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(152, 27);
-            this.textBox7.TabIndex = 16;
+            this.txt_Oad.Location = new System.Drawing.Point(329, 67);
+            this.txt_Oad.Name = "txt_Oad";
+            this.txt_Oad.Size = new System.Drawing.Size(152, 27);
+            this.txt_Oad.TabIndex = 16;
             // 
-            // textBox6
+            // txt_Osoyad
             // 
-            this.textBox6.Location = new System.Drawing.Point(329, 100);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 27);
-            this.textBox6.TabIndex = 15;
+            this.txt_Osoyad.Location = new System.Drawing.Point(329, 100);
+            this.txt_Osoyad.Name = "txt_Osoyad";
+            this.txt_Osoyad.Size = new System.Drawing.Size(152, 27);
+            this.txt_Osoyad.TabIndex = 15;
             // 
-            // textBox5
+            // txt_tlf
             // 
-            this.textBox5.Location = new System.Drawing.Point(329, 137);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 27);
-            this.textBox5.TabIndex = 14;
+            this.txt_tlf.Location = new System.Drawing.Point(329, 137);
+            this.txt_tlf.Name = "txt_tlf";
+            this.txt_tlf.Size = new System.Drawing.Size(152, 27);
+            this.txt_tlf.TabIndex = 14;
             // 
-            // textBox4
+            // txt_Posta
             // 
-            this.textBox4.Location = new System.Drawing.Point(329, 174);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(152, 27);
-            this.textBox4.TabIndex = 13;
+            this.txt_Posta.Location = new System.Drawing.Point(329, 174);
+            this.txt_Posta.Name = "txt_Posta";
+            this.txt_Posta.Size = new System.Drawing.Size(152, 27);
+            this.txt_Posta.TabIndex = 13;
             // 
-            // textBox3
+            // txt_Blm
             // 
-            this.textBox3.Location = new System.Drawing.Point(329, 207);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 27);
-            this.textBox3.TabIndex = 12;
+            this.txt_Blm.Location = new System.Drawing.Point(329, 207);
+            this.txt_Blm.Name = "txt_Blm";
+            this.txt_Blm.Size = new System.Drawing.Size(152, 27);
+            this.txt_Blm.TabIndex = 12;
             // 
-            // textBox2
+            // txt_No2
             // 
-            this.textBox2.Location = new System.Drawing.Point(329, 34);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 27);
-            this.textBox2.TabIndex = 11;
+            this.txt_No2.Location = new System.Drawing.Point(329, 34);
+            this.txt_No2.Name = "txt_No2";
+            this.txt_No2.Size = new System.Drawing.Size(152, 27);
+            this.txt_No2.TabIndex = 11;
             // 
             // label9
             // 
@@ -240,21 +240,23 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Öğrenci No";
             // 
-            // button1
+            // btn_Arama
             // 
-            this.button1.Location = new System.Drawing.Point(65, 281);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Arama";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Arama.Location = new System.Drawing.Point(65, 281);
+            this.btn_Arama.Name = "btn_Arama";
+            this.btn_Arama.Size = new System.Drawing.Size(94, 29);
+            this.btn_Arama.TabIndex = 2;
+            this.btn_Arama.Text = "Arama";
+            this.btn_Arama.UseVisualStyleBackColor = true;
+            this.btn_Arama.Click += new System.EventHandler(this.btn_Arama_Click);
             // 
-            // textBox1
+            // txt_No
             // 
-            this.textBox1.Location = new System.Drawing.Point(50, 214);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(129, 27);
-            this.textBox1.TabIndex = 1;
+            this.txt_No.Location = new System.Drawing.Point(50, 214);
+            this.txt_No.Name = "txt_No";
+            this.txt_No.Size = new System.Drawing.Size(129, 27);
+            this.txt_No.TabIndex = 1;
+            this.txt_No.TextChanged += new System.EventHandler(this.txt_No_TextChanged);
             // 
             // label1
             // 
@@ -334,6 +336,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Odunc";
             this.Text = "Odunc";
+            this.Load += new System.EventHandler(this.Odunc_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -348,15 +351,15 @@
         #endregion
 
         private Panel panel1;
-        private Button button2;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox8;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private Button btn_KitVer;
+        private DateTimePicker dateTime_Tarih;
+        private TextBox txt_Kitap;
+        private TextBox txt_Oad;
+        private TextBox txt_Osoyad;
+        private TextBox txt_tlf;
+        private TextBox txt_Posta;
+        private TextBox txt_Blm;
+        private TextBox txt_No2;
         private Label label9;
         private Label label8;
         private Label label7;
@@ -365,8 +368,8 @@
         private Label label4;
         private Label label3;
         private Label label2;
-        private Button button1;
-        private TextBox textBox1;
+        private Button btn_Arama;
+        private TextBox txt_No;
         private Label label1;
         private Panel panel2;
         private DataGridView dataGridView1;

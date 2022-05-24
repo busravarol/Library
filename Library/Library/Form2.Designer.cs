@@ -134,6 +134,7 @@
             this.iadeKitaplarToolStripMenuItem.Name = "iadeKitaplarToolStripMenuItem";
             this.iadeKitaplarToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
             this.iadeKitaplarToolStripMenuItem.Text = "İade Kitaplar";
+            this.iadeKitaplarToolStripMenuItem.Click += new System.EventHandler(this.iadeKitaplarToolStripMenuItem_Click);
             // 
             // kitapDetaylarıToolStripMenuItem
             // 
