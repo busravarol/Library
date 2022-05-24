@@ -17,7 +17,6 @@ namespace Library
         {
             InitializeComponent();
         }
-        MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
 
         private void Odunc2_Load(object sender, EventArgs e)
         {
@@ -26,6 +25,8 @@ namespace Library
 
         private void txt_No_TextChanged(object sender, EventArgs e)
         {
+            MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
+
             if (txt_No.Text == "") foreach (Control item in Controls) if (item is TextBox) item.Text = "";
             baglanti.Open();
             MySqlCommand komut = new MySqlCommand("select* from tbl_ogrenci where ogrno like'" + txt_No.Text + "'");
