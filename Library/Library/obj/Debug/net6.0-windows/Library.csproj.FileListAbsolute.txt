@@ -210,7 +210,6 @@ C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windo
 C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.giris.resources
 C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.kitap.resources
 C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.kitaplistesi.resources
-C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.Odunc.resources
 C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.OduncListesi.resources
 C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.OgrenciEkle.resources
 C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.Properties.Resources.resources
@@ -225,3 +224,4 @@ C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windo
 C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.pdb
 C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.genruntimeconfig.cache
 C:\Users\ilkay kavak\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.Odunc2.resources
+C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.Odunc2.resources

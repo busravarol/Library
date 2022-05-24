@@ -24,9 +24,9 @@ namespace Library
             baglanti.Open();
             MySqlCommand komutum = new MySqlCommand();
             komutum.Connection = baglanti;
-            komutum.CommandText = "insert into Ogrenci(Ad, Soyad, OgrenciNo, Email, BolumAdi, Telefon) values (@Ad, @Soyad, @OgrenciNo, @Email, @BolumAdi, @Telefon)";
+            komutum.CommandText = "insert into tbl_ogrenci(ograd, ogrsoyad, ogrno, ogreposta , ogrbolumad, ogrtelefon) values (@ograd, @ogrsoyad, @ogrno, @ogreposta, @ogrbolumad, @ogrtelefon)";
             
-            string sorgu = "INSERT INTO Ogrenci (Ad, Soyad, OgrenciNo, Email, BolumAdi, Telefon,) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text
+            string sorgu = "INSERT INTO tbl_ogrenci (ograd, ogrsoyad, ogrno, ogreposta , ogrbolumad, ogrtelefon) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text
 + "' ,'" + textBox5.Text + "', '" + textBox6.Text + "',0,0)";
             komutum.ExecuteNonQuery();
             baglanti.Close();
