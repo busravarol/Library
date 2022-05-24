@@ -93,7 +93,7 @@ namespace Library
 
         private void iadeKitaplarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Odunc odunc = new Odunc();
+            Odunc2 odunc = new Odunc2();
             odunc.Show();
         }
     }

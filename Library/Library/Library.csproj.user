@@ -13,7 +13,7 @@
     <Compile Update="kitaplistesi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Odunc.cs">
+    <Compile Update="Odunc2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="OduncListesi.cs">

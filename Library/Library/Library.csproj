@@ -13,11 +13,14 @@
     <Compile Remove="anasayfa.Designer.cs" />
     <Compile Remove="istatistikler.cs" />
     <Compile Remove="istatistikler.Designer.cs" />
+    <Compile Remove="Odunc.cs" />
+    <Compile Remove="Odunc.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="anasayfa.resx" />
     <EmbeddedResource Remove="istatistikler.resx" />
+    <EmbeddedResource Remove="Odunc.resx" />
   </ItemGroup>
 
   <ItemGroup>
