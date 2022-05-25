@@ -84,7 +84,7 @@
             // 
             this.kitapEkleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kitapEkleToolStripMenuItem.Image")));
             this.kitapEkleToolStripMenuItem.Name = "kitapEkleToolStripMenuItem";
-            this.kitapEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.kitapEkleToolStripMenuItem.Size = new System.Drawing.Size(183, 28);
             this.kitapEkleToolStripMenuItem.Text = "Kitap Ekle";
             this.kitapEkleToolStripMenuItem.Click += new System.EventHandler(this.kitapEkleToolStripMenuItem_Click);
             // 
@@ -92,7 +92,7 @@
             // 
             this.kitapListesiToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kitapListesiToolStripMenuItem.Image")));
             this.kitapListesiToolStripMenuItem.Name = "kitapListesiToolStripMenuItem";
-            this.kitapListesiToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.kitapListesiToolStripMenuItem.Size = new System.Drawing.Size(183, 28);
             this.kitapListesiToolStripMenuItem.Text = "Kitap Listesi";
             this.kitapListesiToolStripMenuItem.Click += new System.EventHandler(this.kitapListesiToolStripMenuItem_Click);
             // 
@@ -143,6 +143,7 @@
             this.kitapDetaylarıToolStripMenuItem.Name = "kitapDetaylarıToolStripMenuItem";
             this.kitapDetaylarıToolStripMenuItem.Size = new System.Drawing.Size(155, 27);
             this.kitapDetaylarıToolStripMenuItem.Text = "Kitap Detayları";
+            this.kitapDetaylarıToolStripMenuItem.Click += new System.EventHandler(this.kitapDetaylarıToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 

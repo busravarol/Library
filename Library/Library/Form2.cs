@@ -96,5 +96,11 @@ namespace Library
             Odunc2 odunc = new Odunc2();
             odunc.Show();
         }
+
+        private void kitapDetaylarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OduncListesi oduncListesi = new OduncListesi();
+            oduncListesi.Show();
+        }
     }
 }
