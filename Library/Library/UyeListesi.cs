@@ -43,6 +43,62 @@ namespace Library
            /* string sorgu = "Select * From UyeBilgisi where (ogrtc like '%" + textBox7.Text + "%')";
             DataSet ds = frm1.VeriGetir(sorgu);
             dataGridView1.DataSource = ds.Tables[0];*/
-        }
-    }
+
+/* baglanti.open();
+ SqlCommand komut= new SqlCommand("select'from uye where tc like'"+txtTc.Text+"'",baglanti)
+SqlDAataReader read = komut.ExecuteReader();
+while(read.Read())
+}
+
+ txtAd.Text= read("ad").Tostring();
+ txtSoyad.Text= read("soyad").Tostring();
+ txtOgrenciNo.Text= read("ogrenciNo").Tostring();
+ txtBolumAdi.Text= read("bolumAd").Tostring();
+ txtEposta.Text= read("eposta").Tostring();
+ txtTelefon.Text= read("telefon").Tostring();
+
+
+private void textBox2_TextChanged(object sender, EventArgs e)
+{
+ string sorgu = "Select * From UyeBilgisi where (ograd like '%" + textBox2.Text + "%')";
+ DataSet ds = frm1.VeriGetir(sorgu);
+ dataGridView1.DataSource = ds.Tables[0];
+
+}
+
+private void textBox3_TextChanged(object sender, EventArgs e)
+{
+ string sorgu = "Select * From UyeBilgisi where (ogrsoyad like '%" + textBox3.Text + "%')";
+ DataSet ds = frm1.VeriGetir(sorgu);
+ dataGridView1.DataSource = ds.Tables[0];
+}
+
+private void textBox4_TextChanged(object sender, EventArgs e)
+{
+ string sorgu = "Select * From UyeBilgisi where (ogrno like '%" + textBox4.Text + "%')";
+ DataSet ds = frm1.VeriGetir(sorgu);
+ dataGridView1.DataSource = ds.Tables[0];
+}
+
+private void textBox5_TextChanged(object sender, EventArgs e)
+{
+ string sorgu = "Select * From UyeBilgisi where (ogrbolumad like '%" + textBox5.Text + "%')";
+ DataSet ds = frm1.VeriGetir(sorgu);
+ dataGridView1.DataSource = ds.Tables[0];
+}
+
+private void textBox6_TextChanged(object sender, EventArgs e)
+{
+ string sorgu = "Select * From UyeBilgisi where (ogreposta like '%" + textBox6.Text + "%')";
+ DataSet ds = frm1.VeriGetir(sorgu);
+ dataGridView1.DataSource = ds.Tables[0];
+}
+
+private void textBox1_TextChanged(object sender, EventArgs e)
+{
+ string sorgu = "Select * From UyeBilgisi where (ogrtelefon like '%" + textBox1.Text + "%')";
+ DataSet ds = frm1.VeriGetir(sorgu);
+ dataGridView1.DataSource = ds.Tables[0];
+}
+}
 }
