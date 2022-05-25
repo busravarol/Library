@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OgrenciEkle));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -42,128 +43,152 @@
             this.Telefon = new System.Windows.Forms.Label();
             this.btnOgrenciEkle = new System.Windows.Forms.Button();
             this.btnİptal = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(184, 70);
+            this.textBox1.Location = new System.Drawing.Point(210, 155);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 23);
+            this.textBox1.Size = new System.Drawing.Size(196, 27);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(184, 99);
+            this.textBox2.Location = new System.Drawing.Point(210, 194);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 23);
+            this.textBox2.Size = new System.Drawing.Size(196, 27);
             this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(184, 128);
+            this.textBox3.Location = new System.Drawing.Point(210, 233);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(172, 23);
+            this.textBox3.Size = new System.Drawing.Size(196, 27);
             this.textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(184, 157);
+            this.textBox4.Location = new System.Drawing.Point(210, 271);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(172, 23);
+            this.textBox4.Size = new System.Drawing.Size(196, 27);
             this.textBox4.TabIndex = 3;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(184, 186);
+            this.textBox5.Location = new System.Drawing.Point(210, 310);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(172, 23);
+            this.textBox5.Size = new System.Drawing.Size(196, 27);
             this.textBox5.TabIndex = 4;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(184, 215);
+            this.textBox6.Location = new System.Drawing.Point(210, 359);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(172, 23);
+            this.textBox6.Size = new System.Drawing.Size(196, 27);
             this.textBox6.TabIndex = 5;
             // 
             // Ad
             // 
             this.Ad.AutoSize = true;
-            this.Ad.Location = new System.Drawing.Point(96, 73);
+            this.Ad.Location = new System.Drawing.Point(110, 159);
             this.Ad.Name = "Ad";
-            this.Ad.Size = new System.Drawing.Size(22, 15);
+            this.Ad.Size = new System.Drawing.Size(28, 20);
             this.Ad.TabIndex = 6;
             this.Ad.Text = "Ad";
             // 
             // Soyad
             // 
             this.Soyad.AutoSize = true;
-            this.Soyad.Location = new System.Drawing.Point(96, 107);
+            this.Soyad.Location = new System.Drawing.Point(110, 201);
             this.Soyad.Name = "Soyad";
-            this.Soyad.Size = new System.Drawing.Size(39, 15);
+            this.Soyad.Size = new System.Drawing.Size(50, 20);
             this.Soyad.TabIndex = 7;
             this.Soyad.Text = "Soyad";
             // 
             // OgrenciNo
             // 
             this.OgrenciNo.AutoSize = true;
-            this.OgrenciNo.Location = new System.Drawing.Point(96, 136);
+            this.OgrenciNo.Location = new System.Drawing.Point(110, 240);
             this.OgrenciNo.Name = "OgrenciNo";
-            this.OgrenciNo.Size = new System.Drawing.Size(68, 15);
+            this.OgrenciNo.Size = new System.Drawing.Size(85, 20);
             this.OgrenciNo.TabIndex = 8;
             this.OgrenciNo.Text = "Öğrenci No";
             // 
             // BolumAdi
             // 
             this.BolumAdi.AutoSize = true;
-            this.BolumAdi.Location = new System.Drawing.Point(96, 165);
+            this.BolumAdi.Location = new System.Drawing.Point(110, 282);
             this.BolumAdi.Name = "BolumAdi";
-            this.BolumAdi.Size = new System.Drawing.Size(63, 15);
+            this.BolumAdi.Size = new System.Drawing.Size(79, 20);
             this.BolumAdi.TabIndex = 9;
             this.BolumAdi.Text = "Bölüm Adı";
             // 
             // Email
             // 
             this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(96, 194);
+            this.Email.Location = new System.Drawing.Point(110, 321);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(36, 15);
+            this.Email.Size = new System.Drawing.Size(46, 20);
             this.Email.TabIndex = 10;
             this.Email.Text = "Email";
             // 
             // Telefon
             // 
             this.Telefon.AutoSize = true;
-            this.Telefon.Location = new System.Drawing.Point(96, 223);
+            this.Telefon.Location = new System.Drawing.Point(110, 359);
             this.Telefon.Name = "Telefon";
-            this.Telefon.Size = new System.Drawing.Size(45, 15);
+            this.Telefon.Size = new System.Drawing.Size(58, 20);
             this.Telefon.TabIndex = 11;
             this.Telefon.Text = "Telefon";
             // 
             // btnOgrenciEkle
             // 
-            this.btnOgrenciEkle.Location = new System.Drawing.Point(184, 267);
+            this.btnOgrenciEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.btnOgrenciEkle.Location = new System.Drawing.Point(210, 421);
+            this.btnOgrenciEkle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOgrenciEkle.Name = "btnOgrenciEkle";
-            this.btnOgrenciEkle.Size = new System.Drawing.Size(83, 47);
+            this.btnOgrenciEkle.Size = new System.Drawing.Size(95, 63);
             this.btnOgrenciEkle.TabIndex = 12;
             this.btnOgrenciEkle.Text = "Ekle";
-            this.btnOgrenciEkle.UseVisualStyleBackColor = true;
+            this.btnOgrenciEkle.UseVisualStyleBackColor = false;
             this.btnOgrenciEkle.Click += new System.EventHandler(this.btnOgrenciEkle_Click);
             // 
             // btnİptal
             // 
-            this.btnİptal.Location = new System.Drawing.Point(273, 267);
+            this.btnİptal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.btnİptal.Location = new System.Drawing.Point(311, 421);
+            this.btnİptal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnİptal.Name = "btnİptal";
-            this.btnİptal.Size = new System.Drawing.Size(83, 47);
+            this.btnİptal.Size = new System.Drawing.Size(95, 63);
             this.btnİptal.TabIndex = 13;
             this.btnİptal.Text = "İptal";
-            this.btnİptal.UseVisualStyleBackColor = true;
+            this.btnİptal.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(244, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(123, 112);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
             // OgrenciEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
+            this.ClientSize = new System.Drawing.Size(525, 600);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnİptal);
             this.Controls.Add(this.btnOgrenciEkle);
             this.Controls.Add(this.Telefon);
@@ -178,8 +203,10 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "OgrenciEkle";
             this.Text = "OgrenciEkle";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +228,6 @@
         private Label Telefon;
         private Button btnOgrenciEkle;
         private Button btnİptal;
+        private PictureBox pictureBox1;
     }
 }

@@ -47,8 +47,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_Tarih = new System.Windows.Forms.TextBox();
-            this.txt_Id = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -113,11 +111,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(67, 266);
+            this.label8.Location = new System.Drawing.Point(67, 261);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 20);
+            this.label8.Size = new System.Drawing.Size(76, 20);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Yayın Tarihi:";
+            this.label8.Text = "Basım Yılı:";
             // 
             // txt_Ad
             // 
@@ -200,8 +198,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
             this.panel1.Controls.Add(this.txt_Tarih);
-            this.panel1.Controls.Add(this.txt_Id);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txt_Ss);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button3);
@@ -225,27 +221,11 @@
             // 
             // txt_Tarih
             // 
-            this.txt_Tarih.Location = new System.Drawing.Point(63, 304);
+            this.txt_Tarih.Location = new System.Drawing.Point(67, 284);
             this.txt_Tarih.Name = "txt_Tarih";
             this.txt_Tarih.Size = new System.Drawing.Size(142, 27);
             this.txt_Tarih.TabIndex = 22;
             this.txt_Tarih.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txt_Id
-            // 
-            this.txt_Id.Location = new System.Drawing.Point(269, 291);
-            this.txt_Id.Name = "txt_Id";
-            this.txt_Id.Size = new System.Drawing.Size(142, 27);
-            this.txt_Id.TabIndex = 21;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(289, 266);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 20);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "ID";
             // 
             // pictureBox2
             // 
@@ -296,8 +276,6 @@
         private PictureBox pictureBox1;
         private Panel panel1;
         private PictureBox pictureBox2;
-        private TextBox txt_Id;
-        private Label label1;
         private TextBox txt_Tarih;
     }
 }
