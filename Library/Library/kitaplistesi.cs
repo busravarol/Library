@@ -77,5 +77,10 @@ namespace Library
             dataGridView1.Columns[6].HeaderCell.Value = "Yazar Adı";
            dataGridView1.Rows.Add("");*/
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

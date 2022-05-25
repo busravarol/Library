@@ -12,13 +12,13 @@ namespace Library
         MySqlConnection con;
         /*public Form1 frm1;*/
 
-        
-       
+
+
 
         public UyeListesi()
         {
 
-        InitializeComponent();
+            InitializeComponent();
             con = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
         }
 
@@ -29,20 +29,24 @@ namespace Library
 
         private void btnguncelle_Click(object sender, EventArgs e)
         {
-           /* MySqlConnection baglanti = new MySqlConnection();
-            baglanti.ConnectionString =
-                "Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal";
-            string sorgu = "Select * From Uyebilgisi";
-            DataSet ds = frm1.VeriGetir(sorgu);
-            dataGridView1.DataSource = ds.Tables[0];*/
+            /* MySqlConnection baglanti = new MySqlConnection();
+             baglanti.ConnectionString =
+                 "Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal";
+             string sorgu = "Select * From Uyebilgisi";
+             DataSet ds = frm1.VeriGetir(sorgu);
+             dataGridView1.DataSource = ds.Tables[0];*/
 
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-           /* string sorgu = "Select * From UyeBilgisi where (ogrtc like '%" + textBox7.Text + "%')";
-            DataSet ds = frm1.VeriGetir(sorgu);
-            dataGridView1.DataSource = ds.Tables[0];*/
+            /* string sorgu = "Select * From UyeBilgisi where (ogrtc like '%" + textBox7.Text + "%')";
+             DataSet ds = frm1.VeriGetir(sorgu);
+             dataGridView1.DataSource = ds.Tables[0];*/
+
+        }
+    }
+}
 
 /* baglanti.open();
  SqlCommand komut= new SqlCommand("select'from uye where tc like'"+txtTc.Text+"'",baglanti)
@@ -101,4 +105,4 @@ private void textBox1_TextChanged(object sender, EventArgs e)
  dataGridView1.DataSource = ds.Tables[0];
 }
 }
-}
+}*/
