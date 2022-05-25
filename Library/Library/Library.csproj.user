@@ -25,5 +25,8 @@
     <Compile Update="OgrenciEkle.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UyeListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
