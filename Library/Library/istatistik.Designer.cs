@@ -108,7 +108,7 @@
             // LblCokOkuyan
             // 
             this.LblCokOkuyan.AutoSize = true;
-            this.LblCokOkuyan.Location = new System.Drawing.Point(422, 267);
+            this.LblCokOkuyan.Location = new System.Drawing.Point(390, 257);
             this.LblCokOkuyan.Name = "LblCokOkuyan";
             this.LblCokOkuyan.Size = new System.Drawing.Size(25, 20);
             this.LblCokOkuyan.TabIndex = 7;
