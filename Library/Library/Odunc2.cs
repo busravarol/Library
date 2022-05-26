@@ -132,8 +132,6 @@ namespace Library
             baglanti.Close();
             MessageBox.Show("Kitap Teslim Edildi");
 
-            
-            
         }
 
     }
