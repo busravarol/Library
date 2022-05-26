@@ -123,6 +123,7 @@
             this.txt_Ad.Name = "txt_Ad";
             this.txt_Ad.Size = new System.Drawing.Size(142, 27);
             this.txt_Ad.TabIndex = 9;
+            this.txt_Ad.TextChanged += new System.EventHandler(this.txt_Ad_TextChanged);
             // 
             // txt_Yazar
             // 
