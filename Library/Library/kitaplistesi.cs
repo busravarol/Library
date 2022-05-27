@@ -25,12 +25,12 @@ namespace Library
         DataSet ds = new DataSet();
         void griddoldur()
         {
-            da=new MySqlDataAdapter("select*from tbl_kitap",baglanti);
-            ds=new DataSet();
+            da = new MySqlDataAdapter("select*from tbl_kitap", baglanti);
+            ds = new DataSet();
             baglanti.Open();
-            da.Fill(ds,"kitap");
+            da.Fill(ds, "kitap");
             dataGridView1.DataSource = ds.Tables["kitap"];
-            
+
             dataGridView1.Columns[0].HeaderCell.Value = "ID";
             dataGridView1.Columns[1].HeaderCell.Value = "Kitap Adı";
             dataGridView1.Columns[2].HeaderCell.Value = "Kategori";
@@ -38,7 +38,7 @@ namespace Library
             dataGridView1.Columns[4].HeaderCell.Value = "Yayınevi";
             dataGridView1.Columns[5].HeaderCell.Value = "Sayfa Sayısı";
             dataGridView1.Columns[6].HeaderCell.Value = "Yazar Adı";
-           
+
 
             /* dataGridView1.Columns[0].Name = "ID";
              dataGridView1.Columns[1].Name = "Kitap Adı";
@@ -66,20 +66,33 @@ namespace Library
         {
             dataGridView1.AllowUserToAddRows = true;
             dataGridView1.AllowUserToDeleteRows = true;
-            dataGridView1.SelectionMode=DataGridViewSelectionMode.FullRowSelect;
-           /* dataGridView1.ColumnCount = 7;
-            dataGridView1.Columns[0].HeaderCell.Value = "ID";
-            dataGridView1.Columns[1].HeaderCell.Value = "Kitap Adı";
-            dataGridView1.Columns[2].HeaderCell.Value= "Kategori";
-            dataGridView1.Columns[3].HeaderCell.Value = "Basım Yılı";
-            dataGridView1.Columns[4].HeaderCell.Value = "Yayınevi";
-            dataGridView1.Columns[5].HeaderCell.Value = "Sayfa Sayısı";
-            dataGridView1.Columns[6].HeaderCell.Value = "Yazar Adı";
-           dataGridView1.Rows.Add("");*/
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            /* dataGridView1.ColumnCount = 7;
+             dataGridView1.Columns[0].HeaderCell.Value = "ID";
+             dataGridView1.Columns[1].HeaderCell.Value = "Kitap Adı";
+             dataGridView1.Columns[2].HeaderCell.Value= "Kategori";
+             dataGridView1.Columns[3].HeaderCell.Value = "Basım Yılı";
+             dataGridView1.Columns[4].HeaderCell.Value = "Yayınevi";
+             dataGridView1.Columns[5].HeaderCell.Value = "Sayfa Sayısı";
+             dataGridView1.Columns[6].HeaderCell.Value = "Yazar Adı";
+            dataGridView1.Rows.Add("");*/
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            /*DialogResult dialog;
+            dialog = MessageBox.Show("Silmek istediğinize emin misiniz?"), "Sil", MessageBoxButtons.YesNo,;
+            if (dialog == DialogResult.Yes)
+            {
+                baglanti.Open();
+                MySqlCommand komut= new MySqlCommand("delete from kitap where kitapID-Ki")
+            }
+            */
 
         }
     }

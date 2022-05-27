@@ -102,5 +102,11 @@ namespace Library
             OduncListesi oduncListesi = new OduncListesi();
             oduncListesi.Show();
         }
+
+        private void ıssueBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            kitaplistesi vb = new kitaplistesi();
+            vb.Show();
+        }
     }
 }
