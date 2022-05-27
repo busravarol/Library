@@ -85,14 +85,18 @@ namespace Library
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            /*DialogResult dialog;
-            dialog = MessageBox.Show("Silmek istediğinize emin misiniz?"), "Sil", MessageBoxButtons.YesNo,;
-            if (dialog == DialogResult.Yes)
+            if (MessageBox.Show("Veri Silinecek. Onaylıyor musunuz?", "Başarılı", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
-                baglanti.Open();
-                MySqlCommand komut= new MySqlCommand("delete from kitap where kitapID-Ki")
+                MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
+                MySqlDataAdapter da = new MySqlDataAdapter();
+                MySqlCommand cmd = new MySqlCommand();
+                DataSet ds = new DataSet();
+
+                /*cmd.CommandText= "delete from NewBook where ID="  rowkitap+"";*/
+                da.Fill(ds);
+
+
             }
-            */
 
         }
     }
