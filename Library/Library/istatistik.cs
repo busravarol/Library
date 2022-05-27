@@ -41,6 +41,7 @@ namespace Library
             }
             baglanti.Close();
 
+           /* MySqlCommand komutg1 = new MySqlCommand("Select toplam_Kitap,Count(*) as'En çok okunan kitap' from Kitap group by toplam_Kitap  ");*/
 
         }
     }
