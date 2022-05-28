@@ -120,14 +120,18 @@ namespace Library
 
 
             baglanti.Open();
-            MySqlCommand komut = new MySqlCommand("insert into tbl_odunc(ograd,ogrsoyad,ogrtelefon,ogreposta,ogrbolumad,kitapadi,teslimalinantarih) values (@k1,@k2,@k3,@k4,@k5,@k6,@k7) ", baglanti);
-            komut.Parameters.AddWithValue("@k1", txt_Ad.Text);
-            komut.Parameters.AddWithValue("@k2", txt_Soyad.Text);
-            komut.Parameters.AddWithValue("@k3", txt_tlf.Text);
-            komut.Parameters.AddWithValue("@k4", txt_posta.Text);
-            komut.Parameters.AddWithValue("@k5", txt_blm.Text);
-            komut.Parameters.AddWithValue("@k6", txt_Kitap.Text);
+            MySqlCommand komut = new MySqlCommand("insert into tbl_odunc(teslimAlinanTarih) values (@k7) ", baglanti);
+            MySqlCommand komutum = new MySqlCommand("insert into tbl_odunc where ogrno in (select ogrno from tbl_ogrenci)values (@k1,@k2,@k3,@k4,@k5)",baglanti);
+            MySqlCommand komut2 = new MySqlCommand("insert into tbl_odunc where kitapadi in (select kitapdi from tbl_kitap) values(@6)", baglanti);
+            komutum.Parameters.AddWithValue("@k1", txt_Ad.Text);
+            komutum.Parameters.AddWithValue("@k2", txt_Soyad.Text);
+            komutum.Parameters.AddWithValue("@k3", txt_tlf.Text);
+            komutum.Parameters.AddWithValue("@k4", txt_posta.Text);
+            komutum.Parameters.AddWithValue("@k5", txt_blm.Text);
+            komut2.Parameters.AddWithValue("@k6", txt_Kitap.Text);
             komut.Parameters.AddWithValue("@k7", dateTimePicker1.Value);
+            komutum.ExecuteNonQuery();
+            komut2.ExecuteNonQuery();
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kitap Teslim Edildi");
