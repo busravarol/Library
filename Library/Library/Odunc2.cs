@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Net.Mail;
 namespace Library
 {
     public partial class Odunc2 : Form
@@ -120,9 +120,10 @@ namespace Library
 
 
             baglanti.Open();
+            /*MySqlCommand komut = new MySqlCommand("insert into tbl_odunc(teslimAlinanTarih) values (@k7) ", baglanti);*/
+            MySqlCommand komutum = new MySqlCommand("insert into tbl_odunc select ogrno from tbl_ogrenci ) values (@k1,@k2,@k3,@k4,@k5)",baglanti);
+            MySqlCommand komut2 = new MySqlCommand("insert into tbl_odunc  select kitapAdi from tbl_kitap values (@k6)", baglanti);
             MySqlCommand komut = new MySqlCommand("insert into tbl_odunc(teslimAlinanTarih) values (@k7) ", baglanti);
-            MySqlCommand komutum = new MySqlCommand("insert into tbl_odunc where ogrno in (select ogrno from tbl_ogrenci)values (@k1,@k2,@k3,@k4,@k5)",baglanti);
-            MySqlCommand komut2 = new MySqlCommand("insert into tbl_odunc where kitapadi in (select kitapdi from tbl_kitap) values(@6)", baglanti);
             komutum.Parameters.AddWithValue("@k1", txt_Ad.Text);
             komutum.Parameters.AddWithValue("@k2", txt_Soyad.Text);
             komutum.Parameters.AddWithValue("@k3", txt_tlf.Text);
