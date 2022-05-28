@@ -120,14 +120,14 @@ namespace Library
 
 
             baglanti.Open();
-            MySqlCommand komut = new MySqlCommand("insert into  tbl_odunc(ograd,ogrsoyad,ogrtelefon,ogreposta,ogrbolumad,kitapadi,teslimalinantarih) values (@k1,@k2,@k3,@k4,@k5,@k6,@k7) ", baglanti);
+            MySqlCommand komut = new MySqlCommand("insert into tbl_odunc(ograd,ogrsoyad,ogrtelefon,ogreposta,ogrbolumad,kitapadi,teslimalinantarih) values (@k1,@k2,@k3,@k4,@k5,@k6,@k7) ", baglanti);
             komut.Parameters.AddWithValue("@k1", txt_Ad.Text);
             komut.Parameters.AddWithValue("@k2", txt_Soyad.Text);
             komut.Parameters.AddWithValue("@k3", txt_tlf.Text);
             komut.Parameters.AddWithValue("@k4", txt_posta.Text);
             komut.Parameters.AddWithValue("@k5", txt_blm.Text);
             komut.Parameters.AddWithValue("@k6", txt_Kitap.Text);
-            komut.Parameters.AddWithValue("@k7", dateTimePicker1.Text);
+            komut.Parameters.AddWithValue("@k7", dateTimePicker1.Value);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kitap Teslim Edildi");
