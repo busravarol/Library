@@ -90,7 +90,7 @@
             // toplam_Kitap
             // 
             this.toplam_Kitap.AutoSize = true;
-            this.toplam_Kitap.Location = new System.Drawing.Point(390, 114);
+            this.toplam_Kitap.Location = new System.Drawing.Point(390, 100);
             this.toplam_Kitap.Name = "toplam_Kitap";
             this.toplam_Kitap.Size = new System.Drawing.Size(25, 20);
             this.toplam_Kitap.TabIndex = 5;

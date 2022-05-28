@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace Library
 {
@@ -22,8 +24,10 @@ namespace Library
         MySqlCommand komut = new MySqlCommand();
 
         private void istatistik_Load(object sender, EventArgs e)
+            
         {
-            MySqlCommand komut1= new MySqlCommand("Select count (*) from toplam_Ogrenci", baglanti);
+            baglanti.Open();
+            MySqlCommand komut1= new MySqlCommand("Select count (toplam_Ogrenci) from tbl_ogrenci", baglanti);
             MySqlDataReader dr1 = komut1.ExecuteReader();
             while (dr1.Read());
             {
@@ -32,7 +36,8 @@ namespace Library
             }
             baglanti.Close();
 
-            MySqlCommand komut2 = new MySqlCommand("Select count (*) from toplam_Kitap", baglanti);
+            baglanti.Open();
+            MySqlCommand komut2 = new MySqlCommand("Select count (toplam_Kitap) from tbl_kitap", baglanti);
             MySqlDataReader dr2 = komut1.ExecuteReader();
             while (dr1.Read());
             {
@@ -41,7 +46,14 @@ namespace Library
             }
             baglanti.Close();
 
-           /* MySqlCommand komutg1 = new MySqlCommand("Select toplam_Kitap,Count(*) as'En çok okunan kitap' from Kitap group by toplam_Kitap  ");*/
+            baglanti.Open();
+            MySqlCommand komuti1 = new MySqlCommand("Select count(LblCokOkunan),tbl_kitap from LblCokOkunan group by tbl_kitap)", baglanti);
+            MySqlDataReader dri1 = komuti1.ExecuteReader();
+            while (dri1.Read());
+            {
+               LblCokOkunan.Text = dr1[0].ToString();
+            }
+            baglanti.Close();
 
         }
     }

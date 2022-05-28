@@ -108,5 +108,11 @@ namespace Library
             kitaplistesi vb = new kitaplistesi();
             vb.Show();
         }
+
+        private void istatistikVerilerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            istatistik istatistik = new istatistik();
+            istatistik.Show();
+        }
     }
 }
