@@ -93,7 +93,7 @@ namespace Library
                 count = int.Parse(DS1.Tables[0].Rows[0][0].ToString)();*/
 
                 if(Ds.Tables[0].Rows.Count != 0)
-                {
+                {   
                     txt_Ad.Text = Ds.Tables[0].Rows[0][1].ToString();
                     txt_Soyad.Text=Ds.Tables[0].Rows[0][2].ToString();
                     txt_tlf.Text=Ds.Tables[0].Rows[0][3].ToString();
@@ -134,5 +134,9 @@ namespace Library
 
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
