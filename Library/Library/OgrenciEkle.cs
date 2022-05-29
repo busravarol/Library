@@ -22,6 +22,7 @@ namespace Library
             baglanti.ConnectionString =
                 "Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal";
             baglanti.Open();
+
             MySqlCommand komutum = new MySqlCommand();
             komutum.Connection = baglanti;
             komutum.CommandText = "insert into tbl_ogrenci(ogrno, ograd, ogrsoyad, ogrtelefon, ogreposta, ogrbolumad) values (@ogrno, @ograd, @ogrsoyad, @ogrtelefon @ogreposta, @ogrbolumad)";

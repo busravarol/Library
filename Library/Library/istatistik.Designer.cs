@@ -34,8 +34,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.toplam_Ogrenci = new System.Windows.Forms.Label();
             this.toplam_Kitap = new System.Windows.Forms.Label();
-            this.LblCokOkunan = new System.Windows.Forms.Label();
-            this.LblCokOkuyan = new System.Windows.Forms.Label();
+            this.lblCokOkunan = new System.Windows.Forms.Label();
+            this.lblCokOkuyan = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -47,6 +47,7 @@
             this.label1.Size = new System.Drawing.Size(208, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Toplam Öğrenci Sayısı:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -96,23 +97,23 @@
             this.toplam_Kitap.TabIndex = 5;
             this.toplam_Kitap.Text = "00";
             // 
-            // LblCokOkunan
+            // lblCokOkunan
             // 
-            this.LblCokOkunan.AutoSize = true;
-            this.LblCokOkunan.Location = new System.Drawing.Point(71, 247);
-            this.LblCokOkunan.Name = "LblCokOkunan";
-            this.LblCokOkunan.Size = new System.Drawing.Size(25, 20);
-            this.LblCokOkunan.TabIndex = 6;
-            this.LblCokOkunan.Text = "00";
+            this.lblCokOkunan.AutoSize = true;
+            this.lblCokOkunan.Location = new System.Drawing.Point(71, 247);
+            this.lblCokOkunan.Name = "lblCokOkunan";
+            this.lblCokOkunan.Size = new System.Drawing.Size(25, 20);
+            this.lblCokOkunan.TabIndex = 6;
+            this.lblCokOkunan.Text = "00";
             // 
-            // LblCokOkuyan
+            // lblCokOkuyan
             // 
-            this.LblCokOkuyan.AutoSize = true;
-            this.LblCokOkuyan.Location = new System.Drawing.Point(390, 257);
-            this.LblCokOkuyan.Name = "LblCokOkuyan";
-            this.LblCokOkuyan.Size = new System.Drawing.Size(25, 20);
-            this.LblCokOkuyan.TabIndex = 7;
-            this.LblCokOkuyan.Text = "00";
+            this.lblCokOkuyan.AutoSize = true;
+            this.lblCokOkuyan.Location = new System.Drawing.Point(390, 257);
+            this.lblCokOkuyan.Name = "lblCokOkuyan";
+            this.lblCokOkuyan.Size = new System.Drawing.Size(25, 20);
+            this.lblCokOkuyan.TabIndex = 7;
+            this.lblCokOkuyan.Text = "00";
             // 
             // istatistik
             // 
@@ -120,8 +121,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(596, 394);
-            this.Controls.Add(this.LblCokOkuyan);
-            this.Controls.Add(this.LblCokOkunan);
+            this.Controls.Add(this.lblCokOkuyan);
+            this.Controls.Add(this.lblCokOkunan);
             this.Controls.Add(this.toplam_Kitap);
             this.Controls.Add(this.toplam_Ogrenci);
             this.Controls.Add(this.label4);
@@ -144,7 +145,7 @@
         private Label label4;
         private Label toplam_Ogrenci;
         private Label toplam_Kitap;
-        private Label LblCokOkunan;
-        private Label LblCokOkuyan;
+        private Label lblCokOkunan;
+        private Label lblCokOkuyan;
     }
 }
