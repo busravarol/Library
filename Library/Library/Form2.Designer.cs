@@ -84,7 +84,7 @@
             // 
             this.kitapEkleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kitapEkleToolStripMenuItem.Image")));
             this.kitapEkleToolStripMenuItem.Name = "kitapEkleToolStripMenuItem";
-            this.kitapEkleToolStripMenuItem.Size = new System.Drawing.Size(168, 28);
+            this.kitapEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.kitapEkleToolStripMenuItem.Text = "Kitap Ekle";
             this.kitapEkleToolStripMenuItem.Click += new System.EventHandler(this.kitapEkleToolStripMenuItem_Click);
             // 
@@ -141,8 +141,9 @@
             // 
             // istatistikVerilerToolStripMenuItem
             // 
+            this.istatistikVerilerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("istatistikVerilerToolStripMenuItem.Image")));
             this.istatistikVerilerToolStripMenuItem.Name = "istatistikVerilerToolStripMenuItem";
-            this.istatistikVerilerToolStripMenuItem.Size = new System.Drawing.Size(139, 27);
+            this.istatistikVerilerToolStripMenuItem.Size = new System.Drawing.Size(159, 27);
             this.istatistikVerilerToolStripMenuItem.Text = "İstatistik Veriler";
             this.istatistikVerilerToolStripMenuItem.Click += new System.EventHandler(this.istatistikVerilerToolStripMenuItem_Click);
             // 
