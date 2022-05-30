@@ -160,7 +160,7 @@
             this.btnOgrenciEkle.TabIndex = 12;
             this.btnOgrenciEkle.Text = "Ekle";
             this.btnOgrenciEkle.UseVisualStyleBackColor = false;
-            this.btnOgrenciEkle.Click += new System.EventHandler(this.btnOgrenciEkle_Click);
+            this.btnOgrenciEkle.Click += new System.EventHandler(this.btnOgrenciEkle_click);
             // 
             // btnİptal
             // 
