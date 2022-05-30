@@ -44,7 +44,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(17, 30);
+            this.label1.Location = new System.Drawing.Point(13, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(208, 28);
             this.label1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(302, 30);
+            this.label2.Location = new System.Drawing.Point(238, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(185, 28);
             this.label2.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(3, 194);
+            this.label3.Location = new System.Drawing.Point(13, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(200, 28);
             this.label3.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(288, 194);
+            this.label4.Location = new System.Drawing.Point(238, 135);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(199, 28);
             this.label4.TabIndex = 3;
@@ -85,7 +85,7 @@
             // 
             this.toplam_Ogrenci.AutoSize = true;
             this.toplam_Ogrenci.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.toplam_Ogrenci.Location = new System.Drawing.Point(63, 69);
+            this.toplam_Ogrenci.Location = new System.Drawing.Point(90, 68);
             this.toplam_Ogrenci.Name = "toplam_Ogrenci";
             this.toplam_Ogrenci.Size = new System.Drawing.Size(40, 31);
             this.toplam_Ogrenci.TabIndex = 4;
@@ -95,7 +95,7 @@
             // 
             this.toplam_Kitap.AutoSize = true;
             this.toplam_Kitap.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.toplam_Kitap.Location = new System.Drawing.Point(354, 69);
+            this.toplam_Kitap.Location = new System.Drawing.Point(300, 68);
             this.toplam_Kitap.Name = "toplam_Kitap";
             this.toplam_Kitap.Size = new System.Drawing.Size(40, 31);
             this.toplam_Kitap.TabIndex = 5;
@@ -105,7 +105,7 @@
             // 
             this.lblCokOkunan.AutoSize = true;
             this.lblCokOkunan.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCokOkunan.Location = new System.Drawing.Point(63, 241);
+            this.lblCokOkunan.Location = new System.Drawing.Point(90, 191);
             this.lblCokOkunan.Name = "lblCokOkunan";
             this.lblCokOkunan.Size = new System.Drawing.Size(40, 31);
             this.lblCokOkunan.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             this.lblCokOkuyan.AutoSize = true;
             this.lblCokOkuyan.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCokOkuyan.Location = new System.Drawing.Point(354, 241);
+            this.lblCokOkuyan.Location = new System.Drawing.Point(300, 191);
             this.lblCokOkuyan.Name = "lblCokOkuyan";
             this.lblCokOkuyan.Size = new System.Drawing.Size(40, 31);
             this.lblCokOkuyan.TabIndex = 7;
@@ -132,9 +132,9 @@
             this.panel1.Controls.Add(this.toplam_Kitap);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(36, 25);
+            this.panel1.Location = new System.Drawing.Point(72, 49);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 311);
+            this.panel1.Size = new System.Drawing.Size(446, 247);
             this.panel1.TabIndex = 8;
             // 
             // istatistik

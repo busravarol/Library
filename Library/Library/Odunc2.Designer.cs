@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Odunc2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_no2 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -49,13 +52,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txt_no2 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txt_no2);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.dateTimePicker2);
@@ -78,17 +83,33 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(42, 24);
+            this.panel1.Location = new System.Drawing.Point(35, 23);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(552, 463);
+            this.panel1.Size = new System.Drawing.Size(489, 455);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txt_no2
+            // 
+            this.txt_no2.Location = new System.Drawing.Point(329, 26);
+            this.txt_no2.Name = "txt_no2";
+            this.txt_no2.Size = new System.Drawing.Size(125, 27);
+            this.txt_no2.TabIndex = 23;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(234, 33);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(85, 20);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Ogrenci No";
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.CustomFormat = "";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(385, 328);
+            this.dateTimePicker2.Location = new System.Drawing.Point(327, 335);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(127, 27);
             this.dateTimePicker2.TabIndex = 21;
@@ -97,7 +118,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(294, 335);
+            this.label1.Location = new System.Drawing.Point(236, 342);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 20);
             this.label1.TabIndex = 20;
@@ -107,7 +128,7 @@
             // 
             this.dateTimePicker1.CustomFormat = "";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(383, 275);
+            this.dateTimePicker1.Location = new System.Drawing.Point(325, 282);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(127, 27);
             this.dateTimePicker1.TabIndex = 19;
@@ -116,7 +137,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(294, 277);
+            this.label9.Location = new System.Drawing.Point(236, 284);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(83, 20);
             this.label9.TabIndex = 18;
@@ -125,7 +146,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(295, 235);
+            this.label8.Location = new System.Drawing.Point(237, 242);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 20);
             this.label8.TabIndex = 17;
@@ -134,7 +155,7 @@
             // 
             // txt_Kitap
             // 
-            this.txt_Kitap.Location = new System.Drawing.Point(385, 232);
+            this.txt_Kitap.Location = new System.Drawing.Point(327, 239);
             this.txt_Kitap.Name = "txt_Kitap";
             this.txt_Kitap.Size = new System.Drawing.Size(125, 27);
             this.txt_Kitap.TabIndex = 16;
@@ -150,16 +171,16 @@
             // 
             // txt_No
             // 
-            this.txt_No.Location = new System.Drawing.Point(49, 155);
+            this.txt_No.Location = new System.Drawing.Point(49, 158);
             this.txt_No.Name = "txt_No";
             this.txt_No.Size = new System.Drawing.Size(125, 27);
             this.txt_No.TabIndex = 14;
             // 
             // btn_Teslim
             // 
-            this.btn_Teslim.Location = new System.Drawing.Point(385, 391);
+            this.btn_Teslim.Location = new System.Drawing.Point(345, 385);
             this.btn_Teslim.Name = "btn_Teslim";
-            this.btn_Teslim.Size = new System.Drawing.Size(94, 29);
+            this.btn_Teslim.Size = new System.Drawing.Size(89, 55);
             this.btn_Teslim.TabIndex = 13;
             this.btn_Teslim.Text = "Teslim Ver";
             this.btn_Teslim.UseVisualStyleBackColor = true;
@@ -177,7 +198,7 @@
             // 
             // txt_blm
             // 
-            this.txt_blm.Location = new System.Drawing.Point(385, 191);
+            this.txt_blm.Location = new System.Drawing.Point(327, 198);
             this.txt_blm.Name = "txt_blm";
             this.txt_blm.ReadOnly = true;
             this.txt_blm.Size = new System.Drawing.Size(125, 27);
@@ -185,7 +206,7 @@
             // 
             // txt_posta
             // 
-            this.txt_posta.Location = new System.Drawing.Point(385, 157);
+            this.txt_posta.Location = new System.Drawing.Point(327, 164);
             this.txt_posta.Name = "txt_posta";
             this.txt_posta.ReadOnly = true;
             this.txt_posta.Size = new System.Drawing.Size(125, 27);
@@ -193,7 +214,7 @@
             // 
             // txt_Soyad
             // 
-            this.txt_Soyad.Location = new System.Drawing.Point(385, 92);
+            this.txt_Soyad.Location = new System.Drawing.Point(327, 99);
             this.txt_Soyad.Name = "txt_Soyad";
             this.txt_Soyad.ReadOnly = true;
             this.txt_Soyad.Size = new System.Drawing.Size(125, 27);
@@ -201,7 +222,7 @@
             // 
             // txt_tlf
             // 
-            this.txt_tlf.Location = new System.Drawing.Point(385, 125);
+            this.txt_tlf.Location = new System.Drawing.Point(327, 132);
             this.txt_tlf.Name = "txt_tlf";
             this.txt_tlf.ReadOnly = true;
             this.txt_tlf.Size = new System.Drawing.Size(125, 27);
@@ -209,7 +230,7 @@
             // 
             // txt_Ad
             // 
-            this.txt_Ad.Location = new System.Drawing.Point(385, 59);
+            this.txt_Ad.Location = new System.Drawing.Point(327, 66);
             this.txt_Ad.Name = "txt_Ad";
             this.txt_Ad.ReadOnly = true;
             this.txt_Ad.Size = new System.Drawing.Size(125, 27);
@@ -218,7 +239,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(314, 198);
+            this.label6.Location = new System.Drawing.Point(256, 205);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 20);
             this.label6.TabIndex = 5;
@@ -227,7 +248,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(306, 161);
+            this.label5.Location = new System.Drawing.Point(248, 168);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 20);
             this.label5.TabIndex = 4;
@@ -236,7 +257,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(309, 128);
+            this.label4.Location = new System.Drawing.Point(251, 135);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 20);
             this.label4.TabIndex = 3;
@@ -245,7 +266,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(273, 95);
+            this.label3.Location = new System.Drawing.Point(215, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 20);
             this.label3.TabIndex = 2;
@@ -254,32 +275,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(295, 61);
+            this.label2.Location = new System.Drawing.Point(237, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Öğrenci Ad";
             // 
-            // label10
+            // pictureBox1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(295, 19);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 20);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "Ogrenci No";
-            // 
-            // txt_no2
-            // 
-            this.txt_no2.Location = new System.Drawing.Point(387, 19);
-            this.txt_no2.Name = "txt_no2";
-            this.txt_no2.Size = new System.Drawing.Size(125, 27);
-            this.txt_no2.TabIndex = 23;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(15, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(140, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Odunc2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(1143, 509);
             this.Controls.Add(this.panel1);
             this.Name = "Odunc2";
@@ -287,6 +303,7 @@
             this.Load += new System.EventHandler(this.Odunc2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -316,5 +333,6 @@
         private Label label1;
         private TextBox txt_no2;
         private Label label10;
+        private PictureBox pictureBox1;
     }
 }
