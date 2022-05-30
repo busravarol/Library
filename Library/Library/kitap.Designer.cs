@@ -43,7 +43,6 @@
             this.txt_ISBN = new System.Windows.Forms.TextBox();
             this.txt_Kategori = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_Tarih = new System.Windows.Forms.TextBox();
@@ -165,25 +164,13 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(67, 352);
+            this.button1.Location = new System.Drawing.Point(282, 284);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 80);
             this.button1.TabIndex = 16;
             this.button1.Text = "KİTAP EKLE";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button3.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(269, 352);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 78);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "KİTAP GÜNCELLE";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
@@ -201,7 +188,6 @@
             this.panel1.Controls.Add(this.txt_Tarih);
             this.panel1.Controls.Add(this.txt_Ss);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.txt_Kategori);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label8);
@@ -273,7 +259,6 @@
         private TextBox txt_ISBN;
         private TextBox txt_Kategori;
         private Button button1;
-        private Button button3;
         private PictureBox pictureBox1;
         private Panel panel1;
         private PictureBox pictureBox2;
