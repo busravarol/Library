@@ -40,12 +40,12 @@
             this.btnsil = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ograd = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.ogrsoyad = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.ogrbolumad = new System.Windows.Forms.Label();
-            this.ogreposta = new System.Windows.Forms.Label();
+            this.ogrBolumAd = new System.Windows.Forms.Label();
+            this.ogrPosta = new System.Windows.Forms.Label();
             this.ogrtelefon = new System.Windows.Forms.Label();
-            this.ogrtcno = new System.Windows.Forms.Label();
+            this.ogrnoara = new System.Windows.Forms.Label();
             this.ogrno = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(162, 23);
             this.textBox2.TabIndex = 1;
-           
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -72,7 +72,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(162, 23);
             this.textBox3.TabIndex = 2;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -133,6 +133,7 @@
             this.btnsil.TabIndex = 9;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // dataGridView1
             // 
@@ -143,6 +144,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(416, 317);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             // 
             // ograd
             // 
@@ -153,14 +155,14 @@
             this.ograd.TabIndex = 11;
             this.ograd.Text = "Ad";
             // 
-            // label2
+            // ogrsoyad
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 130);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 15);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Soyad";
+            this.ogrsoyad.AutoSize = true;
+            this.ogrsoyad.Location = new System.Drawing.Point(12, 130);
+            this.ogrsoyad.Name = "ogrsoyad";
+            this.ogrsoyad.Size = new System.Drawing.Size(39, 15);
+            this.ogrsoyad.TabIndex = 12;
+            this.ogrsoyad.Text = "Soyad";
             // 
             // label3
             // 
@@ -170,23 +172,23 @@
             this.label3.Size = new System.Drawing.Size(0, 15);
             this.label3.TabIndex = 13;
             // 
-            // ogrbolumad
+            // ogrBolumAd
             // 
-            this.ogrbolumad.AutoSize = true;
-            this.ogrbolumad.Location = new System.Drawing.Point(12, 220);
-            this.ogrbolumad.Name = "ogrbolumad";
-            this.ogrbolumad.Size = new System.Drawing.Size(63, 15);
-            this.ogrbolumad.TabIndex = 14;
-            this.ogrbolumad.Text = "Bölüm Adı";
+            this.ogrBolumAd.AutoSize = true;
+            this.ogrBolumAd.Location = new System.Drawing.Point(12, 220);
+            this.ogrBolumAd.Name = "ogrBolumAd";
+            this.ogrBolumAd.Size = new System.Drawing.Size(63, 15);
+            this.ogrBolumAd.TabIndex = 14;
+            this.ogrBolumAd.Text = "Bölüm Adı";
             // 
-            // ogreposta
+            // ogrPosta
             // 
-            this.ogreposta.AutoSize = true;
-            this.ogreposta.Location = new System.Drawing.Point(12, 268);
-            this.ogreposta.Name = "ogreposta";
-            this.ogreposta.Size = new System.Drawing.Size(47, 15);
-            this.ogreposta.TabIndex = 15;
-            this.ogreposta.Text = "E-posta";
+            this.ogrPosta.AutoSize = true;
+            this.ogrPosta.Location = new System.Drawing.Point(12, 268);
+            this.ogrPosta.Name = "ogrPosta";
+            this.ogrPosta.Size = new System.Drawing.Size(47, 15);
+            this.ogrPosta.TabIndex = 15;
+            this.ogrPosta.Text = "E-posta";
             // 
             // ogrtelefon
             // 
@@ -196,16 +198,15 @@
             this.ogrtelefon.Size = new System.Drawing.Size(45, 15);
             this.ogrtelefon.TabIndex = 16;
             this.ogrtelefon.Text = "Telefon";
-            
             // 
-            // ogrtcno
+            // ogrnoara
             // 
-            this.ogrtcno.AutoSize = true;
-            this.ogrtcno.Location = new System.Drawing.Point(324, 34);
-            this.ogrtcno.Name = "ogrtcno";
-            this.ogrtcno.Size = new System.Drawing.Size(71, 15);
-            this.ogrtcno.TabIndex = 17;
-            this.ogrtcno.Text = "Tc ile Arama";
+            this.ogrnoara.AutoSize = true;
+            this.ogrnoara.Location = new System.Drawing.Point(307, 34);
+            this.ogrnoara.Name = "ogrnoara";
+            this.ogrnoara.Size = new System.Drawing.Size(121, 15);
+            this.ogrnoara.TabIndex = 17;
+            this.ogrnoara.Text = "Öğrenci No ile Arama";
             // 
             // ogrno
             // 
@@ -222,12 +223,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 517);
             this.Controls.Add(this.ogrno);
-            this.Controls.Add(this.ogrtcno);
+            this.Controls.Add(this.ogrnoara);
             this.Controls.Add(this.ogrtelefon);
-            this.Controls.Add(this.ogreposta);
-            this.Controls.Add(this.ogrbolumad);
+            this.Controls.Add(this.ogrPosta);
+            this.Controls.Add(this.ogrBolumAd);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ogrsoyad);
             this.Controls.Add(this.ograd);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnsil);
@@ -262,12 +263,12 @@
         private Button btnsil;
         private DataGridView dataGridView1;
         private Label ograd;
-        private Label label2;
+        private Label ogrsoyad;
         private Label label3;
-        private Label ogrbolumad;
-        private Label ogreposta;
+        private Label ogrBolumAd;
+        private Label ogrPosta;
         private Label ogrtelefon;
-        private Label ogrtcno;
+        private Label ogrnoara;
         private Label ogrno;
     }
 }
