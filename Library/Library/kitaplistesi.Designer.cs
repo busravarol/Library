@@ -31,22 +31,24 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_ara = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txt_id = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_kat = new System.Windows.Forms.TextBox();
+            this.txt_yil = new System.Windows.Forms.TextBox();
+            this.txt_ss = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txt_yad = new System.Windows.Forms.TextBox();
+            this.txt_yayinevi = new System.Windows.Forms.TextBox();
+            this.txt_ad = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -84,26 +86,15 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Kitap Adı";
             // 
-            // textBox1
+            // txt_ara
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(517, 164);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(114, 29);
-            this.textBox1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(753, 164);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 31);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Yenile";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txt_ara.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_ara.Location = new System.Drawing.Point(517, 164);
+            this.txt_ara.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_ara.Name = "txt_ara";
+            this.txt_ara.Size = new System.Drawing.Size(114, 29);
+            this.txt_ara.TabIndex = 2;
+            this.txt_ara.TextChanged += new System.EventHandler(this.txt_ara_TextChanged);
             // 
             // dataGridView1
             // 
@@ -122,22 +113,26 @@
             this.dataGridView1.Size = new System.Drawing.Size(1081, 348);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.btnDelete);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.txt_id);
+            this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.txt_kat);
+            this.panel2.Controls.Add(this.txt_yil);
+            this.panel2.Controls.Add(this.txt_ss);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.txt_yad);
+            this.panel2.Controls.Add(this.txt_yayinevi);
+            this.panel2.Controls.Add(this.txt_ad);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(14, 613);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -145,25 +140,74 @@
             this.panel2.Size = new System.Drawing.Size(1081, 300);
             this.panel2.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // txt_id
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(489, 45);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(215, 27);
-            this.dateTimePicker1.TabIndex = 20;
+            this.txt_id.Location = new System.Drawing.Point(438, 11);
+            this.txt_id.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(215, 27);
+            this.txt_id.TabIndex = 27;
             // 
-            // button4
+            // label9
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(619, 251);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(86, 31);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "Çıkış";
-            this.button4.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(358, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 20);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Kitap ID";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(415, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 20);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Kategori";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(426, 112);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 20);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Baım Yılı";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(426, 185);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 20);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Sayfa Sayısı";
+            // 
+            // txt_kat
+            // 
+            this.txt_kat.Location = new System.Drawing.Point(503, 43);
+            this.txt_kat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_kat.Name = "txt_kat";
+            this.txt_kat.Size = new System.Drawing.Size(215, 27);
+            this.txt_kat.TabIndex = 22;
+            // 
+            // txt_yil
+            // 
+            this.txt_yil.Location = new System.Drawing.Point(503, 109);
+            this.txt_yil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_yil.Name = "txt_yil";
+            this.txt_yil.Size = new System.Drawing.Size(215, 27);
+            this.txt_yil.TabIndex = 21;
+            // 
+            // txt_ss
+            // 
+            this.txt_ss.Location = new System.Drawing.Point(503, 178);
+            this.txt_ss.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_ss.Name = "txt_ss";
+            this.txt_ss.Size = new System.Drawing.Size(215, 27);
+            this.txt_ss.TabIndex = 20;
             // 
             // btnDelete
             // 
@@ -191,37 +235,29 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox6
+            // txt_yad
             // 
-            this.textBox6.Location = new System.Drawing.Point(123, 109);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(215, 27);
-            this.textBox6.TabIndex = 15;
+            this.txt_yad.Location = new System.Drawing.Point(123, 109);
+            this.txt_yad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_yad.Name = "txt_yad";
+            this.txt_yad.Size = new System.Drawing.Size(215, 27);
+            this.txt_yad.TabIndex = 15;
             // 
-            // textBox5
+            // txt_yayinevi
             // 
-            this.textBox5.Location = new System.Drawing.Point(123, 175);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(215, 27);
-            this.textBox5.TabIndex = 14;
+            this.txt_yayinevi.Location = new System.Drawing.Point(123, 175);
+            this.txt_yayinevi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_yayinevi.Name = "txt_yayinevi";
+            this.txt_yayinevi.Size = new System.Drawing.Size(215, 27);
+            this.txt_yayinevi.TabIndex = 14;
             // 
-            // textBox3
+            // txt_ad
             // 
-            this.textBox3.Location = new System.Drawing.Point(489, 109);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(215, 27);
-            this.textBox3.TabIndex = 12;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(123, 43);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 27);
-            this.textBox2.TabIndex = 11;
+            this.txt_ad.Location = new System.Drawing.Point(123, 43);
+            this.txt_ad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_ad.Name = "txt_ad";
+            this.txt_ad.Size = new System.Drawing.Size(215, 27);
+            this.txt_ad.TabIndex = 11;
             // 
             // label8
             // 
@@ -242,24 +278,6 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Yayın Evi";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(376, 120);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 20);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Kitap Miktarı";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(376, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Kitap alma tarihi";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -278,8 +296,7 @@
             this.ClientSize = new System.Drawing.Size(1127, 775);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_ara);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -301,22 +318,24 @@
         private Panel panel1;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox txt_ara;
         private DataGridView dataGridView1;
         private Panel panel2;
         private Label label8;
         private Label label7;
-        private Label label6;
-        private Label label5;
         private Label label3;
-        private DateTimePicker dateTimePicker1;
-        private Button button4;
         private Button btnDelete;
         private Button button2;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txt_yad;
+        private TextBox txt_yayinevi;
+        private TextBox txt_ad;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private TextBox txt_kat;
+        private TextBox txt_yil;
+        private TextBox txt_ss;
+        private TextBox txt_id;
+        private Label label9;
     }
 }
