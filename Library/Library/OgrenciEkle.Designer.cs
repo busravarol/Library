@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OgrenciEkle));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_no = new System.Windows.Forms.TextBox();
+            this.txt_soyad = new System.Windows.Forms.TextBox();
+            this.txt_ad = new System.Windows.Forms.TextBox();
+            this.txt_blm = new System.Windows.Forms.TextBox();
+            this.txt_mail = new System.Windows.Forms.TextBox();
+            this.txt_tlf = new System.Windows.Forms.TextBox();
             this.Ad = new System.Windows.Forms.Label();
             this.Soyad = new System.Windows.Forms.Label();
             this.OgrenciNo = new System.Windows.Forms.Label();
@@ -47,59 +47,59 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txt_no
             // 
-            this.textBox1.Location = new System.Drawing.Point(210, 155);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 27);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.txt_no.Location = new System.Drawing.Point(210, 155);
+            this.txt_no.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_no.Name = "txt_no";
+            this.txt_no.Size = new System.Drawing.Size(196, 27);
+            this.txt_no.TabIndex = 0;
+            this.txt_no.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
-            // textBox2
+            // txt_soyad
             // 
-            this.textBox2.Location = new System.Drawing.Point(210, 195);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 27);
-            this.textBox2.TabIndex = 1;
+            this.txt_soyad.Location = new System.Drawing.Point(210, 236);
+            this.txt_soyad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_soyad.Name = "txt_soyad";
+            this.txt_soyad.Size = new System.Drawing.Size(196, 27);
+            this.txt_soyad.TabIndex = 1;
             // 
-            // textBox3
+            // txt_ad
             // 
-            this.textBox3.Location = new System.Drawing.Point(210, 233);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 27);
-            this.textBox3.TabIndex = 2;
+            this.txt_ad.Location = new System.Drawing.Point(210, 201);
+            this.txt_ad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_ad.Name = "txt_ad";
+            this.txt_ad.Size = new System.Drawing.Size(196, 27);
+            this.txt_ad.TabIndex = 2;
             // 
-            // textBox4
+            // txt_blm
             // 
-            this.textBox4.Location = new System.Drawing.Point(210, 271);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(196, 27);
-            this.textBox4.TabIndex = 3;
+            this.txt_blm.Location = new System.Drawing.Point(210, 271);
+            this.txt_blm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_blm.Name = "txt_blm";
+            this.txt_blm.Size = new System.Drawing.Size(196, 27);
+            this.txt_blm.TabIndex = 3;
             // 
-            // textBox5
+            // txt_mail
             // 
-            this.textBox5.Location = new System.Drawing.Point(210, 309);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(196, 27);
-            this.textBox5.TabIndex = 4;
+            this.txt_mail.Location = new System.Drawing.Point(210, 309);
+            this.txt_mail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_mail.Name = "txt_mail";
+            this.txt_mail.Size = new System.Drawing.Size(196, 27);
+            this.txt_mail.TabIndex = 4;
             // 
-            // textBox6
+            // txt_tlf
             // 
-            this.textBox6.Location = new System.Drawing.Point(210, 348);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(196, 27);
-            this.textBox6.TabIndex = 5;
+            this.txt_tlf.Location = new System.Drawing.Point(210, 348);
+            this.txt_tlf.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_tlf.Name = "txt_tlf";
+            this.txt_tlf.Size = new System.Drawing.Size(196, 27);
+            this.txt_tlf.TabIndex = 5;
             // 
             // Ad
             // 
             this.Ad.AutoSize = true;
-            this.Ad.Location = new System.Drawing.Point(110, 159);
+            this.Ad.Location = new System.Drawing.Point(128, 204);
             this.Ad.Name = "Ad";
             this.Ad.Size = new System.Drawing.Size(28, 20);
             this.Ad.TabIndex = 6;
@@ -108,7 +108,7 @@
             // Soyad
             // 
             this.Soyad.AutoSize = true;
-            this.Soyad.Location = new System.Drawing.Point(110, 201);
+            this.Soyad.Location = new System.Drawing.Point(110, 245);
             this.Soyad.Name = "Soyad";
             this.Soyad.Size = new System.Drawing.Size(50, 20);
             this.Soyad.TabIndex = 7;
@@ -117,7 +117,7 @@
             // OgrenciNo
             // 
             this.OgrenciNo.AutoSize = true;
-            this.OgrenciNo.Location = new System.Drawing.Point(110, 240);
+            this.OgrenciNo.Location = new System.Drawing.Point(110, 155);
             this.OgrenciNo.Name = "OgrenciNo";
             this.OgrenciNo.Size = new System.Drawing.Size(85, 20);
             this.OgrenciNo.TabIndex = 8;
@@ -160,7 +160,7 @@
             this.btnOgrenciEkle.TabIndex = 12;
             this.btnOgrenciEkle.Text = "Ekle";
             this.btnOgrenciEkle.UseVisualStyleBackColor = false;
-            this.btnOgrenciEkle.Click += new System.EventHandler(this.btnOgrenciEkle_click);
+            this.btnOgrenciEkle.Click += new System.EventHandler(this.btnOgrenciEkle_Click);
             // 
             // btnİptal
             // 
@@ -198,12 +198,12 @@
             this.Controls.Add(this.OgrenciNo);
             this.Controls.Add(this.Soyad);
             this.Controls.Add(this.Ad);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_tlf);
+            this.Controls.Add(this.txt_mail);
+            this.Controls.Add(this.txt_blm);
+            this.Controls.Add(this.txt_ad);
+            this.Controls.Add(this.txt_soyad);
+            this.Controls.Add(this.txt_no);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "OgrenciEkle";
             this.Text = "OgrenciEkle";
@@ -215,12 +215,12 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox txt_no;
+        private TextBox txt_soyad;
+        private TextBox txt_ad;
+        private TextBox txt_blm;
+        private TextBox txt_mail;
+        private TextBox txt_tlf;
         private Label Ad;
         private Label Soyad;
         private Label OgrenciNo;

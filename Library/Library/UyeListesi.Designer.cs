@@ -64,7 +64,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(162, 23);
             this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+           
             // 
             // textBox3
             // 
@@ -196,7 +196,7 @@
             this.ogrtelefon.Size = new System.Drawing.Size(45, 15);
             this.ogrtelefon.TabIndex = 16;
             this.ogrtelefon.Text = "Telefon";
-            this.ogrtelefon.Click += new System.EventHandler(this.ogrtelefon_Click);
+            
             // 
             // ogrtcno
             // 

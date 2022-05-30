@@ -40,8 +40,8 @@
             this.ıssueBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iadeKitaplarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kitapDetaylarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.istatistikVerilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,7 +84,7 @@
             // 
             this.kitapEkleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kitapEkleToolStripMenuItem.Image")));
             this.kitapEkleToolStripMenuItem.Name = "kitapEkleToolStripMenuItem";
-            this.kitapEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.kitapEkleToolStripMenuItem.Size = new System.Drawing.Size(168, 28);
             this.kitapEkleToolStripMenuItem.Text = "Kitap Ekle";
             this.kitapEkleToolStripMenuItem.Click += new System.EventHandler(this.kitapEkleToolStripMenuItem_Click);
             // 
@@ -113,6 +113,7 @@
             this.öğrenciDetayıGörüntüleToolStripMenuItem.Name = "öğrenciDetayıGörüntüleToolStripMenuItem";
             this.öğrenciDetayıGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(289, 28);
             this.öğrenciDetayıGörüntüleToolStripMenuItem.Text = "Öğrenci Detayı Görüntüle";
+            this.öğrenciDetayıGörüntüleToolStripMenuItem.Click += new System.EventHandler(this.öğrenciDetayıGörüntüleToolStripMenuItem_Click);
             // 
             // ıssueBookToolStripMenuItem
             // 
@@ -138,6 +139,13 @@
             this.kitapDetaylarıToolStripMenuItem.Text = "Kitap Detayları";
             this.kitapDetaylarıToolStripMenuItem.Click += new System.EventHandler(this.kitapDetaylarıToolStripMenuItem_Click);
             // 
+            // istatistikVerilerToolStripMenuItem
+            // 
+            this.istatistikVerilerToolStripMenuItem.Name = "istatistikVerilerToolStripMenuItem";
+            this.istatistikVerilerToolStripMenuItem.Size = new System.Drawing.Size(139, 27);
+            this.istatistikVerilerToolStripMenuItem.Text = "İstatistik Veriler";
+            this.istatistikVerilerToolStripMenuItem.Click += new System.EventHandler(this.istatistikVerilerToolStripMenuItem_Click);
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
@@ -145,13 +153,6 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(78, 27);
             this.exitToolStripMenuItem.Text = "Çıkış";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // istatistikVerilerToolStripMenuItem
-            // 
-            this.istatistikVerilerToolStripMenuItem.Name = "istatistikVerilerToolStripMenuItem";
-            this.istatistikVerilerToolStripMenuItem.Size = new System.Drawing.Size(139, 27);
-            this.istatistikVerilerToolStripMenuItem.Text = "İstatistik Veriler";
-            this.istatistikVerilerToolStripMenuItem.Click += new System.EventHandler(this.istatistikVerilerToolStripMenuItem_Click);
             // 
             // Form2
             // 

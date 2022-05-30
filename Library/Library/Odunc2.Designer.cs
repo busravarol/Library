@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -47,11 +49,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_no2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txt_no2);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
@@ -75,6 +83,25 @@
             this.panel1.Size = new System.Drawing.Size(552, 463);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CustomFormat = "";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(385, 328);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(127, 27);
+            this.dateTimePicker2.TabIndex = 21;
+            this.dateTimePicker2.Value = new System.DateTime(2022, 5, 26, 3, 1, 47, 0);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(294, 335);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 20);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Alış Tarihi";
             // 
             // dateTimePicker1
             // 
@@ -130,7 +157,7 @@
             // 
             // btn_Teslim
             // 
-            this.btn_Teslim.Location = new System.Drawing.Point(385, 327);
+            this.btn_Teslim.Location = new System.Drawing.Point(385, 391);
             this.btn_Teslim.Name = "btn_Teslim";
             this.btn_Teslim.Size = new System.Drawing.Size(94, 29);
             this.btn_Teslim.TabIndex = 13;
@@ -233,6 +260,22 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Öğrenci Ad";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(295, 19);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(85, 20);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Ogrenci No";
+            // 
+            // txt_no2
+            // 
+            this.txt_no2.Location = new System.Drawing.Point(387, 19);
+            this.txt_no2.Name = "txt_no2";
+            this.txt_no2.Size = new System.Drawing.Size(125, 27);
+            this.txt_no2.TabIndex = 23;
+            // 
             // Odunc2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -269,5 +312,9 @@
         private Button btn_Teslim;
         private Button btnarama;
         protected internal DateTimePicker dateTimePicker1;
+        protected internal DateTimePicker dateTimePicker2;
+        private Label label1;
+        private TextBox txt_no2;
+        private Label label10;
     }
 }

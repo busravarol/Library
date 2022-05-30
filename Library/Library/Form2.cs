@@ -114,5 +114,11 @@ namespace Library
             istatistik istatistik = new istatistik();
             istatistik.Show();
         }
+
+        private void öğrenciDetayıGörüntüleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UyeListesi uyeListesi = new UyeListesi();
+            uyeListesi.Show();
+        }
     }
 }
