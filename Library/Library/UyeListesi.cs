@@ -195,8 +195,14 @@ namespace Library
         }
         int ID = 0;
 
-       
+        private void ogreposta_Click(object sender, EventArgs e)
+        {
 
-        
+        }
+
+        private void btniptal_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

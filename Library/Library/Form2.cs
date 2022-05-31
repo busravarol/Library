@@ -121,6 +121,46 @@ namespace Library
             uyeListesi.Show();
         }
 
-       
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            kitap form = new kitap();
+            form.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            kitaplistesi vb = new kitaplistesi();
+            vb.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Odunc2 odunc = new Odunc2();
+            odunc.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OduncListesi oduncListesi = new OduncListesi();
+            oduncListesi.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OgrenciEkle ogrenciEkle = new OgrenciEkle();
+            ogrenciEkle.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            UyeListesi uyeListesi = new UyeListesi();
+            uyeListesi.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            istatistik istatistik = new istatistik();
+            istatistik.Show();
+        }
     }
 }

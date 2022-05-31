@@ -31,18 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.kitaplarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kitapEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.öğrenciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.öğrenciEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.öğrenciDetayıGörüntüleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ıssueBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iadeKitaplarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kitapDetaylarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.istatistikVerilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -51,145 +46,116 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // menuStrip1
+            // button1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kitaplarToolStripMenuItem,
-            this.öğrenciToolStripMenuItem,
-            this.ıssueBookToolStripMenuItem,
-            this.iadeKitaplarToolStripMenuItem,
-            this.kitapDetaylarıToolStripMenuItem,
-            this.istatistikVerilerToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1150, 33);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.button1.Location = new System.Drawing.Point(79, 71);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(283, 91);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Kitap Ekle";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // kitaplarToolStripMenuItem
+            // button2
             // 
-            this.kitaplarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kitapEkleToolStripMenuItem});
-            this.kitaplarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kitaplarToolStripMenuItem.Image")));
-            this.kitaplarToolStripMenuItem.Name = "kitaplarToolStripMenuItem";
-            this.kitaplarToolStripMenuItem.Size = new System.Drawing.Size(102, 27);
-            this.kitaplarToolStripMenuItem.Text = "Kitaplar";
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.button2.Location = new System.Drawing.Point(79, 203);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(283, 91);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Öğrenci Detayı Görüntüle";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // kitapEkleToolStripMenuItem
+            // button3
             // 
-            this.kitapEkleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kitapEkleToolStripMenuItem.Image")));
-            this.kitapEkleToolStripMenuItem.Name = "kitapEkleToolStripMenuItem";
-            this.kitapEkleToolStripMenuItem.Size = new System.Drawing.Size(168, 28);
-            this.kitapEkleToolStripMenuItem.Text = "Kitap Ekle";
-            this.kitapEkleToolStripMenuItem.Click += new System.EventHandler(this.kitapEkleToolStripMenuItem_Click);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.button3.Location = new System.Drawing.Point(461, 71);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(283, 91);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Öğrenci Ekle";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // öğrenciToolStripMenuItem
+            // button4
             // 
-            this.öğrenciToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.öğrenciEkleToolStripMenuItem,
-            this.öğrenciDetayıGörüntüleToolStripMenuItem});
-            this.öğrenciToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("öğrenciToolStripMenuItem.Image")));
-            this.öğrenciToolStripMenuItem.Name = "öğrenciToolStripMenuItem";
-            this.öğrenciToolStripMenuItem.Size = new System.Drawing.Size(104, 27);
-            this.öğrenciToolStripMenuItem.Text = "Öğrenci";
-            this.öğrenciToolStripMenuItem.Click += new System.EventHandler(this.öğrenciToolStripMenuItem_Click);
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.button4.Location = new System.Drawing.Point(461, 203);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(283, 91);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Kitap Listesi";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // öğrenciEkleToolStripMenuItem
+            // button5
             // 
-            this.öğrenciEkleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("öğrenciEkleToolStripMenuItem.Image")));
-            this.öğrenciEkleToolStripMenuItem.Name = "öğrenciEkleToolStripMenuItem";
-            this.öğrenciEkleToolStripMenuItem.Size = new System.Drawing.Size(289, 28);
-            this.öğrenciEkleToolStripMenuItem.Text = "Öğrenci Ekle";
-            this.öğrenciEkleToolStripMenuItem.Click += new System.EventHandler(this.öğrenciEkleToolStripMenuItem_Click);
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.button5.Location = new System.Drawing.Point(79, 332);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(283, 91);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "İade Kitaplar";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // öğrenciDetayıGörüntüleToolStripMenuItem
+            // button6
             // 
-            this.öğrenciDetayıGörüntüleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("öğrenciDetayıGörüntüleToolStripMenuItem.Image")));
-            this.öğrenciDetayıGörüntüleToolStripMenuItem.Name = "öğrenciDetayıGörüntüleToolStripMenuItem";
-            this.öğrenciDetayıGörüntüleToolStripMenuItem.Size = new System.Drawing.Size(289, 28);
-            this.öğrenciDetayıGörüntüleToolStripMenuItem.Text = "Öğrenci Detayı Görüntüle";
-            this.öğrenciDetayıGörüntüleToolStripMenuItem.Click += new System.EventHandler(this.öğrenciDetayıGörüntüleToolStripMenuItem_Click);
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.button6.Location = new System.Drawing.Point(79, 464);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(283, 91);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "Kitap Detayları";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // ıssueBookToolStripMenuItem
+            // button7
             // 
-            this.ıssueBookToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ıssueBookToolStripMenuItem.Image")));
-            this.ıssueBookToolStripMenuItem.Name = "ıssueBookToolStripMenuItem";
-            this.ıssueBookToolStripMenuItem.Size = new System.Drawing.Size(133, 27);
-            this.ıssueBookToolStripMenuItem.Text = "Kitap Listesi";
-            this.ıssueBookToolStripMenuItem.Click += new System.EventHandler(this.ıssueBookToolStripMenuItem_Click);
-            // 
-            // iadeKitaplarToolStripMenuItem
-            // 
-            this.iadeKitaplarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("iadeKitaplarToolStripMenuItem.Image")));
-            this.iadeKitaplarToolStripMenuItem.Name = "iadeKitaplarToolStripMenuItem";
-            this.iadeKitaplarToolStripMenuItem.Size = new System.Drawing.Size(140, 27);
-            this.iadeKitaplarToolStripMenuItem.Text = "İade Kitaplar";
-            this.iadeKitaplarToolStripMenuItem.Click += new System.EventHandler(this.iadeKitaplarToolStripMenuItem_Click);
-            // 
-            // kitapDetaylarıToolStripMenuItem
-            // 
-            this.kitapDetaylarıToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kitapDetaylarıToolStripMenuItem.Image")));
-            this.kitapDetaylarıToolStripMenuItem.Name = "kitapDetaylarıToolStripMenuItem";
-            this.kitapDetaylarıToolStripMenuItem.Size = new System.Drawing.Size(155, 27);
-            this.kitapDetaylarıToolStripMenuItem.Text = "Kitap Detayları";
-            this.kitapDetaylarıToolStripMenuItem.Click += new System.EventHandler(this.kitapDetaylarıToolStripMenuItem_Click);
-            // 
-            // istatistikVerilerToolStripMenuItem
-            // 
-            this.istatistikVerilerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("istatistikVerilerToolStripMenuItem.Image")));
-            this.istatistikVerilerToolStripMenuItem.Name = "istatistikVerilerToolStripMenuItem";
-            this.istatistikVerilerToolStripMenuItem.Size = new System.Drawing.Size(159, 27);
-            this.istatistikVerilerToolStripMenuItem.Text = "İstatistik Veriler";
-            this.istatistikVerilerToolStripMenuItem.Click += new System.EventHandler(this.istatistikVerilerToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(78, 27);
-            this.exitToolStripMenuItem.Text = "Çıkış";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
+            this.button7.Location = new System.Drawing.Point(826, 71);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(283, 91);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "İstatistik Veriler";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1150, 695);
-            this.Controls.Add(this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size(1305, 695);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
             this.Text = "anasayfa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private ContextMenuStrip contextMenuStrip1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem kitaplarToolStripMenuItem;
-        private ToolStripMenuItem kitapEkleToolStripMenuItem;
-        private ToolStripMenuItem öğrenciToolStripMenuItem;
-        private ToolStripMenuItem öğrenciEkleToolStripMenuItem;
-        private ToolStripMenuItem öğrenciDetayıGörüntüleToolStripMenuItem;
-        private ToolStripMenuItem ıssueBookToolStripMenuItem;
-        private ToolStripMenuItem iadeKitaplarToolStripMenuItem;
-        private ToolStripMenuItem kitapDetaylarıToolStripMenuItem;
-        private ToolStripMenuItem exitToolStripMenuItem;
-        private ToolStripMenuItem istatistikVerilerToolStripMenuItem;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Button button6;
+        private Button button7;
     }
 }

@@ -231,7 +231,6 @@ C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windo
 C:\Users\ilkay kavak\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.istatistik.resources
 C:\Users\ilkay kavak\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.UyeListesi.resources
 C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.istatistik.resources
-C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.TeslimAl.resources
 C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.UyeListesi.resources
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.TeslimAl.resources
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.UyeListesi.resources

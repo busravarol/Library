@@ -49,7 +49,7 @@
             // 
             // txt_no
             // 
-            this.txt_no.Location = new System.Drawing.Point(184, 121);
+            this.txt_no.Location = new System.Drawing.Point(106, 107);
             this.txt_no.Name = "txt_no";
             this.txt_no.Size = new System.Drawing.Size(172, 23);
             this.txt_no.TabIndex = 0;
@@ -57,35 +57,35 @@
             // 
             // txt_soyad
             // 
-            this.txt_soyad.Location = new System.Drawing.Point(184, 177);
+            this.txt_soyad.Location = new System.Drawing.Point(106, 185);
             this.txt_soyad.Name = "txt_soyad";
             this.txt_soyad.Size = new System.Drawing.Size(172, 23);
             this.txt_soyad.TabIndex = 1;
             // 
             // txt_ad
             // 
-            this.txt_ad.Location = new System.Drawing.Point(184, 150);
+            this.txt_ad.Location = new System.Drawing.Point(106, 145);
             this.txt_ad.Name = "txt_ad";
             this.txt_ad.Size = new System.Drawing.Size(172, 23);
             this.txt_ad.TabIndex = 2;
             // 
             // txt_blm
             // 
-            this.txt_blm.Location = new System.Drawing.Point(184, 203);
+            this.txt_blm.Location = new System.Drawing.Point(106, 227);
             this.txt_blm.Name = "txt_blm";
             this.txt_blm.Size = new System.Drawing.Size(172, 23);
             this.txt_blm.TabIndex = 3;
             // 
             // txt_mail
             // 
-            this.txt_mail.Location = new System.Drawing.Point(184, 232);
+            this.txt_mail.Location = new System.Drawing.Point(106, 271);
             this.txt_mail.Name = "txt_mail";
             this.txt_mail.Size = new System.Drawing.Size(172, 23);
             this.txt_mail.TabIndex = 4;
             // 
             // txt_tlf
             // 
-            this.txt_tlf.Location = new System.Drawing.Point(184, 261);
+            this.txt_tlf.Location = new System.Drawing.Point(106, 311);
             this.txt_tlf.Name = "txt_tlf";
             this.txt_tlf.Size = new System.Drawing.Size(172, 23);
             this.txt_tlf.TabIndex = 5;
@@ -93,7 +93,7 @@
             // Ad
             // 
             this.Ad.AutoSize = true;
-            this.Ad.Location = new System.Drawing.Point(96, 153);
+            this.Ad.Location = new System.Drawing.Point(4, 148);
             this.Ad.Name = "Ad";
             this.Ad.Size = new System.Drawing.Size(22, 15);
             this.Ad.TabIndex = 6;
@@ -102,7 +102,7 @@
             // Soyad
             // 
             this.Soyad.AutoSize = true;
-            this.Soyad.Location = new System.Drawing.Point(93, 180);
+            this.Soyad.Location = new System.Drawing.Point(4, 188);
             this.Soyad.Name = "Soyad";
             this.Soyad.Size = new System.Drawing.Size(39, 15);
             this.Soyad.TabIndex = 7;
@@ -111,7 +111,7 @@
             // OgrenciNo
             // 
             this.OgrenciNo.AutoSize = true;
-            this.OgrenciNo.Location = new System.Drawing.Point(96, 129);
+            this.OgrenciNo.Location = new System.Drawing.Point(4, 110);
             this.OgrenciNo.Name = "OgrenciNo";
             this.OgrenciNo.Size = new System.Drawing.Size(68, 15);
             this.OgrenciNo.TabIndex = 8;
@@ -120,7 +120,7 @@
             // BolumAdi
             // 
             this.BolumAdi.AutoSize = true;
-            this.BolumAdi.Location = new System.Drawing.Point(93, 206);
+            this.BolumAdi.Location = new System.Drawing.Point(4, 230);
             this.BolumAdi.Name = "BolumAdi";
             this.BolumAdi.Size = new System.Drawing.Size(63, 15);
             this.BolumAdi.TabIndex = 9;
@@ -129,7 +129,7 @@
             // Email
             // 
             this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(93, 235);
+            this.Email.Location = new System.Drawing.Point(7, 274);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(36, 15);
             this.Email.TabIndex = 10;
@@ -138,7 +138,7 @@
             // Telefon
             // 
             this.Telefon.AutoSize = true;
-            this.Telefon.Location = new System.Drawing.Point(93, 264);
+            this.Telefon.Location = new System.Drawing.Point(7, 314);
             this.Telefon.Name = "Telefon";
             this.Telefon.Size = new System.Drawing.Size(45, 15);
             this.Telefon.TabIndex = 11;
@@ -147,9 +147,9 @@
             // btnOgrenciEkle
             // 
             this.btnOgrenciEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.btnOgrenciEkle.Location = new System.Drawing.Point(184, 316);
+            this.btnOgrenciEkle.Location = new System.Drawing.Point(326, 145);
             this.btnOgrenciEkle.Name = "btnOgrenciEkle";
-            this.btnOgrenciEkle.Size = new System.Drawing.Size(83, 47);
+            this.btnOgrenciEkle.Size = new System.Drawing.Size(94, 64);
             this.btnOgrenciEkle.TabIndex = 12;
             this.btnOgrenciEkle.Text = "Ekle";
             this.btnOgrenciEkle.UseVisualStyleBackColor = false;
@@ -158,9 +158,9 @@
             // btnİptal
             // 
             this.btnİptal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.btnİptal.Location = new System.Drawing.Point(272, 316);
+            this.btnİptal.Location = new System.Drawing.Point(326, 231);
             this.btnİptal.Name = "btnİptal";
-            this.btnİptal.Size = new System.Drawing.Size(83, 47);
+            this.btnİptal.Size = new System.Drawing.Size(94, 63);
             this.btnİptal.TabIndex = 13;
             this.btnİptal.Text = "İptal";
             this.btnİptal.UseVisualStyleBackColor = false;
@@ -168,7 +168,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(219, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(187, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(91, 70);
