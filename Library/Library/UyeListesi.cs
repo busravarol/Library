@@ -27,12 +27,12 @@ namespace Library
             da.Fill(ds, "ogrenci");
             dataGridView1.DataSource = ds.Tables["ogrenci"];
 
-            dataGridView1.Columns[0].HeaderCell.Value = "Ad";
-            dataGridView1.Columns[1].HeaderCell.Value = "Soyad";
-            dataGridView1.Columns[2].HeaderCell.Value = "Öğrenci No";
-            dataGridView1.Columns[3].HeaderCell.Value = "Bölüm Adı";
-            dataGridView1.Columns[4].HeaderCell.Value = "E-posta";
-            dataGridView1.Columns[5].HeaderCell.Value = "Telefon";
+            dataGridView1.Columns[0].HeaderCell.Value = "Öğrenci No";
+            dataGridView1.Columns[1].HeaderCell.Value = "Ad";
+            dataGridView1.Columns[2].HeaderCell.Value = "Soyad";
+            dataGridView1.Columns[3].HeaderCell.Value = "Telefon";
+            dataGridView1.Columns[4].HeaderCell.Value = "E-Posta";
+            dataGridView1.Columns[5].HeaderCell.Value = "Bölüm";
             baglanti.Close();
         }
         void KayıtSil(int ograd)
@@ -55,18 +55,23 @@ namespace Library
         {
             if (MessageBox.Show("Öğrenci Güncellenecek Onaylıyor Musunuz?", "Success", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                string ograd = ograd.Text;
-                string ogrsoyad = ogrsoyad.Text;
-                Int32 ogrno = Int32.Parse(ogrno.Text);
-                string ogrBolumAd = ogrBolumAd.Text;
-                Int32 ogrtelefon = Int32.Parse(ogrtelefon.Text);
-                string ogrPosta = ogrPosta.Text;
+                string ograd = txt_ad.Text;
+                string ogrsoyad = txt_soyad.Text;
+                Int64 ogrno = Int64.Parse(txt_no.Text);
+                string ogrBolumAd = txt_blm.Text;
+                Int64 ogrtelefon = Int64.Parse(txt_tlf.Text);
+                string ogrPosta = txt_mail.Text;
                 cmd.Connection = baglanti;
-                cmd.CommandText = "update tbl_ogrenci set ograd='" + textBox3.Text + "',ogrno='" + textBox5 + "',ogrtelefon ='" + textBox7 + "',ogrBolumAd='" + textBox6 + "',ogrsoyad='" + textBox4 + "',ogrPosta='" + textBox1;
+                cmd.CommandText = "update tbl_ogrenci set ograd='" + ograd + "',ogrno='" + ogrno + "',ogrtelefon ='" + ogrtelefon + "',ogrBolumAd='" + ogrBolumAd + "',ogrsoyad='" + ogrsoyad + "',ogrPosta='" + ogrPosta+"'";
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmd);
 
                 da.Fill(ds);
             }
+            baglanti.Open();
+            cmd.ExecuteNonQuery();
+            baglanti.Close();
+            griddoldur();
+            MessageBox.Show("Öğrenci Başarıyla Güncellendi");
             /* if (MessageBox.Show("Öğrenci Güncellenecek Onaylıyor Musunuz?", "Success", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
              {
                  string sorgu = "UPDATE tbl_ogrenci SET ograd='" + textBox3.Text + "',ogrno='" + textBox5 + "',ogrtelefon ='" + textBox7 + "',ogrBolumAd='" + textBox6 + "',ogrsoyad='" + textBox4 + "',ogrPposta='" + textBox1;
@@ -129,15 +134,15 @@ namespace Library
             if (MessageBox.Show("Veri Silinecek. Onaylıyor musunuz?", "Başarılı", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
                 foreach (DataGridViewRow drow in dataGridView1.SelectedRows)
                 {
-                    int ograd= Convert.ToInt32(drow.Cells[0].Value);
-                    KayıtSil(ograd);
+                    int ogrno= Convert.ToInt32(drow.Cells[0].Value);
+                    KayıtSil(ogrno);
                 }
             griddoldur();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            string aranan = ogrnoara.Text.Trim().ToUpper();
+           string aranan = textBox2.Text.Trim().ToUpper();
             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -170,12 +175,12 @@ namespace Library
         {
             try
             {
-                ograd.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                ogrsoyad.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                ogrno.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                ogrBolumAd.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                ogrtelefon.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                ogrPosta.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                txt_no.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                txt_ad.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                txt_soyad.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                txt_tlf.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                txt_mail.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                txt_blm.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
                 
             }
             catch
@@ -183,5 +188,15 @@ namespace Library
 
             }
         }
+
+        private void UyeListesi_Load(object sender, EventArgs e)
+        {
+            griddoldur();
+        }
+        int ID = 0;
+
+       
+
+        
     }
 }

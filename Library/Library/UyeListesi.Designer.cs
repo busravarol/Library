@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UyeListesi));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_mail = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_ad = new System.Windows.Forms.TextBox();
+            this.txt_soyad = new System.Windows.Forms.TextBox();
+            this.txt_no = new System.Windows.Forms.TextBox();
+            this.txt_blm = new System.Windows.Forms.TextBox();
+            this.txt_tlf = new System.Windows.Forms.TextBox();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btniptal = new System.Windows.Forms.Button();
             this.btnsil = new System.Windows.Forms.Button();
@@ -53,14 +53,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txt_mail
             // 
-            this.textBox1.Location = new System.Drawing.Point(122, 353);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 27);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_mail.Location = new System.Drawing.Point(122, 353);
+            this.txt_mail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_mail.Name = "txt_mail";
+            this.txt_mail.Size = new System.Drawing.Size(185, 27);
+            this.txt_mail.TabIndex = 0;
             // 
             // textBox2
             // 
@@ -69,51 +68,47 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(185, 27);
             this.textBox2.TabIndex = 1;
+            
             // 
-            // textBox3
+            // txt_ad
             // 
-            this.textBox3.Location = new System.Drawing.Point(122, 107);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(185, 27);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txt_ad.Location = new System.Drawing.Point(122, 107);
+            this.txt_ad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_ad.Name = "txt_ad";
+            this.txt_ad.Size = new System.Drawing.Size(185, 27);
+            this.txt_ad.TabIndex = 2;
             // 
-            // textBox4
+            // txt_soyad
             // 
-            this.textBox4.Location = new System.Drawing.Point(122, 169);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(185, 27);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txt_soyad.Location = new System.Drawing.Point(122, 169);
+            this.txt_soyad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_soyad.Name = "txt_soyad";
+            this.txt_soyad.Size = new System.Drawing.Size(185, 27);
+            this.txt_soyad.TabIndex = 3;
             // 
-            // textBox5
+            // txt_no
             // 
-            this.textBox5.Location = new System.Drawing.Point(122, 229);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(185, 27);
-            this.textBox5.TabIndex = 4;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.txt_no.Location = new System.Drawing.Point(122, 229);
+            this.txt_no.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_no.Name = "txt_no";
+            this.txt_no.Size = new System.Drawing.Size(185, 27);
+            this.txt_no.TabIndex = 4;
             // 
-            // textBox6
+            // txt_blm
             // 
-            this.textBox6.Location = new System.Drawing.Point(122, 289);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(185, 27);
-            this.textBox6.TabIndex = 5;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.txt_blm.Location = new System.Drawing.Point(122, 289);
+            this.txt_blm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_blm.Name = "txt_blm";
+            this.txt_blm.Size = new System.Drawing.Size(185, 27);
+            this.txt_blm.TabIndex = 5;
             // 
-            // textBox7
+            // txt_tlf
             // 
-            this.textBox7.Location = new System.Drawing.Point(122, 412);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(185, 27);
-            this.textBox7.TabIndex = 6;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.txt_tlf.Location = new System.Drawing.Point(122, 412);
+            this.txt_tlf.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_tlf.Name = "txt_tlf";
+            this.txt_tlf.Size = new System.Drawing.Size(185, 27);
+            this.txt_tlf.TabIndex = 6;
             // 
             // btnGuncelle
             // 
@@ -265,16 +260,17 @@
             this.Controls.Add(this.btnsil);
             this.Controls.Add(this.btniptal);
             this.Controls.Add(this.btnGuncelle);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_tlf);
+            this.Controls.Add(this.txt_blm);
+            this.Controls.Add(this.txt_no);
+            this.Controls.Add(this.txt_soyad);
+            this.Controls.Add(this.txt_ad);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_mail);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UyeListesi";
             this.Text = "UyeListesi";
+            this.Load += new System.EventHandler(this.UyeListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -284,13 +280,13 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txt_mail;
         private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
+        private TextBox txt_ad;
+        private TextBox txt_soyad;
+        private TextBox txt_no;
+        private TextBox txt_blm;
+        private TextBox txt_tlf;
         private Button btnGuncelle;
         private Button btniptal;
         private Button btnsil;

@@ -123,7 +123,7 @@ namespace Library
 
 
             baglanti.Open();
-            MySqlCommand komut = new MySqlCommand("insert into tbl_odunc( kitapAdi, ograd, ogrsoyad, ogrtelefon,ogrPosta,ogrBolumAd,teslimAlinanTarih,ogrno) values(@k1,@k2,@k3,@k4,@k5,@k6,@k7,@k9)", baglanti);
+            MySqlCommand komut = new MySqlCommand("insert into tbl_odunc( kitapAdi, ograd, ogrsoyad, ogrtelefon,ogrPosta,ogrBolumAd,teslimAlinanTarih,ogrno) values(@k1,@k2,@k3,@k4,@k5,@k6,@k7,@k8)", baglanti);
            
             komut.Parameters.AddWithValue("@k1", txt_Ad.Text);
             komut.Parameters.AddWithValue("@k2", txt_Soyad.Text);
@@ -132,8 +132,8 @@ namespace Library
             komut.Parameters.AddWithValue("@k5", txt_blm.Text);
             komut.Parameters.AddWithValue("@k6", txt_Kitap.Text);
             komut.Parameters.AddWithValue("@k7", dateTimePicker1.Value);
-            komut.Parameters.AddWithValue("@k8", dateTimePicker2.Value);
-            komut.Parameters.AddWithValue("@k9", txt_no2.Text);
+           /* komut.Parameters.AddWithValue("@k8", dateTimePicker2.Value);*/
+            komut.Parameters.AddWithValue("@k8", txt_no2.Text);
             komut.ExecuteNonQuery();
             baglanti.Close();
 
