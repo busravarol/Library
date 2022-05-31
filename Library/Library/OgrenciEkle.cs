@@ -59,5 +59,10 @@ namespace Library
              con.Close();
              MessageBox.Show("Öğrenci Kaydı Yapıldı.");*/
         }
+
+        private void txt_ad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

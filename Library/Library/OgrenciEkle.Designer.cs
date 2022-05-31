@@ -53,7 +53,7 @@
             this.txt_no.Name = "txt_no";
             this.txt_no.Size = new System.Drawing.Size(172, 23);
             this.txt_no.TabIndex = 0;
-            this.txt_no.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            /*this.txt_no.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);*/
             // 
             // txt_soyad
             // 
@@ -68,6 +68,7 @@
             this.txt_ad.Name = "txt_ad";
             this.txt_ad.Size = new System.Drawing.Size(172, 23);
             this.txt_ad.TabIndex = 2;
+            this.txt_ad.TextChanged += new System.EventHandler(this.txt_ad_TextChanged);
             // 
             // txt_blm
             // 
@@ -205,11 +206,7 @@
 
         }
 
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
+       
         #endregion
 
         private TextBox txt_no;

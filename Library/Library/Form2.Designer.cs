@@ -60,7 +60,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button2.Location = new System.Drawing.Point(79, 203);
+            this.button2.Location = new System.Drawing.Point(461, 206);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(283, 91);
             this.button2.TabIndex = 3;
@@ -82,7 +82,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button4.Location = new System.Drawing.Point(461, 203);
+            this.button4.Location = new System.Drawing.Point(79, 206);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(283, 91);
             this.button4.TabIndex = 5;
