@@ -33,7 +33,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.txt_ad = new System.Windows.Forms.TextBox();
             this.txt_soyad = new System.Windows.Forms.TextBox();
-            this.txt_no = new System.Windows.Forms.TextBox();
+            this.txt_no3 = new System.Windows.Forms.TextBox();
             this.txt_blm = new System.Windows.Forms.TextBox();
             this.txt_tlf = new System.Windows.Forms.TextBox();
             this.btnGuncelle = new System.Windows.Forms.Button();
@@ -68,7 +68,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(185, 27);
             this.textBox2.TabIndex = 1;
-            
             // 
             // txt_ad
             // 
@@ -86,13 +85,13 @@
             this.txt_soyad.Size = new System.Drawing.Size(185, 27);
             this.txt_soyad.TabIndex = 3;
             // 
-            // txt_no
+            // txt_no3
             // 
-            this.txt_no.Location = new System.Drawing.Point(122, 229);
-            this.txt_no.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_no.Name = "txt_no";
-            this.txt_no.Size = new System.Drawing.Size(185, 27);
-            this.txt_no.TabIndex = 4;
+            this.txt_no3.Location = new System.Drawing.Point(122, 229);
+            this.txt_no3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_no3.Name = "txt_no3";
+            this.txt_no3.Size = new System.Drawing.Size(185, 27);
+            this.txt_no3.TabIndex = 4;
             // 
             // txt_blm
             // 
@@ -262,7 +261,7 @@
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.txt_tlf);
             this.Controls.Add(this.txt_blm);
-            this.Controls.Add(this.txt_no);
+            this.Controls.Add(this.txt_no3);
             this.Controls.Add(this.txt_soyad);
             this.Controls.Add(this.txt_ad);
             this.Controls.Add(this.textBox2);
@@ -284,7 +283,7 @@
         private TextBox textBox2;
         private TextBox txt_ad;
         private TextBox txt_soyad;
-        private TextBox txt_no;
+        private TextBox txt_no3;
         private TextBox txt_blm;
         private TextBox txt_tlf;
         private Button btnGuncelle;

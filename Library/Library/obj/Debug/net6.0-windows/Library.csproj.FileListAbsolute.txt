@@ -235,7 +235,6 @@ C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.
 C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.UyeListesi.resources
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.TeslimAl.resources
 C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.UyeListesi.resources
-C:\Users\ilkay kavak\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.TeslimAl.resources
 C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.csproj.AssemblyReference.cache
 C:\Users\User\Desktop\kütüphane\Library\Library\Library\obj\Debug\net6.0-windows\Library.TeslimAl.resources
 C:\Users\User\Desktop\kütüphane\kütüphane\Library\Library\Library\bin\Debug\net6.0-windows\Library.exe

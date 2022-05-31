@@ -121,10 +121,6 @@ namespace Library
             uyeListesi.Show();
         }
 
-        private void teslimAlToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TeslimAl teslimAl = new TeslimAl();
-            teslimAl.Show();
-        }
+       
     }
 }

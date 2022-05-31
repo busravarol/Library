@@ -30,10 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Odunc2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_no2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -52,19 +51,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.txt_no2);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.dateTimePicker2);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
@@ -89,9 +90,19 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(15, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(140, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // txt_no2
             // 
-            this.txt_no2.Location = new System.Drawing.Point(329, 26);
+            this.txt_no2.Location = new System.Drawing.Point(167, 13);
             this.txt_no2.Name = "txt_no2";
             this.txt_no2.Size = new System.Drawing.Size(125, 27);
             this.txt_no2.TabIndex = 23;
@@ -99,30 +110,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(234, 33);
+            this.label10.Location = new System.Drawing.Point(51, 16);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(85, 20);
             this.label10.TabIndex = 22;
             this.label10.Text = "Ogrenci No";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CustomFormat = "";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(327, 335);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(127, 27);
-            this.dateTimePicker2.TabIndex = 21;
-            this.dateTimePicker2.Value = new System.DateTime(2022, 5, 26, 3, 1, 47, 0);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(236, 342);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 20);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Alış Tarihi";
             // 
             // dateTimePicker1
             // 
@@ -281,15 +273,64 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Öğrenci Ad";
             // 
-            // pictureBox1
+            // panel2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 92);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.txt_no2);
+            this.panel2.Controls.Add(this.dateTimePicker2);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(579, 36);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(457, 434);
+            this.panel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(51, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Kitap Adı";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(167, 49);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(125, 27);
+            this.textBox1.TabIndex = 24;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(41, 93);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(118, 20);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Teslim Alış Tarihi";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CustomFormat = "";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(165, 89);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(127, 27);
+            this.dateTimePicker2.TabIndex = 24;
+            this.dateTimePicker2.Value = new System.DateTime(2022, 5, 26, 3, 1, 47, 0);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(281, 226);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 55);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Teslim Al";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Odunc2
             // 
@@ -297,6 +338,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(1143, 509);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Odunc2";
             this.Text = "Odunc2";
@@ -304,6 +346,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -329,10 +373,14 @@
         private Button btn_Teslim;
         private Button btnarama;
         protected internal DateTimePicker dateTimePicker1;
-        protected internal DateTimePicker dateTimePicker2;
-        private Label label1;
         private TextBox txt_no2;
         private Label label10;
         private PictureBox pictureBox1;
+        private Panel panel2;
+        private Button button1;
+        protected internal DateTimePicker dateTimePicker2;
+        private Label label11;
+        private TextBox textBox1;
+        private Label label1;
     }
 }

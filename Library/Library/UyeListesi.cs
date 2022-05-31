@@ -35,11 +35,11 @@ namespace Library
             dataGridView1.Columns[5].HeaderCell.Value = "Bölüm";
             baglanti.Close();
         }
-        void KayıtSil(int ograd)
+        void KayıtSil(int ogrno)
         {
-            string sql = "DELETE FROM tbl_ogrenci WHERE ograd=@ograd";
+            string sql = "DELETE FROM tbl_ogrenci WHERE ogrno=@ogrno";
             cmd = new MySqlCommand(sql, baglanti);
-            cmd.Parameters.AddWithValue("@ograd", ograd);
+            cmd.Parameters.AddWithValue("@ogrno", ogrno);
             baglanti.Open();
             cmd.ExecuteNonQuery();
             baglanti.Close();
@@ -57,7 +57,7 @@ namespace Library
             {
                 string ograd = txt_ad.Text;
                 string ogrsoyad = txt_soyad.Text;
-                Int64 ogrno = Int64.Parse(txt_no.Text);
+                Int64 ogrno = Int64.Parse(txt_no3.Text);
                 string ogrBolumAd = txt_blm.Text;
                 Int64 ogrtelefon = Int64.Parse(txt_tlf.Text);
                 string ogrPosta = txt_mail.Text;
@@ -175,7 +175,7 @@ namespace Library
         {
             try
             {
-                txt_no.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                txt_no3.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 txt_ad.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 txt_soyad.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
                 txt_tlf.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();

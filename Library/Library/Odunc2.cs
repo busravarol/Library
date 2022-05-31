@@ -85,7 +85,7 @@ namespace Library
                 MySqlDataAdapter Da = new MySqlDataAdapter(cmd);
                 DataSet Ds = new DataSet();
                 Da.Fill(Ds);
-               cmd.CommandText ="select count(ogrno) from tbl_odunc where ogrno='"+edi + "' and teslimverilecektarih is null";
+               cmd.CommandText ="select count(ogrno) from tbl_odunc where ogrno='"+edi + "' and teslimver is null";
                 MySqlDataAdapter DA1 =new MySqlDataAdapter(cmd);
                 DataSet DS1 =new DataSet();
                 Da.Fill(DS1);
@@ -94,7 +94,7 @@ namespace Library
 
                 if(Ds.Tables[0].Rows.Count != 0)
                 {   
-                    txt_no2.Text=Ds.Tables[0].Rows[0][0].ToString();
+                   /* txt_no2.Text=Ds.Tables[0].Rows[0][0].ToString();*/
                     txt_Ad.Text = Ds.Tables[0].Rows[0][1].ToString();
                     txt_Soyad.Text=Ds.Tables[0].Rows[0][2].ToString();
                     txt_tlf.Text=Ds.Tables[0].Rows[0][3].ToString();
@@ -133,7 +133,7 @@ namespace Library
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = baglanti;
             baglanti.Open();
-            cmd.CommandText = "insert into tbl_odunc( kitapAdi,  ograd, ogrsoyad, ogrtelefon, ogrPosta, ogrBolumAd, teslimAlinanTarih) values('"+kitap+"', '"+ad+"','"+soy+"','"+contact+"','"+posta+"','"+blm+"','"+odunc+"' )";
+            cmd.CommandText = "insert into tbl_odunc( kitapAdi, ogrno,  ograd, ogrsoyad, ogrtelefon, ogrPosta, ogrBolumAd, teslimAlinanTarih) values('"+kitap+"','"+edi+"', '"+ad+"','"+soy+"','"+contact+"','"+posta+"','"+blm+"','"+odunc+"' )";
             MySqlDataAdapter Da = new MySqlDataAdapter(cmd);
             DataSet Ds = new DataSet();
             Da.Fill(Ds);
@@ -164,6 +164,17 @@ namespace Library
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        Int64 rowid;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = baglanti;
+            baglanti.Open();
+            cmd.CommandText = "update tbl_odunc set teslimver='" + dateTimePicker2.Text + "' where ogrno='" + txt_no2 + "' and oduncID='"+rowid+"'";
+            cmd.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Teslim Alma Başarılı", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

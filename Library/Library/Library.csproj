@@ -15,12 +15,15 @@
     <Compile Remove="istatistikler.Designer.cs" />
     <Compile Remove="Odunc.cs" />
     <Compile Remove="Odunc.Designer.cs" />
+    <Compile Remove="TeslimAl.cs" />
+    <Compile Remove="TeslimAl.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="anasayfa.resx" />
     <EmbeddedResource Remove="istatistikler.resx" />
     <EmbeddedResource Remove="Odunc.resx" />
+    <EmbeddedResource Remove="TeslimAl.resx" />
   </ItemGroup>
 
   <ItemGroup>
