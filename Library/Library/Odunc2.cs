@@ -120,25 +120,44 @@ namespace Library
         private void btn_Teslim_Click(object sender, EventArgs e)
         {
          
-
-
+            
+            string ad=txt_Ad.Text;
+            string soy=txt_Soyad.Text;
+            Int64 contact = Int64.Parse(txt_tlf.Text);
+            string posta=txt_posta.Text;
+            string blm=txt_blm.Text;
+            string kitap=txt_Kitap.Text;
+            string odunc = dateTimePicker1.Text;
+            string edi = txt_No.Text;
+            MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = baglanti;
             baglanti.Open();
-            MySqlCommand komut = new MySqlCommand("insert into tbl_odunc( kitapAdi, ograd, ogrsoyad, ogrtelefon,ogrPosta,ogrBolumAd,teslimAlinanTarih,ogrno) values(@k1,@k2,@k3,@k4,@k5,@k6,@k7,@k8)", baglanti);
-           
-            komut.Parameters.AddWithValue("@k1", txt_Ad.Text);
-            komut.Parameters.AddWithValue("@k2", txt_Soyad.Text);
-            komut.Parameters.AddWithValue("@k3", txt_tlf.Text);
-            komut.Parameters.AddWithValue("@k4", txt_posta.Text);
-            komut.Parameters.AddWithValue("@k5", txt_blm.Text);
-            komut.Parameters.AddWithValue("@k6", txt_Kitap.Text);
-            komut.Parameters.AddWithValue("@k7", dateTimePicker1.Value);
-           /* komut.Parameters.AddWithValue("@k8", dateTimePicker2.Value);*/
-            komut.Parameters.AddWithValue("@k8", txt_no2.Text);
-            komut.ExecuteNonQuery();
+            cmd.CommandText = "insert into tbl_odunc( kitapAdi,  ograd, ogrsoyad, ogrtelefon, ogrPosta, ogrBolumAd, teslimAlinanTarih) values('"+kitap+"', '"+ad+"','"+soy+"','"+contact+"','"+posta+"','"+blm+"','"+odunc+"' )";
+            MySqlDataAdapter Da = new MySqlDataAdapter(cmd);
+            DataSet Ds = new DataSet();
+            Da.Fill(Ds);
+            cmd.ExecuteNonQuery();
             baglanti.Close();
+            MessageBox.Show("Kitap Öğrenciye Teslim Edildi", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            /* baglanti.Open();
+             MySqlCommand komut = new MySqlCommand("insert into tbl_odunc( kitapAdi, ograd, ogrsoyad, ogrtelefon,ogrPosta,ogrBolumAd,teslimAlinanTarih,ogrno,teslimverilecektarih) values(@k1,@k2,@k3,@k4,@k5,@k6,@k7,@k8)", baglanti);
+
+             komut.Parameters.AddWithValue("@k1", txt_Ad.Text);
+             komut.Parameters.AddWithValue("@k2", txt_Soyad.Text);
+             komut.Parameters.AddWithValue("@k3", txt_tlf.Text);
+             komut.Parameters.AddWithValue("@k4", txt_posta.Text);
+             komut.Parameters.AddWithValue("@k5", txt_blm.Text);
+             komut.Parameters.AddWithValue("@k6", txt_Kitap.Text);
+             komut.Parameters.AddWithValue("@k7", dateTimePicker1.Value);
+            /* komut.Parameters.AddWithValue("@k8", dateTimePicker2.Value);
+             komut.Parameters.AddWithValue("@k8", txt_no2.Text);
+             komut.ExecuteNonQuery();
+             baglanti.Close();
 
 
-            MessageBox.Show("Kitap Teslim Edildi");
+             MessageBox.Show("Kitap Teslim Edildi");*/
 
         }
 

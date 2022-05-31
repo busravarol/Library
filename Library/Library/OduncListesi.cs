@@ -29,8 +29,8 @@ namespace Library
             da.Fill(ds, "odunc");
             dataGridView1.DataSource = ds.Tables["odunc"];
 
-            dataGridView1.Columns[0].HeaderCell.Value = "KitapID";
-            dataGridView1.Columns[1].HeaderCell.Value = "ÖdunçID";
+            dataGridView1.Columns[0].HeaderCell.Value = "ÖdünçID";
+            dataGridView1.Columns[1].HeaderCell.Value = "Kitap Adı";
             dataGridView1.Columns[2].HeaderCell.Value = "Öğrenci No";
             dataGridView1.Columns[3].HeaderCell.Value = "Öğrenci Ad";
             dataGridView1.Columns[4].HeaderCell.Value = "Öğrenci Soyad";

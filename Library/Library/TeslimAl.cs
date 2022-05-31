@@ -28,7 +28,7 @@ namespace Library
         {
             MySqlCommand cmd =new MySqlCommand();
             cmd.Connection = baglanti;
-            cmd.CommandText = "select* from tbl_odunc where ogrno='" + txt_no.Text + "' and teslimalinantarih IS NULL ";
+            cmd.CommandText = "select* from tbl_odunc where kitapAdi='" + txt_no.Text + "' and teslimalinantarih IS NULL ";
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
            DataSet ds=new DataSet();
             da.Fill(ds);
@@ -49,12 +49,12 @@ namespace Library
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = baglanti;
             baglanti.Open();
-            cmd.CommandText = "update tbl_odunc set teslimalinantarih='" + dateTimePicker1.Text + "' where ogrno='" + txt_no + "'and oduncID='"+rowid+"'";
+            cmd.CommandText = "update tbl_odunc set teslimalinantarih='" + dateTimePicker1.Text + "' where kitapAdi='" + txt_no + "'and oduncID='"+rowid+"'";
             cmd.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Teslim Alma Başarılı", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
             TeslimAl_Load(this, null);
-
+           
 
 
         }
@@ -68,8 +68,8 @@ namespace Library
             if (dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
                 rowid=Int64.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
-                kad=dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
-                vtarih=dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+                kad=dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                vtarih=dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
             }
             txt_kiad.Text=kad;
             txt_vetarih.Text=vtarih;
