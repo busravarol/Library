@@ -51,6 +51,8 @@ namespace Library
             komutum.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Öğrenci Başarıyla Eklendi.");
+
+            
             
 
             /* string sorgu = "INSERT INTO tbl_ogrenci (ogrno, ograd, ogrsoyad, ogrtelefon, ogrPosta , ogrBolumAd) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text
@@ -61,6 +63,11 @@ namespace Library
         }
 
         private void txt_ad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnİptal_Click(object sender, EventArgs e)
         {
 
         }

@@ -77,7 +77,7 @@ namespace Library
             if(txt_No.Text != "")
             {
                 string edi = txt_No.Text;
-                MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
+                MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.3;Uid=Banipal;pwd=Banipal12345.;database=Banipal;");
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = baglanti;
 
@@ -175,6 +175,11 @@ namespace Library
             cmd.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Teslim Alma Başarılı", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

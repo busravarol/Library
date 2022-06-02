@@ -131,7 +131,7 @@ namespace Library
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Kitap Güncellenecek Onaylıyor Musunuz?","Success",MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.OK)
+           if(MessageBox.Show("Kitap Güncellenecek Onaylıyor Musunuz?","Success",MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.OK)
             {
                 string kitapAdi = txt_ad.Text;
                 string kategori = txt_kat.Text;
@@ -140,9 +140,10 @@ namespace Library
                 Int32 sayfasayisi = Int32.Parse(txt_ss.Text);
                 string yazaradi = txt_yad.Text;
                 cmd.Connection = baglanti;
-                cmd.CommandText = "update tbl_kitap set kitapAdi='" + kitapAdi + "',kategori='" + kategori + "',basimyili='" + basimyili + "',yayinevi='" + yayinevi + "',sayfasayisi='" + sayfasayisi + "',yazaradi='" + yazaradi + "'";
+                cmd.CommandText = "update tbl_kitap set kitapAdi='" + kitapAdi + "',kategori='" + kategori + "',basimyili='" + basimyili + "',yayinevi='" + yayinevi + "',sayfasayisi='" + sayfasayisi + "',yazaradi='" + yazaradi + "' WHERE kitapID='" + txt_id.Text  + "'";
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmd);
-                
+
+          
                 da.Fill(ds);
             }
            /* string sql = "update tbl_kitap set kitapAdi  ";
@@ -204,18 +205,23 @@ namespace Library
         {
             try
             {
-                txt_id.Text=dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                txt_ad.Text=dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                txt_kat.Text=dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                txt_yil.Text=dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                txt_yayinevi.Text=dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                txt_ss.Text=dataGridView1.CurrentRow.Cells[5].Value.ToString();
-                txt_yad.Text=dataGridView1.CurrentRow.Cells[6].Value.ToString();
+                
             }
             catch
             {
 
             }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_id.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txt_ad.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            txt_kat.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txt_yil.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            txt_yayinevi.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            txt_ss.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            txt_yad.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
         }
     }
 }

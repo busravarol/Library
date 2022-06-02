@@ -41,11 +41,11 @@
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSkyBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(165, 55);
+            this.dataGridView1.Location = new System.Drawing.Point(86, 73);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(880, 348);
+            this.dataGridView1.Size = new System.Drawing.Size(1072, 437);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.AllowUserToAddRowsChanged += new System.EventHandler(this.OduncListesi_Load);
             this.dataGridView1.AllowUserToDeleteRowsChanged += new System.EventHandler(this.OduncListesi_Load);

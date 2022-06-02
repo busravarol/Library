@@ -66,7 +66,7 @@
             this.label1.Location = new System.Drawing.Point(177, 346);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 27);
+            this.label1.Size = new System.Drawing.Size(174, 34);
             this.label1.TabIndex = 1;
             this.label1.Text = "   Kullanıcı Adı:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -79,8 +79,9 @@
             this.txtUsername.Margin = new System.Windows.Forms.Padding(5);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "admin";
-            this.txtUsername.Size = new System.Drawing.Size(244, 29);
+            this.txtUsername.Size = new System.Drawing.Size(244, 34);
             this.txtUsername.TabIndex = 2;
+            this.txtUsername.Text = "admin";
             this.txtUsername.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtUsername_MouseClick);
             // 
             // label2
@@ -93,7 +94,7 @@
             this.label2.Location = new System.Drawing.Point(177, 458);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 27);
+            this.label2.Size = new System.Drawing.Size(93, 34);
             this.label2.TabIndex = 3;
             this.label2.Text = "   Şifre:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -107,8 +108,9 @@
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '*';
             this.txtSifre.PlaceholderText = "sifre";
-            this.txtSifre.Size = new System.Drawing.Size(244, 29);
+            this.txtSifre.Size = new System.Drawing.Size(244, 34);
             this.txtSifre.TabIndex = 4;
+            this.txtSifre.Text = "admin";
             this.txtSifre.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSifre_MouseClick_1);
             // 
             // btngiris
@@ -145,7 +147,7 @@
             this.textBox1.Location = new System.Drawing.Point(66, 69);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(461, 36);
+            this.textBox1.Size = new System.Drawing.Size(461, 42);
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "ULUDAĞ ÜNİVERSİTESİ";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -175,7 +177,8 @@
             // 
             // giris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AcceptButton = this.btngiris;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(583, 763);

@@ -143,7 +143,7 @@ namespace Library
         private void button3_Click(object sender, EventArgs e)
         {
           
-            baglanti.Open();
+        /*    baglanti.Open();
             MySqlCommand komut = new MySqlCommand("update tbl_kitap (kitapAdi,kategori,yayintarihi,yayinevi,sayfasayisi,yazaradi) values (@k1,@k2,@k3,@k4,@k5,@k6) ", baglanti);
             komut.Parameters.AddWithValue("@k1", txt_Ad.Text);
             komut.Parameters.AddWithValue("@k2", txt_Kategori.Text);
@@ -155,7 +155,7 @@ namespace Library
             baglanti.Close();
             MessageBox.Show("Kitap Başarıyla Güncellendi.");
 
-            /*
+           
             string kitapadi = txt_Ad.Text;
             string yazar = txt_Yazar.Text;
             string yayinevi = txt_Yayinevi.Text;
