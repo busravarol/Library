@@ -9,8 +9,10 @@
 
 ![image](https://user-images.githubusercontent.com/102472911/171635573-f560d4cf-4754-4c67-b5cc-eeb70df47012.png)
 
+USE CASE DİAGRAMI
 
-![image](https://user-images.githubusercontent.com/102472911/171635765-11dacddf-ddb5-4427-ba5e-b9db21c601f1.png)
+
+![usecase](https://user-images.githubusercontent.com/102472911/171636918-e35d44e6-ac1d-4248-b133-2569e7645a32.jpeg)
 
 
 
