@@ -5,9 +5,14 @@
  
  Örnekleri ektedir
  
- Anasayfa  giriş  ekranı
+ UML DİAGRAMI
 
-Uygulamaya giriş ekranı
+![image](https://user-images.githubusercontent.com/102472911/171635573-f560d4cf-4754-4c67-b5cc-eeb70df47012.png)
+
+
+![image](https://user-images.githubusercontent.com/102472911/171635765-11dacddf-ddb5-4427-ba5e-b9db21c601f1.png)
+
+
 
 Kullanıcı adı ve şifre girişi yapılarak uygulamaya girilir.
 
