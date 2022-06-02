@@ -1,9 +1,15 @@
 # Library
  Nesne Yönelimli Programlama 2 dersi için oluşturulmuş bir kütüphne otomasyon projesidir
 
- Kitap ekleme-çıkarma, öğrenci ekleme-çıkarma,  istatistikler, kitap listesi, üye listesi, teslim alma bilgilerinin yönetilebildiği bir projedir.
+ Kitap ekleme-çıkarma,
+ öğrenci ekleme-çıkarma,  
+ istatistikler, 
+ kitap listesi, 
+ üye listesi, 
+ teslim alma
+ gibi bilgilerin yönetilebildiği bir projedir.
  
- Örnekleri ektedir
+ Görsel üzerinden örnekleri ektedir.
  
  UML DİAGRAMI
 
