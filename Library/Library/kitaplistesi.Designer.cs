@@ -50,6 +50,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_ara1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -80,7 +82,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(15, 176);
+            this.label2.Location = new System.Drawing.Point(14, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 32);
             this.label2.TabIndex = 1;
@@ -89,7 +91,7 @@
             // txt_ara
             // 
             this.txt_ara.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_ara.Location = new System.Drawing.Point(153, 176);
+            this.txt_ara.Location = new System.Drawing.Point(153, 144);
             this.txt_ara.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_ara.Name = "txt_ara";
             this.txt_ara.Size = new System.Drawing.Size(199, 29);
@@ -288,6 +290,24 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Kitap Adı";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(14, 188);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(119, 31);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Yazar Adı:";
+            // 
+            // txt_ara1
+            // 
+            this.txt_ara1.Location = new System.Drawing.Point(153, 192);
+            this.txt_ara1.Name = "txt_ara1";
+            this.txt_ara1.Size = new System.Drawing.Size(199, 27);
+            this.txt_ara1.TabIndex = 6;
+            this.txt_ara1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // kitaplistesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -295,6 +315,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1127, 807);
+            this.Controls.Add(this.txt_ara1);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_ara);
@@ -338,5 +360,7 @@
         private TextBox txt_ss;
         private TextBox txt_id;
         private Label label9;
+        private Label label10;
+        private TextBox txt_ara1;
     }
 }

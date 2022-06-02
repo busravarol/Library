@@ -223,5 +223,29 @@ namespace Library
             txt_ss.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             txt_yad.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string aranan = txt_ara1.Text.Trim().ToUpper();
+            for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    foreach (DataGridViewCell cell in dataGridView1.Rows[i].Cells)
+                    {
+                        if (cell.Value != null)
+                        {
+                            if (cell.Value.ToString().ToUpper() == aranan)
+                            {
+                                cell.Style.BackColor = Color.DarkTurquoise;
+
+                                break;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
     }
 }

@@ -97,7 +97,7 @@ namespace Library
             baglanti.Open   ();
             MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(kitapAdi,kategori,basimyili,yayinevi,sayfasayisi,yazaradi) values (@k1,@k2,@k3,@k4,@k5,@k6) ", baglanti);
             komut.Parameters.AddWithValue("@k1", txt_Ad.Text);
-            komut.Parameters.AddWithValue("@k2", txt_Kategori.Text);
+         // komut.Parameters.AddWithValue("@k2", kategori_Box.SelectedItem);
             komut.Parameters.AddWithValue("@k3", txt_Tarih.Text);
             komut.Parameters.AddWithValue("@k4", txt_Yayinevi.Text);
             komut.Parameters.AddWithValue("@k5", txt_Ss.Text);
@@ -105,6 +105,7 @@ namespace Library
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kitap Başarıyla Eklendi");
+
 
 
 
@@ -182,6 +183,11 @@ namespace Library
         }
 
         private void txt_Ad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
