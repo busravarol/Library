@@ -69,5 +69,80 @@ namespace Library
         {
 
         }
+
+        private void lbl_Kitap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Kitap1_TextChanged(object sender, EventArgs e)
+        {
+            string aranan = txt_Kitap1.Text.Trim().ToUpper();
+            for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    foreach (DataGridViewCell cell in dataGridView1.Rows[i].Cells)
+                    {
+                        if (cell.Value != null)
+                        {
+                            if (cell.Value.ToString().ToUpper() == aranan)
+                            {
+                                cell.Style.BackColor = Color.DarkTurquoise;
+
+                                break;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        private void txt_Ogr1_TextChanged(object sender, EventArgs e)
+        {
+            string aranan = txt_Ogr1.Text.Trim().ToUpper();
+            for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    foreach (DataGridViewCell cell in dataGridView1.Rows[i].Cells)
+                    {
+                        if (cell.Value != null)
+                        {
+                            if (cell.Value.ToString().ToUpper() == aranan)
+                            {
+                                cell.Style.BackColor = Color.DarkTurquoise;
+
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void txt_Yazar1_TextChanged(object sender, EventArgs e)
+        {
+            string aranan = txt_Yazar1.Text.Trim().ToUpper();
+            for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    foreach (DataGridViewCell cell in dataGridView1.Rows[i].Cells)
+                    {
+                        if (cell.Value != null)
+                        {
+                            if (cell.Value.ToString().ToUpper() == aranan)
+                            {
+                                cell.Style.BackColor = Color.DarkTurquoise;
+
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -134,7 +134,7 @@ namespace Library
            if(MessageBox.Show("Kitap Güncellenecek Onaylıyor Musunuz?","Success",MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.OK)
             {
                 string kitapAdi = txt_ad.Text;
-                string kategori = txt_kat.Text;
+                string kategori = comboBox1.Text;
                 Int32 basimyili = Int32.Parse(txt_yil.Text);
                 string yayinevi= txt_yayinevi.Text;
                 Int32 sayfasayisi = Int32.Parse(txt_ss.Text);
@@ -217,7 +217,7 @@ namespace Library
         {
             txt_id.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txt_ad.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txt_kat.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            comboBox1.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txt_yil.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             txt_yayinevi.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             txt_ss.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
@@ -246,6 +246,21 @@ namespace Library
                 }
 
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_kat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -39,7 +39,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_kat = new System.Windows.Forms.TextBox();
             this.txt_yil = new System.Windows.Forms.TextBox();
             this.txt_ss = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -52,6 +51,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_ara1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -87,6 +87,7 @@
             this.label2.Size = new System.Drawing.Size(120, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Kitap Adı";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txt_ara
             // 
@@ -121,12 +122,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.txt_id);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txt_kat);
             this.panel2.Controls.Add(this.txt_yil);
             this.panel2.Controls.Add(this.txt_ss);
             this.panel2.Controls.Add(this.btnDelete);
@@ -187,14 +188,6 @@
             this.label4.Size = new System.Drawing.Size(86, 20);
             this.label4.TabIndex = 23;
             this.label4.Text = "Sayfa Sayısı";
-            // 
-            // txt_kat
-            // 
-            this.txt_kat.Location = new System.Drawing.Point(503, 41);
-            this.txt_kat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_kat.Name = "txt_kat";
-            this.txt_kat.Size = new System.Drawing.Size(215, 27);
-            this.txt_kat.TabIndex = 22;
             // 
             // txt_yil
             // 
@@ -308,6 +301,15 @@
             this.txt_ara1.TabIndex = 6;
             this.txt_ara1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(503, 37);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(215, 28);
+            this.comboBox1.TabIndex = 28;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // kitaplistesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -355,12 +357,12 @@
         private Label label6;
         private Label label5;
         private Label label4;
-        private TextBox txt_kat;
         private TextBox txt_yil;
         private TextBox txt_ss;
         private TextBox txt_id;
         private Label label9;
         private Label label10;
         private TextBox txt_ara1;
+        private ComboBox comboBox1;
     }
 }

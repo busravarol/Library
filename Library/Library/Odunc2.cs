@@ -33,7 +33,7 @@ namespace Library
             {
                 for(int i = 0; i < dr.FieldCount; i++)
                 {
-                    txt_Kitap.Text = dr[i].ToString();
+                    comboBox1.Text = dr[i].ToString();
                 }
             }
             dr.Close();
@@ -126,7 +126,7 @@ namespace Library
             Int64 contact = Int64.Parse(txt_tlf.Text);
             string posta=txt_posta.Text;
             string blm=txt_blm.Text;
-            string kitap=txt_Kitap.Text;
+            string kitap=comboBox1.Text;
             string odunc = dateTimePicker1.Text;
             string edi = txt_No.Text;
             MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
@@ -178,6 +178,11 @@ namespace Library
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

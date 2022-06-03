@@ -10,12 +10,13 @@ namespace Library
     public partial class OgrenciEkle : Form
     {
         MySqlConnection con;
+
         public OgrenciEkle()
         {
             InitializeComponent();
             con = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
         }
-
+        
         private void BtnOgrenciEkle_Click(object sender, EventArgs e, MySqlConnection baglanti)
         {
            
@@ -52,15 +53,16 @@ namespace Library
             con.Close();
             MessageBox.Show("Öğrenci Başarıyla Eklendi.");
 
-            
-            
+           
 
-            /* string sorgu = "INSERT INTO tbl_ogrenci (ogrno, ograd, ogrsoyad, ogrtelefon, ogrPosta , ogrBolumAd) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text
- + "' ,'" + textBox5.Text + "', '" + textBox6.Text + "',0,0)";
-             komutum.ExecuteNonQuery();
-             con.Close();
-             MessageBox.Show("Öğrenci Kaydı Yapıldı.");*/
-        }
+
+
+                /* string sorgu = "INSERT INTO tbl_ogrenci (ogrno, ograd, ogrsoyad, ogrtelefon, ogrPosta , ogrBolumAd) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text
+     + "' ,'" + textBox5.Text + "', '" + textBox6.Text + "',0,0)";
+                 komutum.ExecuteNonQuery();
+                 con.Close();
+                 MessageBox.Show("Öğrenci Kaydı Yapıldı.");*/
+            }
 
         private void txt_ad_TextChanged(object sender, EventArgs e)
         {

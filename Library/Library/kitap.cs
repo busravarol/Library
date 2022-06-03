@@ -89,7 +89,14 @@ namespace Library
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            object[] kategori = new object[] { "Edebiyat", "Tarih", "Kişisel Gelişim", "Felsefe", "İşletme" };
+            kategori_Box.Items.AddRange(kategori);
+            kategori_Box.Text = "Seçiniz...";
+            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+            for (int i = 0; i < kategori_Box.Items.Count; i++)
+            {
+                collection.Add(kategori_Box.Items[i].ToString());
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -97,7 +104,7 @@ namespace Library
             baglanti.Open   ();
             MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(kitapAdi,kategori,basimyili,yayinevi,sayfasayisi,yazaradi) values (@k1,@k2,@k3,@k4,@k5,@k6) ", baglanti);
             komut.Parameters.AddWithValue("@k1", txt_Ad.Text);
-         // komut.Parameters.AddWithValue("@k2", kategori_Box.SelectedItem);
+            komut.Parameters.AddWithValue("@k2", kategori_Box.SelectedItem);
             komut.Parameters.AddWithValue("@k3", txt_Tarih.Text);
             komut.Parameters.AddWithValue("@k4", txt_Yayinevi.Text);
             komut.Parameters.AddWithValue("@k5", txt_Ss.Text);
@@ -106,6 +113,7 @@ namespace Library
             baglanti.Close();
             MessageBox.Show("Kitap Başarıyla Eklendi");
 
+            
 
 
 
@@ -189,7 +197,11 @@ namespace Library
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            MessageBox.Show(kategori_Box.SelectedItem.ToString());
+            MessageBox.Show(kategori_Box.SelectedText.ToString());
 
+            //ComboBox'da seçilen değerin indeksini yakalama.
+            MessageBox.Show(kategori_Box.SelectedIndex.ToString());
         }
     }
 }
