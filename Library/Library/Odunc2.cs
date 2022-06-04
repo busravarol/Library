@@ -38,6 +38,15 @@ namespace Library
             }
             dr.Close();
             baglanti.Close();
+
+
+            object[] kitapadi = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra", "Elveda Güzel Vatanım", "Saatleri Ayarlama Enstitüsü", "İtiraflarım" };
+            comboBox1.Items.AddRange(kitapadi);
+            comboBox1.Text = "Seçiniz...";
+
+            object[] kitapadi1 = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra", "Elveda Güzel Vatanım", "Saatleri Ayarlama Enstitüsü", "İtiraflarım" };
+            comboBox2.Items.AddRange(kitapadi1);
+            comboBox2.Text = "Seçiniz...";
         }
 
         private void txt_No_TextChanged(object sender, EventArgs e)
@@ -64,7 +73,7 @@ namespace Library
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void label8_Click(object sender, EventArgs e)

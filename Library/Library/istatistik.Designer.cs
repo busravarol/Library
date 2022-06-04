@@ -37,6 +37,7 @@
             this.lblCokOkunan = new System.Windows.Forms.Label();
             this.lblCokOkuyan = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,6 +138,13 @@
             this.panel1.Size = new System.Drawing.Size(446, 247);
             this.panel1.TabIndex = 8;
             // 
+            // mySqlCommand1
+            // 
+            this.mySqlCommand1.CacheAge = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.EnableCaching = false;
+            this.mySqlCommand1.Transaction = null;
+            // 
             // istatistik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -164,5 +172,6 @@
         private Label lblCokOkunan;
         private Label lblCokOkuyan;
         private Panel panel1;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
     }
 }

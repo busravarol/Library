@@ -33,10 +33,10 @@
             this.mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
             this.lbl_Kitap = new System.Windows.Forms.Label();
             this.lbl_Ogrenci = new System.Windows.Forms.Label();
-            this.txt_Kitap1 = new System.Windows.Forms.TextBox();
             this.txt_Ogr1 = new System.Windows.Forms.TextBox();
             this.lbl_Yazar = new System.Windows.Forms.Label();
-            this.txt_Yazar1 = new System.Windows.Forms.TextBox();
+            this.txt_Ogrno = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(873, 324);
+            this.dataGridView1.Size = new System.Drawing.Size(881, 324);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.AllowUserToAddRowsChanged += new System.EventHandler(this.OduncListesi_Load);
             this.dataGridView1.AllowUserToDeleteRowsChanged += new System.EventHandler(this.OduncListesi_Load);
@@ -97,14 +97,6 @@
             this.lbl_Ogrenci.TabIndex = 4;
             this.lbl_Ogrenci.Text = "Öğrenci Adı:";
             // 
-            // txt_Kitap1
-            // 
-            this.txt_Kitap1.Location = new System.Drawing.Point(155, 77);
-            this.txt_Kitap1.Name = "txt_Kitap1";
-            this.txt_Kitap1.Size = new System.Drawing.Size(121, 27);
-            this.txt_Kitap1.TabIndex = 5;
-            this.txt_Kitap1.TextChanged += new System.EventHandler(this.txt_Kitap1_TextChanged);
-            // 
             // txt_Ogr1
             // 
             this.txt_Ogr1.Location = new System.Drawing.Point(155, 176);
@@ -119,17 +111,26 @@
             this.lbl_Yazar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Yazar.Location = new System.Drawing.Point(30, 127);
             this.lbl_Yazar.Name = "lbl_Yazar";
-            this.lbl_Yazar.Size = new System.Drawing.Size(96, 28);
+            this.lbl_Yazar.Size = new System.Drawing.Size(117, 28);
             this.lbl_Yazar.TabIndex = 7;
-            this.lbl_Yazar.Text = "Yazar Adı:";
+            this.lbl_Yazar.Text = "Öğrenci No:";
             // 
-            // txt_Yazar1
+            // txt_Ogrno
             // 
-            this.txt_Yazar1.Location = new System.Drawing.Point(155, 131);
-            this.txt_Yazar1.Name = "txt_Yazar1";
-            this.txt_Yazar1.Size = new System.Drawing.Size(121, 27);
-            this.txt_Yazar1.TabIndex = 8;
-            this.txt_Yazar1.TextChanged += new System.EventHandler(this.txt_Yazar1_TextChanged);
+            this.txt_Ogrno.Location = new System.Drawing.Point(155, 127);
+            this.txt_Ogrno.Name = "txt_Ogrno";
+            this.txt_Ogrno.Size = new System.Drawing.Size(121, 27);
+            this.txt_Ogrno.TabIndex = 8;
+            this.txt_Ogrno.TextChanged += new System.EventHandler(this.txt_Yazar1_TextChanged);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(152, 77);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(124, 28);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // OduncListesi
             // 
@@ -137,10 +138,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(1221, 453);
-            this.Controls.Add(this.txt_Yazar1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txt_Ogrno);
             this.Controls.Add(this.lbl_Yazar);
             this.Controls.Add(this.txt_Ogr1);
-            this.Controls.Add(this.txt_Kitap1);
             this.Controls.Add(this.lbl_Ogrenci);
             this.Controls.Add(this.lbl_Kitap);
             this.Controls.Add(this.label1);
@@ -161,9 +162,9 @@
         private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
         private Label lbl_Kitap;
         private Label lbl_Ogrenci;
-        private TextBox txt_Kitap1;
         private TextBox txt_Ogr1;
         private Label lbl_Yazar;
-        private TextBox txt_Yazar1;
+        private TextBox txt_Ogrno;
+        private ComboBox comboBox1;
     }
 }

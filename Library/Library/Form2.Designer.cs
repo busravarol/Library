@@ -44,14 +44,15 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
+            this.mySqlCommand2 = new MySql.Data.MySqlClient.MySqlCommand();
+            this.mySqlCommand3 = new MySql.Data.MySqlClient.MySqlCommand();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -63,9 +64,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button1.Location = new System.Drawing.Point(70, 80);
+            this.button1.Location = new System.Drawing.Point(79, 38);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(283, 91);
+            this.button1.Size = new System.Drawing.Size(164, 66);
             this.button1.TabIndex = 2;
             this.button1.Text = "Kitap Ekle";
             this.button1.UseVisualStyleBackColor = false;
@@ -74,20 +75,20 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button2.Location = new System.Drawing.Point(461, 206);
+            this.button2.Location = new System.Drawing.Point(367, 112);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(283, 91);
+            this.button2.Size = new System.Drawing.Size(164, 69);
             this.button2.TabIndex = 3;
-            this.button2.Text = "            Öğrenci Detayı Görüntüle";
+            this.button2.Text = "         Öğrenci Detayı Görüntüle";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button3.Location = new System.Drawing.Point(461, 71);
+            this.button3.Location = new System.Drawing.Point(367, 38);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(283, 91);
+            this.button3.Size = new System.Drawing.Size(164, 66);
             this.button3.TabIndex = 4;
             this.button3.Text = "Öğrenci Ekle";
             this.button3.UseVisualStyleBackColor = false;
@@ -96,9 +97,9 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button4.Location = new System.Drawing.Point(79, 206);
+            this.button4.Location = new System.Drawing.Point(79, 119);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(283, 91);
+            this.button4.Size = new System.Drawing.Size(164, 62);
             this.button4.TabIndex = 5;
             this.button4.Text = "Kitap Listesi";
             this.button4.UseVisualStyleBackColor = false;
@@ -107,9 +108,9 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button5.Location = new System.Drawing.Point(79, 332);
+            this.button5.Location = new System.Drawing.Point(79, 195);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(283, 91);
+            this.button5.Size = new System.Drawing.Size(164, 69);
             this.button5.TabIndex = 6;
             this.button5.Text = "İade Kitaplar";
             this.button5.UseVisualStyleBackColor = false;
@@ -118,9 +119,9 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button6.Location = new System.Drawing.Point(79, 464);
+            this.button6.Location = new System.Drawing.Point(79, 282);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(283, 91);
+            this.button6.Size = new System.Drawing.Size(164, 68);
             this.button6.TabIndex = 7;
             this.button6.Text = "Kitap Detayları";
             this.button6.UseVisualStyleBackColor = false;
@@ -129,9 +130,9 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button7.Location = new System.Drawing.Point(826, 71);
+            this.button7.Location = new System.Drawing.Point(367, 195);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(283, 91);
+            this.button7.Size = new System.Drawing.Size(164, 69);
             this.button7.TabIndex = 8;
             this.button7.Text = "İstatistik Veriler";
             this.button7.UseVisualStyleBackColor = false;
@@ -141,9 +142,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(104, 103);
+            this.pictureBox1.Location = new System.Drawing.Point(88, 66);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(74, 44);
+            this.pictureBox1.Size = new System.Drawing.Size(28, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -152,9 +153,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(104, 232);
+            this.pictureBox2.Location = new System.Drawing.Point(83, 142);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 46);
+            this.pictureBox2.Size = new System.Drawing.Size(26, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
@@ -163,9 +164,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(93, 347);
+            this.pictureBox3.Location = new System.Drawing.Point(88, 211);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(71, 62);
+            this.pictureBox3.Size = new System.Drawing.Size(28, 30);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
@@ -174,9 +175,9 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(93, 477);
+            this.pictureBox4.Location = new System.Drawing.Point(88, 292);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(67, 62);
+            this.pictureBox4.Size = new System.Drawing.Size(21, 35);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
@@ -185,9 +186,9 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(483, 97);
+            this.pictureBox5.Location = new System.Drawing.Point(382, 54);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(71, 50);
+            this.pictureBox5.Size = new System.Drawing.Size(26, 36);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
@@ -196,33 +197,41 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(472, 216);
+            this.pictureBox6.Location = new System.Drawing.Point(382, 126);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(59, 62);
+            this.pictureBox6.Size = new System.Drawing.Size(30, 48);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 14;
             this.pictureBox6.TabStop = false;
             // 
-            // pictureBox7
+            // mySqlCommand1
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(836, 85);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(79, 62);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 15;
-            this.pictureBox7.TabStop = false;
+            this.mySqlCommand1.CacheAge = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.EnableCaching = false;
+            this.mySqlCommand1.Transaction = null;
+            // 
+            // mySqlCommand2
+            // 
+            this.mySqlCommand2.CacheAge = 0;
+            this.mySqlCommand2.Connection = null;
+            this.mySqlCommand2.EnableCaching = false;
+            this.mySqlCommand2.Transaction = null;
+            // 
+            // mySqlCommand3
+            // 
+            this.mySqlCommand3.CacheAge = 0;
+            this.mySqlCommand3.Connection = null;
+            this.mySqlCommand3.EnableCaching = false;
+            this.mySqlCommand3.Transaction = null;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1305, 695);
-            this.Controls.Add(this.pictureBox7);
+            this.ClientSize = new System.Drawing.Size(664, 480);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -247,7 +256,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,6 +276,8 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand2;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand3;
     }
 }

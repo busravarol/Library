@@ -24,59 +24,58 @@ namespace Library
             InitializeComponent();
         }
         MySqlConnection baglanti=new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
-      /*  public static MySqlConnection GetConnection()
-        {
-            string sql = "Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;";
-            MySqlConnection con = new MySqlConnection(sql);
-            try
-            {
-                con.Open();
-            }
-            catch (Exception ex)
-            {
+        /*  public static MySqlConnection GetConnection()
+          {
+              string sql = "Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;";
+              MySqlConnection con = new MySqlConnection(sql);
+              try
+              {
+                  con.Open();
+              }
+              catch (Exception ex)
+              {
 
-                MessageBox.Show($"{ex}");
-            }
-            return con;
-        }
-        public static void addBook(kitap kitap)
-        {
-            string sql = "INSERT INTO kitap VALUES (@ID,@kitap-ad, @ISBN,@kategori,@yayintarihi,@yayinevi,@sayfasayisi,@yazaradi)";
-            MySqlConnection con =GetConnection();
-            MySqlCommand cmd = new MySqlCommand(sql, con);
-            cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@kitap-ad", MySqlDbType.VarChar).Value = kitap.txt_Ad;
-            cmd.Parameters.Add("@ISBN", MySqlDbType.VarChar).Value = kitap.txt_ISBN;
-            cmd.Parameters.Add("@kategori", MySqlDbType.VarChar).Value = kitap.txt_Kategori;
-            cmd.Parameters.Add("@yayintarihi", MySqlDbType.Int64).Value = kitap.txt_Tarih;
-            cmd.Parameters.Add("@yayinevi", MySqlDbType.VarChar).Value = kitap.txt_Yayinevi;
-            cmd.Parameters.Add("@sayfasayisi", MySqlDbType.Int64).Value = kitap.txt_Ss;
-            cmd.Parameters.Add("@yazaradi", MySqlDbType.VarChar).Value = kitap.txt_Yazar;
-            try
-            {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Kitap Başarıyla Eklendi");
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Kitap Ekleme Başarısız"+ex.Message,"Error",MessageBoxButtons.OK);
-            }
-            con.Close();
+                  MessageBox.Show($"{ex}");
+              }
+              return con;
+          }
+          public static void addBook(kitap kitap)
+          {
+              string sql = "INSERT INTO kitap VALUES (@ID,@kitap-ad, @ISBN,@kategori,@yayintarihi,@yayinevi,@sayfasayisi,@yazaradi)";
+              MySqlConnection con =GetConnection();
+              MySqlCommand cmd = new MySqlCommand(sql, con);
+              cmd.CommandType = CommandType.Text;
+              cmd.Parameters.Add("@kitap-ad", MySqlDbType.VarChar).Value = kitap.txt_Ad;
+              cmd.Parameters.Add("@ISBN", MySqlDbType.VarChar).Value = kitap.txt_ISBN;
+              cmd.Parameters.Add("@kategori", MySqlDbType.VarChar).Value = kitap.txt_Kategori;
+              cmd.Parameters.Add("@yayintarihi", MySqlDbType.Int64).Value = kitap.txt_Tarih;
+              cmd.Parameters.Add("@yayinevi", MySqlDbType.VarChar).Value = kitap.txt_Yayinevi;
+              cmd.Parameters.Add("@sayfasayisi", MySqlDbType.Int64).Value = kitap.txt_Ss;
+              cmd.Parameters.Add("@yazaradi", MySqlDbType.VarChar).Value = kitap.txt_Yazar;
+              try
+              {
+                  cmd.ExecuteNonQuery();
+                  MessageBox.Show("Kitap Başarıyla Eklendi");
+              }
+              catch(Exception ex)
+              {
+                  MessageBox.Show("Kitap Ekleme Başarısız"+ex.Message,"Error",MessageBoxButtons.OK);
+              }
+              con.Close();
 
-        }
-       /* public class kitap
-        {
-            string Ad;
-            string ISBN;
-            string Kategori;
-            string Tarih;
-            string Ss;
-            string Yazar;
-            public string 
-        }*/
+          }
+         /* public class kitap
+          {
+              string Ad;
+              string ISBN;
+              string Kategori;
+              string Tarih;
+              string Ss;
+              string Yazar;
+              public string 
+          }*/
 
 
-        
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -84,37 +83,45 @@ namespace Library
 
         private void deneme_Load(object sender, EventArgs e)
         {
+            object[] kategori = new object[] { "Edebiyat", "Tarih", "Kişisel Gelişim", "Felsefe", "İşletme" };
+            kategori_Box.Items.AddRange(kategori);
+            kategori_Box.Text = "Seçiniz...";
+
+            object[] kitapadi = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984","Çocukluk","Kinyas ve Kayra","Elveda Güzel Vatanım","Saatleri Ayarlama Enstitüsü","İtiraflarım" };
+            kitap_Box.Items.AddRange(kitapadi);
+            kitap_Box.Text = "Seçiniz...";
+
+            object[] yayinevi = new object[] { "İş Bankası", "İndigo", "Yapı Kredi", "Epsilon", "Timaş","Dergah" };
+            yayın_Box.Items.AddRange(yayinevi);
+            yayın_Box.Text = "Seçiniz...";
 
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            object[] kategori = new object[] { "Edebiyat", "Tarih", "Kişisel Gelişim", "Felsefe", "İşletme" };
-            kategori_Box.Items.AddRange(kategori);
-            kategori_Box.Text = "Seçiniz...";
-            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
-            for (int i = 0; i < kategori_Box.Items.Count; i++)
-            {
-                collection.Add(kategori_Box.Items[i].ToString());
-            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             baglanti.Open   ();
             MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(kitapAdi,kategori,basimyili,yayinevi,sayfasayisi,yazaradi) values (@k1,@k2,@k3,@k4,@k5,@k6) ", baglanti);
-            komut.Parameters.AddWithValue("@k1", txt_Ad.Text);
+            komut.Parameters.AddWithValue("@k1", kitap_Box.SelectedItem);
             komut.Parameters.AddWithValue("@k2", kategori_Box.SelectedItem);
             komut.Parameters.AddWithValue("@k3", txt_Tarih.Text);
-            komut.Parameters.AddWithValue("@k4", txt_Yayinevi.Text);
+            komut.Parameters.AddWithValue("@k4",yayın_Box.SelectedItem);
             komut.Parameters.AddWithValue("@k5", txt_Ss.Text);
             komut.Parameters.AddWithValue("@k6", txt_Yazar.Text);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kitap Başarıyla Eklendi");
 
-            
 
+            
+           /* for (int i = 0; i < kategori_Box.Items.Count; i++)
+            {
+                collection.Add(kategori_Box.Items[i].ToString());
+            }*/
 
 
             /*kitap ID =    
@@ -197,11 +204,15 @@ namespace Library
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(kategori_Box.SelectedItem.ToString());
-            MessageBox.Show(kategori_Box.SelectedText.ToString());
+           // object[] kategori = new object[] { "Edebiyat", "Tarih", "Kişisel Gelişim", "Felsefe", "İşletme" };
+           // kategori_Box.Items.AddRange(kategori);
+           // kategori_Box.Text = "Seçiniz...";
+           // AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+        }
 
-            //ComboBox'da seçilen değerin indeksini yakalama.
-            MessageBox.Show(kategori_Box.SelectedIndex.ToString());
+        private void kitap_Box_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
