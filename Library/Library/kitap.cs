@@ -214,5 +214,10 @@ namespace Library
         {
            
         }
+
+        private void yayın_Box_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

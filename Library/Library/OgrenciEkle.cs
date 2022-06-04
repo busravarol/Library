@@ -48,7 +48,7 @@ namespace Library
             komutum.Parameters.AddWithValue("@ogrsoyad", txt_soyad.Text);
             komutum.Parameters.AddWithValue("@ogrtelefon", txt_tlf.Text);
             komutum.Parameters.AddWithValue("@ogreposta", txt_mail.Text);
-            komutum.Parameters.AddWithValue("@ogrbolumad", txt_blm.Text);
+            komutum.Parameters.AddWithValue("@ogrbolumad", bolum_Box.SelectedItem);
             komutum.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Öğrenci Başarıyla Eklendi.");
@@ -72,6 +72,18 @@ namespace Library
         private void btnİptal_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bolum_Box_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OgrenciEkle_Load(object sender, EventArgs e)
+        {
+            object[] bolum = new object[] { "Yönetim Bilişim Sistemleri", "İşletme", "Uluslararası Ticaret ve İşletmecilik" };
+            bolum_Box.Items.AddRange(bolum);
+            bolum_Box.Text = "Seçiniz...";
         }
     }
 }
