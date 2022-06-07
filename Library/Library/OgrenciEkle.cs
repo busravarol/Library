@@ -16,7 +16,7 @@ namespace Library
             InitializeComponent();
             con = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
         }
-        
+        MySqlConnection con2 = new MySqlConnection(@"Server = 172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
         private void BtnOgrenciEkle_Click(object sender, EventArgs e, MySqlConnection baglanti)
         {
            
@@ -34,24 +34,38 @@ namespace Library
 
         }
 
-      
-
+        MySqlCommand cmd = new MySqlCommand();
+        int ögrenci_sayisi;
         private void btnOgrenciEkle_Click(object sender, EventArgs e)
-        {
-            con.Open();
-
-            MySqlCommand komutum = new MySqlCommand();
-            komutum.Connection = con;
-            komutum.CommandText = "insert into tbl_ogrenci(ogrno, ograd, ogrsoyad, ogrtelefon, ogrPosta, ogrBolumAd) values (@ogrno, @ograd, @ogrsoyad, @ogrtelefon, @ogreposta, @ogrbolumad)";
-            komutum.Parameters.AddWithValue("@ogrno", txt_no.Text);
-            komutum.Parameters.AddWithValue("@ograd", txt_ad.Text);
-            komutum.Parameters.AddWithValue("@ogrsoyad", txt_soyad.Text);
-            komutum.Parameters.AddWithValue("@ogrtelefon", txt_tlf.Text);
-            komutum.Parameters.AddWithValue("@ogreposta", txt_mail.Text);
-            komutum.Parameters.AddWithValue("@ogrbolumad", bolum_Box.SelectedItem);
-            komutum.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Öğrenci Başarıyla Eklendi.");
+        {//nerede 
+            ögrenci_sayisi = 0;
+            con2.Open();
+            cmd = new MySqlCommand("select count(*) from tbl_ogrenci where ogrno=@gelenno ", con2);
+            cmd.Parameters.AddWithValue("@gelenno", txt_no.Text);
+            ögrenci_sayisi = int.Parse(cmd.ExecuteScalar().ToString());
+            con2.Close();
+            MessageBox.Show(ögrenci_sayisi.ToString());
+            if (ögrenci_sayisi>0)
+            {
+                MessageBox.Show("AYNI ÖĞRENCİ VAR");
+            }
+            else
+            {
+                con.Open();
+                MySqlCommand komutum = new MySqlCommand();
+                komutum.Connection = con;
+                komutum.CommandText = "insert into tbl_ogrenci(ogrno, ograd, ogrsoyad, ogrtelefon, ogrPosta, ogrBolumAd) values (@ogrno, @ograd, @ogrsoyad, @ogrtelefon, @ogreposta, @ogrbolumad)";
+                komutum.Parameters.AddWithValue("@ogrno", txt_no.Text);
+                komutum.Parameters.AddWithValue("@ograd", txt_ad.Text);
+                komutum.Parameters.AddWithValue("@ogrsoyad", txt_soyad.Text);
+                komutum.Parameters.AddWithValue("@ogrtelefon", txt_tlf.Text);
+                komutum.Parameters.AddWithValue("@ogreposta", txt_mail.Text);
+                komutum.Parameters.AddWithValue("@ogrbolumad", bolum_Box.SelectedItem);
+                komutum.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Öğrenci Başarıyla Eklendi.");
+            }
+            
 
            
 

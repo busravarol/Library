@@ -106,10 +106,10 @@ namespace Library
         {
             baglanti.Open   ();
             MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(kitapAdi,kategori,basimyili,yayinevi,sayfasayisi,yazaradi) values (@k1,@k2,@k3,@k4,@k5,@k6) ", baglanti);
-            komut.Parameters.AddWithValue("@k1", kitap_Box.SelectedItem);
-            komut.Parameters.AddWithValue("@k2", kategori_Box.SelectedItem);
+            komut.Parameters.AddWithValue("@k1", kitap_Box.Text);
+            komut.Parameters.AddWithValue("@k2", kategori_Box.Text);
             komut.Parameters.AddWithValue("@k3", txt_Tarih.Text);
-            komut.Parameters.AddWithValue("@k4",yayın_Box.SelectedItem);
+            komut.Parameters.AddWithValue("@k4",yayın_Box.Text);
             komut.Parameters.AddWithValue("@k5", txt_Ss.Text);
             komut.Parameters.AddWithValue("@k6", txt_Yazar.Text);
             komut.ExecuteNonQuery();
