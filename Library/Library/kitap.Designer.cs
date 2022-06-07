@@ -41,10 +41,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.yayın_Box = new System.Windows.Forms.ComboBox();
-            this.kitap_Box = new System.Windows.Forms.ComboBox();
             this.kategori_Box = new System.Windows.Forms.ComboBox();
             this.txt_Tarih = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txt_kitap = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -145,8 +145,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
+            this.panel1.Controls.Add(this.txt_kitap);
             this.panel1.Controls.Add(this.yayın_Box);
-            this.panel1.Controls.Add(this.kitap_Box);
             this.panel1.Controls.Add(this.kategori_Box);
             this.panel1.Controls.Add(this.txt_Tarih);
             this.panel1.Controls.Add(this.txt_Ss);
@@ -173,15 +173,6 @@
             this.yayın_Box.Size = new System.Drawing.Size(158, 28);
             this.yayın_Box.TabIndex = 22;
             this.yayın_Box.SelectedIndexChanged += new System.EventHandler(this.yayın_Box_SelectedIndexChanged);
-            // 
-            // kitap_Box
-            // 
-            this.kitap_Box.FormattingEnabled = true;
-            this.kitap_Box.Location = new System.Drawing.Point(14, 36);
-            this.kitap_Box.Name = "kitap_Box";
-            this.kitap_Box.Size = new System.Drawing.Size(158, 28);
-            this.kitap_Box.TabIndex = 22;
-            this.kitap_Box.SelectedIndexChanged += new System.EventHandler(this.kitap_Box_SelectedIndexChanged);
             // 
             // kategori_Box
             // 
@@ -210,6 +201,13 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
+            // 
+            // txt_kitap
+            // 
+            this.txt_kitap.Location = new System.Drawing.Point(14, 36);
+            this.txt_kitap.Name = "txt_kitap";
+            this.txt_kitap.Size = new System.Drawing.Size(158, 27);
+            this.txt_kitap.TabIndex = 22;
             // 
             // kitap
             // 
@@ -246,7 +244,7 @@
         private PictureBox pictureBox2;
         private TextBox txt_Tarih;
         private ComboBox kategori_Box;
-        private ComboBox kitap_Box;
         private ComboBox yayın_Box;
+        private TextBox txt_kitap;
     }
 }

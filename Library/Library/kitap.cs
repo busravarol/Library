@@ -87,9 +87,9 @@ namespace Library
             kategori_Box.Items.AddRange(kategori);
             kategori_Box.Text = "Seçiniz...";
 
-            object[] kitapadi = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984","Çocukluk","Kinyas ve Kayra","Elveda Güzel Vatanım","Saatleri Ayarlama Enstitüsü","İtiraflarım" };
+           /* object[] kitapadi = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984","Çocukluk","Kinyas ve Kayra","Elveda Güzel Vatanım","Saatleri Ayarlama Enstitüsü","İtiraflarım" };
             kitap_Box.Items.AddRange(kitapadi);
-            kitap_Box.Text = "Seçiniz...";
+            kitap_Box.Text = "Seçiniz...";*/
 
             object[] yayinevi = new object[] { "İş Bankası", "İndigo", "Yapı Kredi", "Epsilon", "Timaş","Dergah" };
             yayın_Box.Items.AddRange(yayinevi);
@@ -106,7 +106,7 @@ namespace Library
         {
             baglanti.Open   ();
             MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(kitapAdi,kategori,basimyili,yayinevi,sayfasayisi,yazaradi) values (@k1,@k2,@k3,@k4,@k5,@k6) ", baglanti);
-            komut.Parameters.AddWithValue("@k1", kitap_Box.Text);
+            komut.Parameters.AddWithValue("@k1", txt_kitap.Text);
             komut.Parameters.AddWithValue("@k2", kategori_Box.Text);
             komut.Parameters.AddWithValue("@k3", txt_Tarih.Text);
             komut.Parameters.AddWithValue("@k4",yayın_Box.Text);
