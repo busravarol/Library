@@ -81,7 +81,7 @@ namespace Library
 
         private void OgrenciEkle_Load(object sender, EventArgs e)
         {
-            object[] bolum = new object[] { "Yönetim Bilişim Sistemleri", "İşletme", "Uluslararası Ticaret ve İşletmecilik" };
+            object[] bolum = new object[] { "Yönetim Bilişim Sistemleri", "İşletme", "Uluslararası Ticaret ve İşletmecilik","Çocuk Gelişimi","Elektrik ve Elektronik","Dış Ticaret", };
             bolum_Box.Items.AddRange(bolum);
             bolum_Box.Text = "Seçiniz...";
         }
