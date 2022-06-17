@@ -5,11 +5,16 @@
  
  Bu proje aşağıdaki sorunları çözmek amacıyla geliştirilmiştir. 
  
-1-	Kitapların ödünç alınıp verilmesi konusunda yaşanan zorluklar
+1-	Kitapların ödünç alınıp verilmesi konusunda yaşanan zorluklar 
+
 2-	Kitapların giriş-çıkış kaydının alınamamasından dolayı takip edilemeyen kitaplar
+
 3-	Yasaklanan yayınevlerini ayırt etme konusunda yaşanan zorluklar
+
 4-	Kitapların mevcut olmasına rağmen sistemde görünmemesi 
+
 5-	Bir öğrenci birden fazla kitap aldığında kullanıcının her kitapta tüm bilgileri tekrar girmek zorunda kalıyor olması.
+
 
 
 Otomasyonumuzda;
