@@ -45,9 +45,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(13, 19);
+            this.label1.Location = new System.Drawing.Point(11, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 28);
+            this.label1.Size = new System.Drawing.Size(166, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Toplam Öğrenci Sayısı:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -56,9 +56,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(238, 19);
+            this.label2.Location = new System.Drawing.Point(208, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 28);
+            this.label2.Size = new System.Drawing.Size(146, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "Toplam Kitap Sayısı:";
             // 
@@ -66,9 +66,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(13, 135);
+            this.label3.Location = new System.Drawing.Point(11, 101);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 28);
+            this.label3.Size = new System.Drawing.Size(159, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "En Çok Okunan Kitap:";
             // 
@@ -76,9 +76,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(238, 135);
+            this.label4.Location = new System.Drawing.Point(208, 101);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(199, 28);
+            this.label4.Size = new System.Drawing.Size(158, 21);
             this.label4.TabIndex = 3;
             this.label4.Text = "En Çok Kitap Okuyan:";
             // 
@@ -86,9 +86,9 @@
             // 
             this.toplam_Ogrenci.AutoSize = true;
             this.toplam_Ogrenci.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.toplam_Ogrenci.Location = new System.Drawing.Point(90, 68);
+            this.toplam_Ogrenci.Location = new System.Drawing.Point(79, 51);
             this.toplam_Ogrenci.Name = "toplam_Ogrenci";
-            this.toplam_Ogrenci.Size = new System.Drawing.Size(40, 31);
+            this.toplam_Ogrenci.Size = new System.Drawing.Size(34, 25);
             this.toplam_Ogrenci.TabIndex = 4;
             this.toplam_Ogrenci.Text = "00";
             // 
@@ -96,9 +96,9 @@
             // 
             this.toplam_Kitap.AutoSize = true;
             this.toplam_Kitap.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.toplam_Kitap.Location = new System.Drawing.Point(300, 68);
+            this.toplam_Kitap.Location = new System.Drawing.Point(262, 51);
             this.toplam_Kitap.Name = "toplam_Kitap";
-            this.toplam_Kitap.Size = new System.Drawing.Size(40, 31);
+            this.toplam_Kitap.Size = new System.Drawing.Size(34, 25);
             this.toplam_Kitap.TabIndex = 5;
             this.toplam_Kitap.Text = "00";
             // 
@@ -106,9 +106,9 @@
             // 
             this.lblCokOkunan.AutoSize = true;
             this.lblCokOkunan.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCokOkunan.Location = new System.Drawing.Point(90, 191);
+            this.lblCokOkunan.Location = new System.Drawing.Point(79, 143);
             this.lblCokOkunan.Name = "lblCokOkunan";
-            this.lblCokOkunan.Size = new System.Drawing.Size(40, 31);
+            this.lblCokOkunan.Size = new System.Drawing.Size(34, 25);
             this.lblCokOkunan.TabIndex = 6;
             this.lblCokOkunan.Text = "00";
             // 
@@ -116,15 +116,15 @@
             // 
             this.lblCokOkuyan.AutoSize = true;
             this.lblCokOkuyan.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCokOkuyan.Location = new System.Drawing.Point(300, 191);
+            this.lblCokOkuyan.Location = new System.Drawing.Point(262, 143);
             this.lblCokOkuyan.Name = "lblCokOkuyan";
-            this.lblCokOkuyan.Size = new System.Drawing.Size(40, 31);
+            this.lblCokOkuyan.Size = new System.Drawing.Size(34, 25);
             this.lblCokOkuyan.TabIndex = 7;
             this.lblCokOkuyan.Text = "00";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(198)))), ((int)(((byte)(244)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
             this.panel1.Controls.Add(this.toplam_Ogrenci);
             this.panel1.Controls.Add(this.lblCokOkunan);
             this.panel1.Controls.Add(this.lblCokOkuyan);
@@ -133,9 +133,10 @@
             this.panel1.Controls.Add(this.toplam_Kitap);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(72, 49);
+            this.panel1.Location = new System.Drawing.Point(63, 51);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(446, 247);
+            this.panel1.Size = new System.Drawing.Size(390, 185);
             this.panel1.TabIndex = 8;
             // 
             // mySqlCommand1
@@ -147,11 +148,12 @@
             // 
             // istatistik
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.ClientSize = new System.Drawing.Size(596, 394);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.ClientSize = new System.Drawing.Size(522, 296);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "istatistik";
             this.Text = "istatistik";
             this.Load += new System.EventHandler(this.istatistik_Load);
