@@ -173,7 +173,7 @@ namespace Library
             /*DataView dv = dt.DefaultView;
             dv.RowFilter = "select kitapAdi from tbl_kitap where kitapAdi LIKE %";
             dataGridView1.DataSource= dv;*/
-            string aranan = txt_ara.Text.Trim().ToUpper();
+          /*  string aranan = txt_ara.Text.Trim().ToUpper();
             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -198,7 +198,7 @@ namespace Library
             
 
 
-
+            */
         }
 
         private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
@@ -226,7 +226,7 @@ namespace Library
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string aranan = txt_ara1.Text.Trim().ToUpper();
+            /*string aranan = txt_ara1.Text.Trim().ToUpper();
             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -245,7 +245,7 @@ namespace Library
                     }
                 }
 
-            }
+            }*/
         }
 
         private void label2_Click(object sender, EventArgs e)

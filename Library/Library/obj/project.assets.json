@@ -1131,19 +1131,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ilkay kavak\\.nuget\\packages\\": {}
+    "C:\\Users\\enesa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilkay kavak\\Desktop\\Library\\Library\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\enesa\\Desktop\\Library\\Library\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "C:\\Users\\ilkay kavak\\Desktop\\Library\\Library\\Library\\Library.csproj",
-      "packagesPath": "C:\\Users\\ilkay kavak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilkay kavak\\Desktop\\Library\\Library\\Library\\obj\\",
+      "projectPath": "C:\\Users\\enesa\\Desktop\\Library\\Library\\Library\\Library.csproj",
+      "packagesPath": "C:\\Users\\enesa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\enesa\\Desktop\\Library\\Library\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ilkay kavak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\enesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

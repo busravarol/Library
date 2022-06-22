@@ -15,6 +15,7 @@ namespace Library
         public Form2()
         {
             InitializeComponent();
+            this.IsMdiContainer = true;
         }
 
         private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
@@ -72,7 +73,7 @@ namespace Library
             
         }
 
-        private void kitapEkleToolStripMenuItem_Click(object sender, EventArgs e)
+       /* private void kitapEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             kitap form = new kitap();
             form.Show();
@@ -119,48 +120,122 @@ namespace Library
         {
             UyeListesi uyeListesi = new UyeListesi();
             uyeListesi.Show();
-        }
-
+        }*/
+        private kitap kitapform;
+        private bool kitapDurum;
         private void button1_Click_1(object sender, EventArgs e)
         {
-            kitap form = new kitap();
-            form.Show();
+            if (kitapDurum == false)
+            {
+                kitapform = new kitap();
+                kitapform.MdiParent = this;
+                kitapform.Show();
+                kitapDurum = true;
+            }else
+            {
+                kitapform.Close();
+                kitapDurum = false;
+            }  
+                
+            
         }
-
+        private kitaplistesi kitaplistesiform;
+        private bool listedurum;
         private void button4_Click(object sender, EventArgs e)
         {
-            kitaplistesi vb = new kitaplistesi();
-            vb.Show();
-        }
+            if (listedurum == false)
+            {
+                kitaplistesiform = new kitaplistesi();
+                kitaplistesiform.MdiParent = this;
+                kitaplistesiform.Show();
+                listedurum = true;
+            }
+            else
+            {
+                kitaplistesiform.Close();
+               listedurum=false;
 
+            }
+        }
+        private Odunc2 oduncform;
+        private bool oduncDurum;    
         private void button5_Click(object sender, EventArgs e)
-        {
-            Odunc2 odunc = new Odunc2();
-            odunc.Show();
+        { if (oduncDurum == false)
+            {
+                oduncform = new Odunc2();
+                oduncform.MdiParent = this;
+                oduncform.Show();
+                oduncDurum = true;
+            }
+            else
+            {
+                oduncform.Close();
+                oduncDurum = false;
+            }
         }
-
+        private OduncListesi odunclistesiform;
+        private bool odunclisteDurum;
         private void button6_Click(object sender, EventArgs e)
-        {
-            OduncListesi oduncListesi = new OduncListesi();
-            oduncListesi.Show();
+        { if (odunclisteDurum == false)
+            {
+                odunclistesiform = new OduncListesi();
+                odunclistesiform.MdiParent = this;
+                odunclistesiform.Show();
+                odunclisteDurum=true;
+            }
+            else
+            {
+                odunclistesiform.Close();
+                odunclisteDurum = false;
+            }
         }
-
+        private OgrenciEkle OgrenciEkleform;
+        private bool OgrenciEkleDurum;
         private void button3_Click(object sender, EventArgs e)
-        {
-            OgrenciEkle ogrenciEkle = new OgrenciEkle();
-            ogrenciEkle.Show();
+        { if (OgrenciEkleDurum == false)
+            {
+                OgrenciEkleform = new OgrenciEkle();
+                OgrenciEkleform.MdiParent = this;
+                OgrenciEkleform.Show();
+                OgrenciEkleDurum=true;
+            }
+            else
+            {
+                OgrenciEkleform.Close();
+                OgrenciEkleDurum = false;
+            }
         }
-
+        private UyeListesi UyeListesiform;
+        private bool UyeListesiformDurum;
         private void button2_Click_1(object sender, EventArgs e)
-        {
-            UyeListesi uyeListesi = new UyeListesi();
-            uyeListesi.Show();
+        { if (UyeListesiformDurum == false)
+            {
+                UyeListesiform = new UyeListesi();
+                UyeListesiform.MdiParent = this;
+                UyeListesiform.Show();
+                UyeListesiformDurum=true;
+            }
+            else
+            {
+                UyeListesiform.Close();
+                UyeListesiformDurum = false;
+            }
         }
-
+        private istatistik istatistikform;
+        private bool istatistikformDurum;
         private void button7_Click(object sender, EventArgs e)
-        {
-            istatistik istatistik = new istatistik();
-            istatistik.Show();
+        { if (istatistikformDurum == false)
+            {
+                istatistikform = new istatistik();
+                istatistikform.MdiParent = this;
+                istatistikform.Show();
+                istatistikformDurum=true;
+            }
+            else
+            {
+                istatistikform.Close();
+                istatistikformDurum = false;
+            }
         }
     }
 }

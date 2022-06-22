@@ -29,30 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.öğrencidetay = new System.Windows.Forms.Button();
+            this.öğrenciekle = new System.Windows.Forms.Button();
+            this.istatistikler = new System.Windows.Forms.Button();
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.mySqlCommand2 = new MySql.Data.MySqlClient.MySqlCommand();
             this.mySqlCommand3 = new MySql.Data.MySqlClient.MySqlCommand();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.kitapdetay = new System.Windows.Forms.Button();
+            this.iadekitaplar = new System.Windows.Forms.Button();
+            this.kitaplistesi = new System.Windows.Forms.Button();
+            this.kitapekle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -61,148 +48,38 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // button1
+            // öğrencidetay
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button1.Location = new System.Drawing.Point(79, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 66);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Kitap Ekle";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.öğrencidetay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.öğrencidetay.Location = new System.Drawing.Point(6, 456);
+            this.öğrencidetay.Name = "öğrencidetay";
+            this.öğrencidetay.Size = new System.Drawing.Size(199, 69);
+            this.öğrencidetay.TabIndex = 3;
+            this.öğrencidetay.Text = "         Öğrenci Detayı Görüntüle";
+            this.öğrencidetay.UseVisualStyleBackColor = false;
+            this.öğrencidetay.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // button2
+            // öğrenciekle
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button2.Location = new System.Drawing.Point(367, 112);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 69);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "         Öğrenci Detayı Görüntüle";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.öğrenciekle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.öğrenciekle.Location = new System.Drawing.Point(6, 373);
+            this.öğrenciekle.Name = "öğrenciekle";
+            this.öğrenciekle.Size = new System.Drawing.Size(199, 66);
+            this.öğrenciekle.TabIndex = 4;
+            this.öğrenciekle.Text = "Öğrenci Ekle";
+            this.öğrenciekle.UseVisualStyleBackColor = false;
+            this.öğrenciekle.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button3
+            // istatistikler
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button3.Location = new System.Drawing.Point(367, 38);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(164, 66);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Öğrenci Ekle";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button4.Location = new System.Drawing.Point(79, 119);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(164, 62);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Kitap Listesi";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button5.Location = new System.Drawing.Point(79, 195);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(164, 69);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "İade Kitaplar";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button6.Location = new System.Drawing.Point(79, 282);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(164, 68);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Kitap Detayları";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.button7.Location = new System.Drawing.Point(367, 195);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(164, 69);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "İstatistik Veriler";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(88, 66);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(83, 142);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(88, 211);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(28, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(88, 292);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(21, 35);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(382, 54);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(26, 36);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(138)))), ((int)(((byte)(185)))));
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(382, 126);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(30, 48);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 14;
-            this.pictureBox6.TabStop = false;
+            this.istatistikler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.istatistikler.Location = new System.Drawing.Point(3, 298);
+            this.istatistikler.Name = "istatistikler";
+            this.istatistikler.Size = new System.Drawing.Size(202, 69);
+            this.istatistikler.TabIndex = 8;
+            this.istatistikler.Text = "İstatistik Veriler";
+            this.istatistikler.UseVisualStyleBackColor = false;
+            this.istatistikler.Click += new System.EventHandler(this.button7_Click);
             // 
             // mySqlCommand1
             // 
@@ -225,37 +102,72 @@
             this.mySqlCommand3.EnableCaching = false;
             this.mySqlCommand3.Transaction = null;
             // 
+            // kitapdetay
+            // 
+            this.kitapdetay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.kitapdetay.Location = new System.Drawing.Point(3, 224);
+            this.kitapdetay.Name = "kitapdetay";
+            this.kitapdetay.Size = new System.Drawing.Size(202, 68);
+            this.kitapdetay.TabIndex = 7;
+            this.kitapdetay.Text = "Kitap Detayları";
+            this.kitapdetay.UseVisualStyleBackColor = false;
+            this.kitapdetay.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // iadekitaplar
+            // 
+            this.iadekitaplar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.iadekitaplar.Location = new System.Drawing.Point(3, 149);
+            this.iadekitaplar.Name = "iadekitaplar";
+            this.iadekitaplar.Size = new System.Drawing.Size(199, 69);
+            this.iadekitaplar.TabIndex = 6;
+            this.iadekitaplar.Text = "İade Kitaplar";
+            this.iadekitaplar.UseVisualStyleBackColor = false;
+            this.iadekitaplar.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // kitaplistesi
+            // 
+            this.kitaplistesi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.kitaplistesi.Location = new System.Drawing.Point(3, 81);
+            this.kitaplistesi.Name = "kitaplistesi";
+            this.kitaplistesi.Size = new System.Drawing.Size(202, 62);
+            this.kitaplistesi.TabIndex = 5;
+            this.kitaplistesi.Text = "Kitap Listesi";
+            this.kitaplistesi.UseVisualStyleBackColor = false;
+            this.kitaplistesi.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // kitapekle
+            // 
+            this.kitapekle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.kitapekle.Location = new System.Drawing.Point(3, 12);
+            this.kitapekle.Name = "kitapekle";
+            this.kitapekle.Size = new System.Drawing.Size(199, 63);
+            this.kitapekle.TabIndex = 2;
+            this.kitapekle.Text = "Kitap Ekle";
+            this.kitapekle.UseVisualStyleBackColor = false;
+            this.kitapekle.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(765, 480);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(1415, 602);
+            this.Controls.Add(this.öğrencidetay);
+            this.Controls.Add(this.kitapdetay);
+            this.Controls.Add(this.öğrenciekle);
+            this.Controls.Add(this.iadekitaplar);
+            this.Controls.Add(this.istatistikler);
+            this.Controls.Add(this.kitaplistesi);
+            this.Controls.Add(this.kitapekle);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "anasayfa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -263,21 +175,15 @@
         #endregion
 
         private ContextMenuStrip contextMenuStrip1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
+        private Button öğrencidetay;
+        private Button öğrenciekle;
+        private Button istatistikler;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand2;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand3;
+        private Button kitapdetay;
+        private Button iadekitaplar;
+        private Button kitaplistesi;
+        private Button kitapekle;
     }
 }

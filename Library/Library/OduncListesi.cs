@@ -47,9 +47,9 @@ namespace Library
 
         private void OduncListesi_Load(object sender, EventArgs e)
         {
-            object[] kitapadi = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra", "Elveda Güzel Vatanım", "Saatleri Ayarlama Enstitüsü", "İtiraflarım" };
+          /*  object[] kitapadi = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra", "Elveda Güzel Vatanım", "Saatleri Ayarlama Enstitüsü", "İtiraflarım" };
             comboBox1.Items.AddRange(kitapadi);
-            comboBox1.Text = "Seçiniz...";
+            comboBox1.Text = "Seçiniz...";*/
             griddoldur2();
         }
         int ID=0;
@@ -84,7 +84,7 @@ namespace Library
 
         private void txt_Ogr1_TextChanged(object sender, EventArgs e)
         {
-            string aranan = txt_Ogr1.Text.Trim().ToUpper();
+           /* string aranan = txt_Ogr1.Text.Trim().ToUpper();
             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -102,7 +102,7 @@ namespace Library
                         }
                     }
                 }
-            }
+            }*/
         }
 
         private void txt_Yazar1_TextChanged(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace Library
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            string aranan = comboBox1.Text.Trim().ToUpper();
+           /* string aranan = comboBox1.Text.Trim().ToUpper();
             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -132,7 +132,7 @@ namespace Library
                     }
                 }
 
-            }
+            }*/
         }
     }
 }

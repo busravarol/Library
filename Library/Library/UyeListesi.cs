@@ -143,7 +143,7 @@ namespace Library
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            string aranan = txt_No1.Text.Trim().ToUpper();
+           /* string aranan = txt_No1.Text.Trim().ToUpper();
             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -224,7 +224,7 @@ namespace Library
 
         private void txt_No1_TextChanged(object sender, EventArgs e)
         {
-            string aranan = txt_No1.Text.Trim().ToUpper();
+          /*  string aranan = txt_No1.Text.Trim().ToUpper();
             for (int i = 0; i <= dataGridView1.Rows.Count - 1;i++)
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -242,12 +242,12 @@ namespace Library
                         }
                     }
                 }
-            }
+            }*/
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string aranan = textBox1.Text.Trim().ToUpper();
+           /* string aranan = textBox1.Text.Trim().ToUpper();
             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -265,7 +265,7 @@ namespace Library
                         }
                     }
                 }
-            }
+            }*/
         }
     }
 }
