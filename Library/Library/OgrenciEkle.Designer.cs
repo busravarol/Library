@@ -48,91 +48,96 @@
             // 
             // txt_no
             // 
-            this.txt_no.Location = new System.Drawing.Point(130, 26);
+            this.txt_no.Location = new System.Drawing.Point(149, 35);
+            this.txt_no.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_no.Name = "txt_no";
-            this.txt_no.Size = new System.Drawing.Size(151, 23);
+            this.txt_no.Size = new System.Drawing.Size(172, 27);
             this.txt_no.TabIndex = 0;
             // 
             // txt_soyad
             // 
-            this.txt_soyad.Location = new System.Drawing.Point(130, 99);
+            this.txt_soyad.Location = new System.Drawing.Point(149, 132);
+            this.txt_soyad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_soyad.Name = "txt_soyad";
-            this.txt_soyad.Size = new System.Drawing.Size(151, 23);
+            this.txt_soyad.Size = new System.Drawing.Size(172, 27);
             this.txt_soyad.TabIndex = 1;
             // 
             // txt_ad
             // 
-            this.txt_ad.Location = new System.Drawing.Point(130, 64);
+            this.txt_ad.Location = new System.Drawing.Point(149, 85);
+            this.txt_ad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_ad.Name = "txt_ad";
-            this.txt_ad.Size = new System.Drawing.Size(151, 23);
+            this.txt_ad.Size = new System.Drawing.Size(172, 27);
             this.txt_ad.TabIndex = 2;
             this.txt_ad.TextChanged += new System.EventHandler(this.txt_ad_TextChanged);
             // 
             // txt_mail
             // 
-            this.txt_mail.Location = new System.Drawing.Point(130, 165);
+            this.txt_mail.Location = new System.Drawing.Point(149, 220);
+            this.txt_mail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_mail.Name = "txt_mail";
-            this.txt_mail.Size = new System.Drawing.Size(151, 23);
+            this.txt_mail.Size = new System.Drawing.Size(172, 27);
             this.txt_mail.TabIndex = 4;
             // 
             // txt_tlf
             // 
-            this.txt_tlf.Location = new System.Drawing.Point(130, 199);
+            this.txt_tlf.Location = new System.Drawing.Point(149, 265);
+            this.txt_tlf.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_tlf.Name = "txt_tlf";
-            this.txt_tlf.Size = new System.Drawing.Size(151, 23);
+            this.txt_tlf.Size = new System.Drawing.Size(172, 27);
             this.txt_tlf.TabIndex = 5;
             // 
             // Ad
             // 
             this.Ad.AutoSize = true;
-            this.Ad.Location = new System.Drawing.Point(28, 69);
+            this.Ad.Location = new System.Drawing.Point(32, 92);
             this.Ad.Name = "Ad";
-            this.Ad.Size = new System.Drawing.Size(22, 15);
+            this.Ad.Size = new System.Drawing.Size(28, 20);
             this.Ad.TabIndex = 6;
             this.Ad.Text = "Ad";
             // 
             // Soyad
             // 
             this.Soyad.AutoSize = true;
-            this.Soyad.Location = new System.Drawing.Point(28, 104);
+            this.Soyad.Location = new System.Drawing.Point(32, 139);
             this.Soyad.Name = "Soyad";
-            this.Soyad.Size = new System.Drawing.Size(39, 15);
+            this.Soyad.Size = new System.Drawing.Size(50, 20);
             this.Soyad.TabIndex = 7;
             this.Soyad.Text = "Soyad";
             // 
             // OgrenciNo
             // 
             this.OgrenciNo.AutoSize = true;
-            this.OgrenciNo.Location = new System.Drawing.Point(28, 29);
+            this.OgrenciNo.Location = new System.Drawing.Point(32, 39);
             this.OgrenciNo.Name = "OgrenciNo";
-            this.OgrenciNo.Size = new System.Drawing.Size(68, 15);
+            this.OgrenciNo.Size = new System.Drawing.Size(85, 20);
             this.OgrenciNo.TabIndex = 8;
             this.OgrenciNo.Text = "Öğrenci No";
             // 
             // BolumAdi
             // 
             this.BolumAdi.AutoSize = true;
-            this.BolumAdi.Location = new System.Drawing.Point(28, 137);
+            this.BolumAdi.Location = new System.Drawing.Point(32, 183);
             this.BolumAdi.Name = "BolumAdi";
-            this.BolumAdi.Size = new System.Drawing.Size(63, 15);
+            this.BolumAdi.Size = new System.Drawing.Size(79, 20);
             this.BolumAdi.TabIndex = 9;
             this.BolumAdi.Text = "Bölüm Adı";
             // 
             // Email
             // 
             this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(28, 167);
+            this.Email.Location = new System.Drawing.Point(32, 223);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(36, 15);
+            this.Email.Size = new System.Drawing.Size(46, 20);
             this.Email.TabIndex = 10;
             this.Email.Text = "Email";
             // 
             // Telefon
             // 
             this.Telefon.AutoSize = true;
-            this.Telefon.Location = new System.Drawing.Point(28, 202);
+            this.Telefon.Location = new System.Drawing.Point(32, 269);
             this.Telefon.Name = "Telefon";
-            this.Telefon.Size = new System.Drawing.Size(45, 15);
+            this.Telefon.Size = new System.Drawing.Size(58, 20);
             this.Telefon.TabIndex = 11;
             this.Telefon.Text = "Telefon";
             // 
@@ -140,9 +145,10 @@
             // 
             this.btnOgrenciEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
             this.btnOgrenciEkle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnOgrenciEkle.Location = new System.Drawing.Point(54, 356);
+            this.btnOgrenciEkle.Location = new System.Drawing.Point(62, 475);
+            this.btnOgrenciEkle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOgrenciEkle.Name = "btnOgrenciEkle";
-            this.btnOgrenciEkle.Size = new System.Drawing.Size(149, 49);
+            this.btnOgrenciEkle.Size = new System.Drawing.Size(170, 65);
             this.btnOgrenciEkle.TabIndex = 12;
             this.btnOgrenciEkle.Text = "Ekle";
             this.btnOgrenciEkle.UseVisualStyleBackColor = false;
@@ -152,9 +158,10 @@
             // 
             this.btnİptal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
             this.btnİptal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnİptal.Location = new System.Drawing.Point(229, 420);
+            this.btnİptal.Location = new System.Drawing.Point(262, 475);
+            this.btnİptal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnİptal.Name = "btnİptal";
-            this.btnİptal.Size = new System.Drawing.Size(151, 46);
+            this.btnİptal.Size = new System.Drawing.Size(173, 65);
             this.btnİptal.TabIndex = 13;
             this.btnİptal.Text = "İptal";
             this.btnİptal.UseVisualStyleBackColor = false;
@@ -163,10 +170,9 @@
             // bolum_Box
             // 
             this.bolum_Box.FormattingEnabled = true;
-            this.bolum_Box.Location = new System.Drawing.Point(130, 131);
-            this.bolum_Box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bolum_Box.Location = new System.Drawing.Point(149, 175);
             this.bolum_Box.Name = "bolum_Box";
-            this.bolum_Box.Size = new System.Drawing.Size(151, 23);
+            this.bolum_Box.Size = new System.Drawing.Size(172, 28);
             this.bolum_Box.TabIndex = 15;
             this.bolum_Box.SelectedIndexChanged += new System.EventHandler(this.bolum_Box_SelectedIndexChanged);
             // 
@@ -185,20 +191,22 @@
             this.panel1.Controls.Add(this.BolumAdi);
             this.panel1.Controls.Add(this.Ad);
             this.panel1.Controls.Add(this.Soyad);
-            this.panel1.Location = new System.Drawing.Point(54, 66);
+            this.panel1.Location = new System.Drawing.Point(62, 88);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(326, 265);
+            this.panel1.Size = new System.Drawing.Size(373, 353);
             this.panel1.TabIndex = 16;
             // 
             // OgrenciEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(444, 547);
+            this.ClientSize = new System.Drawing.Size(507, 729);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnİptal);
             this.Controls.Add(this.btnOgrenciEkle);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "OgrenciEkle";
             this.Text = "OgrenciEkle";
             this.Load += new System.EventHandler(this.OgrenciEkle_Load);

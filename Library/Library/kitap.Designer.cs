@@ -159,7 +159,7 @@
             this.panel1.Controls.Add(this.txt_Yazar);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(282, 208);
+            this.panel1.Location = new System.Drawing.Point(32, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(429, 472);
             this.panel1.TabIndex = 20;
@@ -235,6 +235,7 @@
             this.txt_kitap.Name = "txt_kitap";
             this.txt_kitap.Size = new System.Drawing.Size(158, 27);
             this.txt_kitap.TabIndex = 22;
+            this.txt_kitap.TextChanged += new System.EventHandler(this.txt_kitap_TextChanged);
             // 
             // yayın_Box
             // 

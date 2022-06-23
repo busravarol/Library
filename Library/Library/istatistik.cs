@@ -73,5 +73,10 @@ namespace Library
         {
 
         }
+
+        private void lblCokOkuyan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

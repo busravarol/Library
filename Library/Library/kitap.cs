@@ -223,5 +223,10 @@ namespace Library
         {
 
         }
+
+        private void txt_kitap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
