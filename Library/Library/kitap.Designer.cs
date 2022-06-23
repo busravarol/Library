@@ -159,7 +159,7 @@
             this.panel1.Controls.Add(this.txt_Yazar);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(32, 24);
+            this.panel1.Location = new System.Drawing.Point(557, 36);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(429, 472);
             this.panel1.TabIndex = 20;

@@ -318,3 +318,4 @@ C:\Users\User\Desktop\Libraryy\Library\Library\Library\obj\Debug\net6.0-windows\
 C:\Users\User\Desktop\Libraryy\Library\Library\Library\obj\Debug\net6.0-windows\ref\Library.dll
 C:\Users\User\Desktop\Libraryy\Library\Library\Library\obj\Debug\net6.0-windows\Library.pdb
 C:\Users\User\Desktop\Libraryy\Library\Library\Library\obj\Debug\net6.0-windows\Library.genruntimeconfig.cache
+C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.ogrenciİsleri.resources
