@@ -95,6 +95,10 @@ namespace Library
             yayın_Box.Items.AddRange(yayinevi);
             yayın_Box.Text = "Seçiniz...";
 
+            object[] dil = new object[] { "Türkçe", "İngilizce", "Almanca"};
+            dil_Box.Items.AddRange(dil);
+            dil_Box.Text = "Seçiniz...";
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -109,13 +113,13 @@ namespace Library
             komut.Parameters.AddWithValue("@k1", txt_kitap.Text);
             komut.Parameters.AddWithValue("@k2", kategori_Box.Text);
             komut.Parameters.AddWithValue("@k3", txt_Tarih.Text);
-            komut.Parameters.AddWithValue("@k4",yayın_Box.Text);
+            komut.Parameters.AddWithValue("@k4", yayın_Box.Text);
             komut.Parameters.AddWithValue("@k5", txt_Ss.Text);
             komut.Parameters.AddWithValue("@k6", txt_Yazar.Text);
             komut.Parameters.AddWithValue("@k7", txtdolap.Text);
             komut.Parameters.AddWithValue("@k8", txtstok.Text);
-            komut.Parameters.AddWithValue("@k9", txtdil.Text);
-            komut.Parameters.AddWithValue("@k10", txtraf.Text);
+            komut.Parameters.AddWithValue("@k9", dil_Box.Text);
+            komut.Parameters.AddWithValue("@k10",txtraf.Text);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kitap Başarıyla Eklendi");
@@ -225,6 +229,11 @@ namespace Library
         }
 
         private void txt_kitap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dil_Box_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

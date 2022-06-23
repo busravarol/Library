@@ -44,12 +44,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtraf = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtdil = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_kitap = new System.Windows.Forms.TextBox();
             this.yayın_Box = new System.Windows.Forms.ComboBox();
             this.kategori_Box = new System.Windows.Forms.ComboBox();
             this.txt_Tarih = new System.Windows.Forms.TextBox();
+            this.dil_Box = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,13 +138,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.panel1.Controls.Add(this.dil_Box);
             this.panel1.Controls.Add(this.txtstok);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.txtdolap);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.txtraf);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txtdil);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txt_kitap);
             this.panel1.Controls.Add(this.yayın_Box);
@@ -213,13 +213,6 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "Raf No:";
             // 
-            // txtdil
-            // 
-            this.txtdil.Location = new System.Drawing.Point(14, 309);
-            this.txtdil.Name = "txtdil";
-            this.txtdil.Size = new System.Drawing.Size(158, 27);
-            this.txtdil.TabIndex = 25;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -265,6 +258,15 @@
             this.txt_Tarih.TabIndex = 22;
             this.txt_Tarih.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // dil_Box
+            // 
+            this.dil_Box.FormattingEnabled = true;
+            this.dil_Box.Location = new System.Drawing.Point(14, 310);
+            this.dil_Box.Name = "dil_Box";
+            this.dil_Box.Size = new System.Drawing.Size(158, 28);
+            this.dil_Box.TabIndex = 32;
+            this.dil_Box.SelectedIndexChanged += new System.EventHandler(this.dil_Box_SelectedIndexChanged);
+            // 
             // kitap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -306,7 +308,7 @@
         private Label label9;
         private TextBox txtraf;
         private Label label6;
-        private TextBox txtdil;
         private Label label1;
+        private ComboBox dil_Box;
     }
 }
