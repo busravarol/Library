@@ -105,13 +105,17 @@ namespace Library
         private void button1_Click(object sender, EventArgs e)
         {
             baglanti.Open   ();
-            MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(kitapAdi,kategori,basimyili,yayinevi,sayfasayisi,yazaradi) values (@k1,@k2,@k3,@k4,@k5,@k6) ", baglanti);
+            MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(kitapAdi,kategori,basimyili,yayinevi,sayfasayisi,yazaradi,dolap,stoksayisi,dil,rafno) values (@k1,@k2,@k3,@k4,@k5,@k6,@k7,@k8,@k9,@k10) ", baglanti);
             komut.Parameters.AddWithValue("@k1", txt_kitap.Text);
             komut.Parameters.AddWithValue("@k2", kategori_Box.Text);
             komut.Parameters.AddWithValue("@k3", txt_Tarih.Text);
             komut.Parameters.AddWithValue("@k4",yayın_Box.Text);
             komut.Parameters.AddWithValue("@k5", txt_Ss.Text);
             komut.Parameters.AddWithValue("@k6", txt_Yazar.Text);
+            komut.Parameters.AddWithValue("@k7", txtdolap.Text);
+            komut.Parameters.AddWithValue("@k8", txtstok.Text);
+            komut.Parameters.AddWithValue("@k9", txtdil.Text);
+            komut.Parameters.AddWithValue("@k10", txtraf.Text);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kitap Başarıyla Eklendi");

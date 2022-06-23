@@ -38,7 +38,10 @@ namespace Library
             dataGridView1.Columns[3].HeaderCell.Value = "Basım Yılı";
             dataGridView1.Columns[4].HeaderCell.Value = "Yayınevi";
             dataGridView1.Columns[5].HeaderCell.Value = "Sayfa Sayısı";
-            dataGridView1.Columns[6].HeaderCell.Value = "Yazar Adı";
+            dataGridView1.Columns[6].HeaderCell.Value = "Dil";
+            dataGridView1.Columns[7].HeaderCell.Value = "Stok Sayısı";
+            dataGridView1.Columns[8].HeaderCell.Value = "Dolap No";
+            dataGridView1.Columns[9].HeaderCell.Value = "Raf No";
 
 
             /* dataGridView1.Columns[0].Name = "ID";
@@ -222,6 +225,10 @@ namespace Library
             txt_yayinevi.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             txt_ss.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             txt_yad.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            txtdolap.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            txtdil.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            txtstok.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+            txtraf.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -262,5 +269,60 @@ namespace Library
         {
 
         }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            if (comboBox2.Text == "Kitap Adı")
+            {
+                MySqlDataAdapter da = new MySqlDataAdapter("select* from tbl_kitap where kitapAdi like'%" + textBox1.Text + "%'", baglanti);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                baglanti.Close();
+                if (textBox1.Text == "")
+                {
+                    griddoldur();
+                }
+            }
+            else if (comboBox2.Text == "Yazar Adı")
+            {
+                MySqlDataAdapter da = new MySqlDataAdapter("select* from tbl_kitap where yazaradi like'%" + textBox1.Text + "%'", baglanti);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                baglanti.Close();
+                if (textBox1.Text == "")
+                {
+                    griddoldur();
+                }
+            }
+            else if (comboBox2.Text == "Dil")
+            {
+                MySqlDataAdapter da = new MySqlDataAdapter("select* from tbl_kitap where dil like'%" + textBox1.Text + "%'", baglanti);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                baglanti.Close();
+                if (textBox1.Text == "")
+                {
+                    griddoldur();
+                }
+            }
+            else if (comboBox2.Text == "Yayınevi")
+            {
+                MySqlDataAdapter da = new MySqlDataAdapter("select* from tbl_kitap where yayinevi like'%" + textBox1.Text + "%'", baglanti);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                baglanti.Close();
+                if (textBox1.Text == "")
+                {
+                    griddoldur();
+                }
+            }
+           
+        }
     }
+    
 }

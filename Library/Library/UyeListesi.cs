@@ -143,33 +143,33 @@ namespace Library
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-           /* string aranan = txt_No1.Text.Trim().ToUpper();
-            for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
-            {
-                foreach (DataGridViewRow row in dataGridView1.Rows)
-                {
-                    foreach (DataGridViewCell cell in dataGridView1.Rows[i].Cells)
-                    {
-                        if (cell.Value != null)
-                        {
-                            if (cell.Value.ToString().ToUpper() != aranan)
-                            {
-                                continue;
-                            }
-                            cell.Style.BackColor = Color.DarkTurquoise;
-
-                            break;
-                        }
-                    }
-                }
-            }
-
-            /* private void textBox2_TextChanged(object sender, EventArgs e)
+            /* string aranan = txt_No1.Text.Trim().ToUpper();
+             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
              {
-                 string sorgu = "Select * From tbl_ogrenci where (ogrtcno like '%" + textBox2.Text + "%')";
-                 DataSet ds = frm1.VeriGetir(sorgu);
-                 dataGridView1.DataSource = ds.Tables[0];
-             }*/
+                 foreach (DataGridViewRow row in dataGridView1.Rows)
+                 {
+                     foreach (DataGridViewCell cell in dataGridView1.Rows[i].Cells)
+                     {
+                         if (cell.Value != null)
+                         {
+                             if (cell.Value.ToString().ToUpper() != aranan)
+                             {
+                                 continue;
+                             }
+                             cell.Style.BackColor = Color.DarkTurquoise;
+
+                             break;
+                         }
+                     }
+                 }
+             }
+
+             /* private void textBox2_TextChanged(object sender, EventArgs e)
+              {
+                  string sorgu = "Select * From tbl_ogrenci where (ogrtcno like '%" + textBox2.Text + "%')";
+                  DataSet ds = frm1.VeriGetir(sorgu);
+                  dataGridView1.DataSource = ds.Tables[0];
+              }*/
         }
 
         private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
@@ -224,48 +224,101 @@ namespace Library
 
         private void txt_No1_TextChanged(object sender, EventArgs e)
         {
-          /*  string aranan = txt_No1.Text.Trim().ToUpper();
-            for (int i = 0; i <= dataGridView1.Rows.Count - 1;i++)
-            {
-                foreach (DataGridViewRow row in dataGridView1.Rows)
-                {
-                    foreach (DataGridViewCell cell in dataGridView1.Rows[i].Cells)
-                    {
-                        if (cell.Value != null)
-                        {
-                            if (cell.Value.ToString().ToUpper() == aranan)
-                            {
-                                cell.Style.BackColor = Color.DarkTurquoise;
+            /*  string aranan = txt_No1.Text.Trim().ToUpper();
+              for (int i = 0; i <= dataGridView1.Rows.Count - 1;i++)
+              {
+                  foreach (DataGridViewRow row in dataGridView1.Rows)
+                  {
+                      foreach (DataGridViewCell cell in dataGridView1.Rows[i].Cells)
+                      {
+                          if (cell.Value != null)
+                          {
+                              if (cell.Value.ToString().ToUpper() == aranan)
+                              {
+                                  cell.Style.BackColor = Color.DarkTurquoise;
 
-                                break;
-                            }
-                        }
-                    }
-                }
-            }*/
+                                  break;
+                              }
+                          }
+                      }
+                  }
+              }*/
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           /* string aranan = textBox1.Text.Trim().ToUpper();
-            for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
-            {
-                foreach (DataGridViewRow row in dataGridView1.Rows)
-                {
-                    foreach (DataGridViewCell cell in dataGridView1.Rows[i].Cells)
-                    {
-                        if (cell.Value != null)
-                        {
-                            if (cell.Value.ToString().ToUpper() == aranan)
-                            {
-                                cell.Style.BackColor = Color.DarkTurquoise;
+            /* string aranan = textBox1.Text.Trim().ToUpper();
+             for (int i = 0; i <= dataGridView1.Rows.Count - 1; i++)
+             {
+                 foreach (DataGridViewRow row in dataGridView1.Rows)
+                 {
+                     foreach (DataGridViewCell cell in dataGridView1.Rows[i].Cells)
+                     {
+                         if (cell.Value != null)
+                         {
+                             if (cell.Value.ToString().ToUpper() == aranan)
+                             {
+                                 cell.Style.BackColor = Color.DarkTurquoise;
 
-                                break;
-                            }
-                        }
-                    }
+                                 break;
+                             }
+                         }
+                     }
+                 }
+             }*/
+        }
+
+        private void aramakutucuk_TextChanged(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            if (uyeozellikarama.Text == "Öğrenci No")
+            {
+                MySqlDataAdapter da = new MySqlDataAdapter("select* from tbl_ogrenci where ogrno like'%" + aramakutucuk.Text + "%'", baglanti);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                baglanti.Close();
+                if (aramakutucuk.Text == "")
+                {
+                    griddoldur();
                 }
-            }*/
+            }
+            else if (uyeozellikarama.Text == "Öğrenci Ad")
+            {
+                MySqlDataAdapter da = new MySqlDataAdapter("select* from tbl_ogrenci where ograd like'%" + aramakutucuk.Text + "%'", baglanti);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                baglanti.Close();
+                if (aramakutucuk.Text == "")
+                {
+                    griddoldur();
+                }
+            }
+            else if (uyeozellikarama.Text == "Öğrenci Soyad")
+            {
+                MySqlDataAdapter da = new MySqlDataAdapter("select* from tbl_ogrenci where ogrsoyad like'%" + aramakutucuk.Text + "%'", baglanti);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                baglanti.Close();
+                if (aramakutucuk.Text == "")
+                {
+                    griddoldur();
+                }
+            }
+            else if (uyeozellikarama.Text == "Öğrenci Bölüm")
+            {
+                MySqlDataAdapter da = new MySqlDataAdapter("select* from tbl_ogrenci where ogrBolumAd like'%" + aramakutucuk.Text + "%'", baglanti);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                baglanti.Close();
+                if (aramakutucuk.Text == "")
+                {
+                    griddoldur();
+                }
+            }
         }
     }
 }

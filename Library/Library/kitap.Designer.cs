@@ -38,13 +38,13 @@
             this.txt_Ss = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtstok = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtdolap = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtraf = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtdil = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_kitap = new System.Windows.Forms.TextBox();
             this.yayın_Box = new System.Windows.Forms.ComboBox();
@@ -138,13 +138,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.txtstok);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txtdolap);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtraf);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtdil);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txt_kitap);
             this.panel1.Controls.Add(this.yayın_Box);
@@ -165,12 +165,12 @@
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // textBox4
+            // txtstok
             // 
-            this.textBox4.Location = new System.Drawing.Point(203, 235);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(158, 27);
-            this.textBox4.TabIndex = 31;
+            this.txtstok.Location = new System.Drawing.Point(203, 235);
+            this.txtstok.Name = "txtstok";
+            this.txtstok.Size = new System.Drawing.Size(158, 27);
+            this.txtstok.TabIndex = 31;
             // 
             // label10
             // 
@@ -181,12 +181,12 @@
             this.label10.TabIndex = 30;
             this.label10.Text = "Dil:";
             // 
-            // textBox3
+            // txtdolap
             // 
-            this.textBox3.Location = new System.Drawing.Point(203, 171);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(158, 27);
-            this.textBox3.TabIndex = 29;
+            this.txtdolap.Location = new System.Drawing.Point(203, 171);
+            this.txtdolap.Name = "txtdolap";
+            this.txtdolap.Size = new System.Drawing.Size(158, 27);
+            this.txtdolap.TabIndex = 29;
             // 
             // label9
             // 
@@ -197,12 +197,12 @@
             this.label9.TabIndex = 28;
             this.label9.Text = "Stok Sayısı:";
             // 
-            // textBox2
+            // txtraf
             // 
-            this.textBox2.Location = new System.Drawing.Point(14, 372);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 27);
-            this.textBox2.TabIndex = 27;
+            this.txtraf.Location = new System.Drawing.Point(14, 372);
+            this.txtraf.Name = "txtraf";
+            this.txtraf.Size = new System.Drawing.Size(158, 27);
+            this.txtraf.TabIndex = 27;
             // 
             // label6
             // 
@@ -213,12 +213,12 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "Raf No:";
             // 
-            // textBox1
+            // txtdil
             // 
-            this.textBox1.Location = new System.Drawing.Point(14, 309);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 27);
-            this.textBox1.TabIndex = 25;
+            this.txtdil.Location = new System.Drawing.Point(14, 309);
+            this.txtdil.Name = "txtdil";
+            this.txtdil.Size = new System.Drawing.Size(158, 27);
+            this.txtdil.TabIndex = 25;
             // 
             // label1
             // 
@@ -299,13 +299,13 @@
         private ComboBox kategori_Box;
         private ComboBox yayın_Box;
         private TextBox txt_kitap;
-        private TextBox textBox4;
+        private TextBox txtstok;
         private Label label10;
-        private TextBox textBox3;
+        private TextBox txtdolap;
         private Label label9;
-        private TextBox textBox2;
+        private TextBox txtraf;
         private Label label6;
-        private TextBox textBox1;
+        private TextBox txtdil;
         private Label label1;
     }
 }
