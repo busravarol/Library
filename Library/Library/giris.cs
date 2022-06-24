@@ -123,6 +123,12 @@ namespace Library
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Kaydol KaydolEkrani = new Kaydol();
+            KaydolEkrani.Show();
+        }
     }
 }
    

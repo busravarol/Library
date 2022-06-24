@@ -4,6 +4,9 @@
     <Compile Update="istatistik.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Kaydol.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="kitap.cs">
       <SubType>Form</SubType>
     </Compile>
