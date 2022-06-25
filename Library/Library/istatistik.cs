@@ -47,10 +47,10 @@ namespace Library
                 toplam_Kitap.Text = dr2[0].ToString();
 
             }
-            baglanti.Close(); 
-           
+            baglanti.Close();
+            //select count(kitapAdi) from tbl_odunc group by kitapAdi order by count(kitapAdi) limit 1
             baglanti.Open();
-            MySqlCommand komuti1 = new MySqlCommand("select count(kitapAdi) from tbl_odunc group by kitapAdi", baglanti);
+            MySqlCommand komuti1 = new MySqlCommand("select count(kitapAdi) from tbl_odunc group by kitapAdi order by count(kitapAdi) limit 1", baglanti);
             MySqlDataReader dri1 = komuti1.ExecuteReader();
             while (dri1.Read());
             {

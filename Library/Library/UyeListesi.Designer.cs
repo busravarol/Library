@@ -32,7 +32,6 @@
             this.txt_ad = new System.Windows.Forms.TextBox();
             this.txt_soyad = new System.Windows.Forms.TextBox();
             this.txt_no3 = new System.Windows.Forms.TextBox();
-            this.txt_blm = new System.Windows.Forms.TextBox();
             this.txt_tlf = new System.Windows.Forms.TextBox();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btniptal = new System.Windows.Forms.Button();
@@ -48,6 +47,7 @@
             this.uyeozellikarama = new System.Windows.Forms.ComboBox();
             this.aramakutucuk = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,14 +82,6 @@
             this.txt_no3.Name = "txt_no3";
             this.txt_no3.Size = new System.Drawing.Size(185, 27);
             this.txt_no3.TabIndex = 4;
-            // 
-            // txt_blm
-            // 
-            this.txt_blm.Location = new System.Drawing.Point(113, 259);
-            this.txt_blm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_blm.Name = "txt_blm";
-            this.txt_blm.Size = new System.Drawing.Size(185, 27);
-            this.txt_blm.TabIndex = 5;
             // 
             // txt_tlf
             // 
@@ -247,12 +239,21 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "Arama";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(113, 257);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(185, 28);
+            this.comboBox1.TabIndex = 22;
+            // 
             // UyeListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
             this.ClientSize = new System.Drawing.Size(933, 567);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.aramakutucuk);
             this.Controls.Add(this.uyeozellikarama);
@@ -268,7 +269,6 @@
             this.Controls.Add(this.btniptal);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.txt_tlf);
-            this.Controls.Add(this.txt_blm);
             this.Controls.Add(this.txt_no3);
             this.Controls.Add(this.txt_soyad);
             this.Controls.Add(this.txt_ad);
@@ -289,7 +289,6 @@
         private TextBox txt_ad;
         private TextBox txt_soyad;
         private TextBox txt_no3;
-        private TextBox txt_blm;
         private TextBox txt_tlf;
         private Button btnGuncelle;
         private Button btniptal;
@@ -305,5 +304,6 @@
         private ComboBox uyeozellikarama;
         private TextBox aramakutucuk;
         private Label label1;
+        private ComboBox comboBox1;
     }
 }

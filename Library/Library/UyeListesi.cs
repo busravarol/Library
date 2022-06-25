@@ -60,7 +60,7 @@ namespace Library
                 string ogrsoyad = txt_soyad.Text;
                 Int64 ogrtelefon = Int64.Parse(txt_tlf.Text);
                 string ogrPosta = txt_mail.Text;
-                string ogrBolumAd = txt_blm.Text;
+                string ogrBolumAd = comboBox1.Text;
                 cmd.Connection = baglanti;
                 cmd.CommandText = ("update tbl_ogrenci set ogrno='" + ogrno + "',ograd='" + ograd +"'ogrsoyad='"+ ogrsoyad+ "',ogrtelefon ='" + ogrtelefon + "',ogrPosta='" + ogrPosta + "',ogrBolumAd='" + ogrBolumAd + "' WHERE ogrno='" + ogrno + "'");
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmd);
@@ -180,7 +180,7 @@ namespace Library
                 txt_soyad.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
                 txt_tlf.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
                 txt_mail.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                txt_blm.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                comboBox1.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
 
             }
             catch
@@ -191,6 +191,9 @@ namespace Library
 
         private void UyeListesi_Load(object sender, EventArgs e)
         {
+            object[] bolum = new object[] { "Yönetim Bilişim Sistemleri", "İşletme", "Uluslararası Ticaret ve İşletmecilik", "Çocuk Gelişimi", "Elektrik ve Elektronik", "Dış Ticaret", };
+            comboBox1.Items.AddRange(bolum);
+            comboBox1.Text = "Seçiniz...";
             griddoldur();
         }
         int ID = 0;
