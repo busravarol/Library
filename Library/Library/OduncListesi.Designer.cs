@@ -91,6 +91,7 @@
             "Öğrenci No",
             "Öğrenci Ad",
             "Öğrenci Soyad",
+            "Öğrenci Bölüm",
             "Kitap Adı"});
             this.comboBox2.Location = new System.Drawing.Point(323, 117);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

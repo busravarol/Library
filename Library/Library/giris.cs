@@ -74,7 +74,7 @@ namespace Library
 
         private void btngiris_Click(object sender, EventArgs e)
         {
-            string sqlCommand = "Select * FROM tbl_giris where kullaniciadi='" + txtUsername.Text + "'AND sifre='" + txtSifre.Text + "'";
+            string sqlCommand = "Select * FROM Memur where Kullanici_Adi='" + txtUsername.Text + "'AND Kullanici_Sifre='" + txtSifre.Text + "'";
             string user =txtUsername.Text;
             string sifre =txtSifre.Text;
             

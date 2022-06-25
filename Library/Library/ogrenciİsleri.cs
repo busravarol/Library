@@ -53,7 +53,7 @@ namespace Library
 
                 for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
-                    if (dataGridView1.Rows[i].Cells[16].Value.ToString() == "Teslim Alindi")
+                    if (dataGridView1.Rows[i].Cells[9].Value.ToString() == "Teslim Alindi")
                     {
                         button1.Visible = true;
                         emptyBox = true;
@@ -76,7 +76,7 @@ namespace Library
 
                 for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
-                    if (dataGridView1.Rows[i].Cells[16].Value.ToString() == "Teslim Alindi")
+                    if (dataGridView1.Rows[i].Cells[9].Value.ToString() == "Teslim Alindi")
                     {
                         button1.Visible = true;
                         emptyBox = true;
@@ -100,7 +100,7 @@ namespace Library
 
                 for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
-                    if (dataGridView1.Rows[i].Cells[16].Value.ToString() == "Teslim Alindi")
+                    if (dataGridView1.Rows[i].Cells[9].Value.ToString() == "Teslim Alindi")
                     {
                         button1.Visible = true;
                         emptyBox = true;

@@ -219,9 +219,9 @@
             this.uyeozellikarama.FormattingEnabled = true;
             this.uyeozellikarama.Items.AddRange(new object[] {
             "Öğrenci No",
-            "Öğrenci ad",
-            "Öğrenci soyad",
-            "Öğrenci bölüm"});
+            "Öğrenci Ad",
+            "Öğrenci Soyad",
+            "Öğrenci Bölüm"});
             this.uyeozellikarama.Location = new System.Drawing.Point(455, 32);
             this.uyeozellikarama.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.uyeozellikarama.Name = "uyeozellikarama";

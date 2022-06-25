@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.GirisYap_btn = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,83 +56,22 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(43, 51);
+            this.panel1.Location = new System.Drawing.Point(49, 68);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(414, 356);
+            this.panel1.Size = new System.Drawing.Size(473, 475);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // GirisYap_btn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kullanıcı Adı:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 186);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Kullanıcı Şifre:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 136);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Kullanıcı Mail Adresi:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 95);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Kullanıcı Soyadı:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 231);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Okul:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(185, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 23);
-            this.textBox1.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(184, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 23);
-            this.textBox2.TabIndex = 6;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(185, 133);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(170, 23);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(183, 183);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 23);
-            this.textBox4.TabIndex = 8;
+            this.GirisYap_btn.Location = new System.Drawing.Point(246, 393);
+            this.GirisYap_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.GirisYap_btn.Name = "GirisYap_btn";
+            this.GirisYap_btn.Size = new System.Drawing.Size(86, 31);
+            this.GirisYap_btn.TabIndex = 10;
+            this.GirisYap_btn.Text = "Kaydol";
+            this.GirisYap_btn.UseVisualStyleBackColor = true;
+            this.GirisYap_btn.Click += new System.EventHandler(this.GirisYap_btn_Click);
             // 
             // comboBox1
             // 
@@ -141,27 +80,99 @@
             "Seçiniz",
             "İnegöl Meslek Yüksek Okulu",
             "İnegöl İşletme Fakültesi"});
-            this.comboBox1.Location = new System.Drawing.Point(184, 228);
+            this.comboBox1.Location = new System.Drawing.Point(210, 304);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 23);
+            this.comboBox1.Size = new System.Drawing.Size(194, 28);
             this.comboBox1.TabIndex = 9;
             // 
-            // GirisYap_btn
+            // textBox4
             // 
-            this.GirisYap_btn.Location = new System.Drawing.Point(215, 295);
-            this.GirisYap_btn.Name = "GirisYap_btn";
-            this.GirisYap_btn.Size = new System.Drawing.Size(75, 23);
-            this.GirisYap_btn.TabIndex = 10;
-            this.GirisYap_btn.Text = "Kaydol";
-            this.GirisYap_btn.UseVisualStyleBackColor = true;
+            this.textBox4.Location = new System.Drawing.Point(209, 244);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(195, 27);
+            this.textBox4.TabIndex = 8;
+            this.textBox4.UseSystemPasswordChar = true;
+            this.textBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox4_MouseClick);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(211, 177);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(194, 27);
+            this.textBox3.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(210, 116);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(194, 27);
+            this.textBox2.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(211, 60);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(193, 27);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 308);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Okul:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 127);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(117, 20);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Kullanıcı Soyadı:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 181);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Kullanıcı Mail Adresi:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(26, 248);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Kullanıcı Şifre:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Kullanıcı Adı:";
             // 
             // Kaydol
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Kaydol";
             this.Text = "Kaydol";
             this.panel1.ResumeLayout(false);

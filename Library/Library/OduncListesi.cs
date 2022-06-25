@@ -186,7 +186,7 @@ namespace Library
                     griddoldur2();
                 }
             }
-            else if (comboBox2.Text == "Kitap Ad")
+            else if (comboBox2.Text == "Kitap Adı")
             {
                 MySqlDataAdapter da = new MySqlDataAdapter("select* from tbl_odunc where kitapAdi like'%" + textBox1.Text + "%'", baglanti);
                 DataTable dt = new DataTable();

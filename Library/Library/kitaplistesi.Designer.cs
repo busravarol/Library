@@ -359,14 +359,13 @@
             "Kitap Adı",
             "Yazar Adı",
             "Dil",
-            "Yayın Evi",
+            "Yayınevi",
             "Kategori"});
             this.comboBox2.Location = new System.Drawing.Point(153, 67);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(138, 28);
             this.comboBox2.TabIndex = 7;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // textBox1
             // 
