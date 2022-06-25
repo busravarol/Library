@@ -129,6 +129,11 @@ namespace Library
             Kaydol KaydolEkrani = new Kaydol();
             KaydolEkrani.Show();
         }
+
+        private void txtSifre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
    

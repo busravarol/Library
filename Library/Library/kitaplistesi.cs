@@ -40,9 +40,9 @@ namespace Library
             dataGridView1.Columns[5].HeaderCell.Value = "Sayfa Sayısı";
             dataGridView1.Columns[6].HeaderCell.Value = "Yazar Adı";
             dataGridView1.Columns[7].HeaderCell.Value = "Dil";
-            dataGridView1.Columns[8].HeaderCell.Value = "Stok Sayisi";
-            dataGridView1.Columns[9].HeaderCell.Value = "Dolap NO";
-            dataGridView1.Columns[10].HeaderCell.Value = "Raf No";
+            dataGridView1.Columns[8].HeaderCell.Value = "Stok Sayısı";
+            dataGridView1.Columns[9].HeaderCell.Value = "Dolap No";
+            dataGridView1.Columns[10].HeaderCell.Value ="Raf No";
 
 
             /* dataGridView1.Columns[0].Name = "ID";
@@ -74,6 +74,16 @@ namespace Library
 
         private void kitaplistesi_Load(object sender, EventArgs e)
         {
+            object[] kategori = new object[] { "Edebiyat", "Tarih", "Kişisel Gelişim", "Felsefe", "İşletme" };
+            comboBox1.Items.AddRange(kategori);
+
+            object[] yayinevi = new object[] { "İş Bankası", "İndigo", "Yapı Kredi", "Epsilon", "Timaş","Dergah" };
+            comboBox3.Items.AddRange(yayinevi);
+
+            object[] dil = new object[] { "Türkçe", "İngilizce", "Almanca" };
+            comboBox4.Items.AddRange(dil);
+            comboBox4.Text = "Seçiniz...";
+
             /*string sql = "Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;";
             MySqlConnection con = new MySqlConnection(sql);*/
             griddoldur();
@@ -140,13 +150,19 @@ namespace Library
                 string kitapAdi = txt_ad.Text;
                 string kategori = comboBox1.Text;
                 Int32 basimyili = Int32.Parse(txt_yil.Text);
-                string yayinevi = txt_yayinevi.Text;
+                string yayinevi = comboBox3.Text;
                 Int32 sayfasayisi = Int32.Parse(txt_ss.Text);
                 string yazaradi = txt_yad.Text;
+                string dil = comboBox4.Text;
+                Int32 stoksayisi = Int32.Parse(txtstok.Text);
+                Int32 dolapno = Int32.Parse(txtdolap.Text);
+                Int32 rafno = Int32.Parse(txtraf.Text);
                 cmd.Connection = baglanti;
-                cmd.CommandText = "update tbl_kitap set kitapAdi='" + kitapAdi + "',kategori='" + kategori + "',basimyili='" + basimyili + "',yayinevi='" + yayinevi + "',sayfasayisi='" + sayfasayisi + "',yazaradi='" + yazaradi + "' WHERE kitapID='" + txt_id.Text + "'";
+                cmd.CommandText = ("update tbl_kitap set kitapAdi='" + kitapAdi + "',kategori='" + kategori + "',basimyili='" + basimyili + "',yayinevi='" + yayinevi +
+                    "',sayfasayisi='" + sayfasayisi + "',yazaradi='" + yazaradi +"',dil='" + dil + "',stoksayisi='"+ stoksayisi + "',dolapno='"+ dolapno + "',rafno='"+ rafno + 
+                    "' WHERE kitapID='" + txt_id.Text + "'");
+                   // "update tbl_kitap set kitapAdi='" + kitapAdi + "',kategori='" + kategori + "',basimyili='" + basimyili + "',yayinevi='" + yayinevi + "',sayfasayisi='" + sayfasayisi + "',yazaradi='" + yazaradi + "' WHERE kitapID='" + txt_id.Text + "'";
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmd);
-
 
                 da.Fill(ds);
             }
@@ -223,11 +239,11 @@ namespace Library
             txt_ad.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             comboBox1.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txt_yil.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            txt_yayinevi.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            comboBox3.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             txt_ss.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             txt_yad.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
             txtdolap.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            txtdil.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            comboBox4.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
             txtstok.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
             txtraf.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
         }
@@ -337,6 +353,16 @@ namespace Library
             }
 
             
+        }
+
+        private void txt_ad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

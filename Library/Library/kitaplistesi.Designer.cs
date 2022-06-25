@@ -32,9 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.txtraf = new System.Windows.Forms.TextBox();
             this.txtdolap = new System.Windows.Forms.TextBox();
-            this.txtdil = new System.Windows.Forms.TextBox();
             this.txtstok = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.txt_yad = new System.Windows.Forms.TextBox();
-            this.txt_yayinevi = new System.Windows.Forms.TextBox();
             this.txt_ad = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -76,7 +76,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(13, 69);
+            this.label2.Location = new System.Drawing.Point(229, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 28);
             this.label2.TabIndex = 1;
@@ -90,7 +90,7 @@
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 167);
+            this.dataGridView1.Location = new System.Drawing.Point(195, 102);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
@@ -106,9 +106,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.panel2.Controls.Add(this.comboBox3);
+            this.panel2.Controls.Add(this.comboBox4);
             this.panel2.Controls.Add(this.txtraf);
             this.panel2.Controls.Add(this.txtdolap);
-            this.panel2.Controls.Add(this.txtdil);
             this.panel2.Controls.Add(this.txtstok);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label12);
@@ -125,16 +126,32 @@
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.txt_yad);
-            this.panel2.Controls.Add(this.txt_yayinevi);
             this.panel2.Controls.Add(this.txt_ad);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(679, 167);
+            this.panel2.Location = new System.Drawing.Point(872, 102);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(357, 637);
             this.panel2.TabIndex = 5;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(107, 124);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(215, 28);
+            this.comboBox3.TabIndex = 9;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(107, 310);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(216, 28);
+            this.comboBox4.TabIndex = 10;
             // 
             // txtraf
             // 
@@ -151,14 +168,6 @@
             this.txtdolap.Name = "txtdolap";
             this.txtdolap.Size = new System.Drawing.Size(215, 27);
             this.txtdolap.TabIndex = 35;
-            // 
-            // txtdil
-            // 
-            this.txtdil.Location = new System.Drawing.Point(107, 315);
-            this.txtdil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtdil.Name = "txtdil";
-            this.txtdil.Size = new System.Drawing.Size(215, 27);
-            this.txtdil.TabIndex = 34;
             // 
             // txtstok
             // 
@@ -308,14 +317,6 @@
             this.txt_yad.Size = new System.Drawing.Size(215, 27);
             this.txt_yad.TabIndex = 15;
             // 
-            // txt_yayinevi
-            // 
-            this.txt_yayinevi.Location = new System.Drawing.Point(107, 127);
-            this.txt_yayinevi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_yayinevi.Name = "txt_yayinevi";
-            this.txt_yayinevi.Size = new System.Drawing.Size(215, 27);
-            this.txt_yayinevi.TabIndex = 14;
-            // 
             // txt_ad
             // 
             this.txt_ad.Location = new System.Drawing.Point(107, 53);
@@ -323,6 +324,7 @@
             this.txt_ad.Name = "txt_ad";
             this.txt_ad.Size = new System.Drawing.Size(215, 27);
             this.txt_ad.TabIndex = 11;
+            this.txt_ad.TextChanged += new System.EventHandler(this.txt_ad_TextChanged);
             // 
             // label8
             // 
@@ -361,7 +363,7 @@
             "Dil",
             "Yayınevi",
             "Kategori"});
-            this.comboBox2.Location = new System.Drawing.Point(153, 67);
+            this.comboBox2.Location = new System.Drawing.Point(361, 66);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(138, 28);
@@ -369,7 +371,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(329, 67);
+            this.textBox1.Location = new System.Drawing.Point(520, 67);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(154, 27);
@@ -381,8 +383,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(1083, 836);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.ClientSize = new System.Drawing.Size(1272, 836);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label1);
@@ -412,7 +414,6 @@
         private Button btnDelete;
         private Button button2;
         private TextBox txt_yad;
-        private TextBox txt_yayinevi;
         private TextBox txt_ad;
         private Label label6;
         private Label label5;
@@ -426,11 +427,12 @@
         private TextBox textBox1;
         private TextBox txtraf;
         private TextBox txtdolap;
-        private TextBox txtdil;
         private TextBox txtstok;
         private Label label13;
         private Label label12;
         private Label label11;
         private Label label10;
+        private ComboBox comboBox3;
+        private ComboBox comboBox4;
     }
 }

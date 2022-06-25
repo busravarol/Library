@@ -323,3 +323,4 @@ C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.
 C:\Users\enesa\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.Kaydol.resources
 C:\Users\ilkay kavak\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.Kaydol.resources
 C:\Users\ilkay kavak\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.ogrenciİsleri.resources
+C:\Users\esma\Desktop\Library\Library\Library\obj\Debug\net6.0-windows\Library.Kaydol.resources

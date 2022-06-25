@@ -78,5 +78,10 @@ namespace Library
         {
 
         }
+
+        private void lblCokOkunan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

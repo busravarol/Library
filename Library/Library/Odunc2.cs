@@ -40,11 +40,13 @@ namespace Library
             baglanti.Close();
 
 
-            object[] kitapadi = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra", "Elveda Güzel Vatanım", "Saatleri Ayarlama Enstitüsü", "İtiraflarım" };
+            object[] kitapadi = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra",
+                "Elveda Güzel Vatanım", "Saatleri Ayarlama Enstitüsü", "İtiraflarım","Momo","Hamlet","Yunan Mitolojisi","Seyir" };
             comboBox1.Items.AddRange(kitapadi);
             comboBox1.Text = "Seçiniz...";
 
-            object[] kitapadi1 = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra", "Elveda Güzel Vatanım", "Saatleri Ayarlama Enstitüsü", "İtiraflarım" };
+            object[] kitapadi1 = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra",
+                "Elveda Güzel Vatanım", "Saatleri Ayarlama Enstitüsü", "İtiraflarım","Momo","Hamlet","Yunan Mitolojisi","Seyir" };
             comboBox2.Items.AddRange(kitapadi1);
             comboBox2.Text = "Seçiniz...";
         }
@@ -137,13 +139,16 @@ namespace Library
                 string posta = txt_posta.Text;
                 string blm = txt_blm.Text;
                 string kitap = comboBox1.Text;
+                //DateTime tarih = DateTime.Now;
+                //Console.WriteLine(tarih.ToString("d"));
                 string odunc = dateTimePicker1.Text;
                 string edi = txt_No.Text;
                 MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = baglanti;
                 baglanti.Open();
-                cmd.CommandText = "insert into tbl_odunc( kitapAdi, ogrno,  ograd, ogrsoyad, ogrtelefon, ogrPosta, ogrBolumAd, teslimAlinanTarih) values('" + kitap + "','" + edi + "', '" + ad + "','" + soy + "','" + contact + "','" + posta + "','" + blm + "','" + odunc + "' )";
+                cmd.CommandText = "insert into tbl_odunc( kitapAdi, ogrno,  ograd, ogrsoyad, ogrtelefon, ogrPosta, ogrBolumAd, teslimAlinanTarih) values" +
+                    "('" + kitap + "','" + edi + "', '" + ad + "','" + soy + "','" + contact + "','" + posta + "','" + blm + "','" + odunc + "' )";
                 MySqlDataAdapter Da = new MySqlDataAdapter(cmd);
                 DataSet Ds = new DataSet();
                 Da.Fill(Ds);

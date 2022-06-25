@@ -111,6 +111,7 @@
             this.lblCokOkunan.Size = new System.Drawing.Size(40, 31);
             this.lblCokOkunan.TabIndex = 6;
             this.lblCokOkunan.Text = "00";
+            this.lblCokOkunan.Click += new System.EventHandler(this.lblCokOkunan_Click);
             // 
             // lblCokOkuyan
             // 

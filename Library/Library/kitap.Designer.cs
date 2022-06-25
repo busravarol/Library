@@ -38,6 +38,7 @@
             this.txt_Ss = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dil_Box = new System.Windows.Forms.ComboBox();
             this.txtstok = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtdolap = new System.Windows.Forms.TextBox();
@@ -49,7 +50,6 @@
             this.yayın_Box = new System.Windows.Forms.ComboBox();
             this.kategori_Box = new System.Windows.Forms.ComboBox();
             this.txt_Tarih = new System.Windows.Forms.TextBox();
-            this.dil_Box = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,7 +124,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(203, 287);
@@ -159,11 +159,20 @@
             this.panel1.Controls.Add(this.txt_Yazar);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(557, 36);
+            this.panel1.Location = new System.Drawing.Point(306, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(429, 472);
+            this.panel1.Size = new System.Drawing.Size(409, 472);
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // dil_Box
+            // 
+            this.dil_Box.FormattingEnabled = true;
+            this.dil_Box.Location = new System.Drawing.Point(14, 310);
+            this.dil_Box.Name = "dil_Box";
+            this.dil_Box.Size = new System.Drawing.Size(158, 28);
+            this.dil_Box.TabIndex = 32;
+            this.dil_Box.SelectedIndexChanged += new System.EventHandler(this.dil_Box_SelectedIndexChanged);
             // 
             // txtstok
             // 
@@ -258,21 +267,12 @@
             this.txt_Tarih.TabIndex = 22;
             this.txt_Tarih.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // dil_Box
-            // 
-            this.dil_Box.FormattingEnabled = true;
-            this.dil_Box.Location = new System.Drawing.Point(14, 310);
-            this.dil_Box.Name = "dil_Box";
-            this.dil_Box.Size = new System.Drawing.Size(158, 28);
-            this.dil_Box.TabIndex = 32;
-            this.dil_Box.SelectedIndexChanged += new System.EventHandler(this.dil_Box_SelectedIndexChanged);
-            // 
             // kitap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(1549, 821);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.ClientSize = new System.Drawing.Size(1381, 695);
             this.Controls.Add(this.panel1);
             this.Name = "kitap";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

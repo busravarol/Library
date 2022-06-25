@@ -61,7 +61,7 @@
             // 
             // txt_ad
             // 
-            this.txt_ad.Location = new System.Drawing.Point(113, 127);
+            this.txt_ad.Location = new System.Drawing.Point(113, 168);
             this.txt_ad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_ad.Name = "txt_ad";
             this.txt_ad.Size = new System.Drawing.Size(185, 27);
@@ -69,7 +69,7 @@
             // 
             // txt_soyad
             // 
-            this.txt_soyad.Location = new System.Drawing.Point(113, 171);
+            this.txt_soyad.Location = new System.Drawing.Point(113, 212);
             this.txt_soyad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_soyad.Name = "txt_soyad";
             this.txt_soyad.Size = new System.Drawing.Size(185, 27);
@@ -77,7 +77,7 @@
             // 
             // txt_no3
             // 
-            this.txt_no3.Location = new System.Drawing.Point(113, 213);
+            this.txt_no3.Location = new System.Drawing.Point(113, 126);
             this.txt_no3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_no3.Name = "txt_no3";
             this.txt_no3.Size = new System.Drawing.Size(185, 27);
@@ -149,12 +149,13 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(555, 347);
             this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // ograd
             // 
             this.ograd.AutoSize = true;
-            this.ograd.Location = new System.Drawing.Point(11, 131);
+            this.ograd.Location = new System.Drawing.Point(16, 171);
             this.ograd.Name = "ograd";
             this.ograd.Size = new System.Drawing.Size(28, 20);
             this.ograd.TabIndex = 11;
@@ -163,7 +164,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 171);
+            this.label2.Location = new System.Drawing.Point(14, 215);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 20);
             this.label2.TabIndex = 12;
@@ -199,7 +200,7 @@
             // ogrtelefon
             // 
             this.ogrtelefon.AutoSize = true;
-            this.ogrtelefon.Location = new System.Drawing.Point(16, 353);
+            this.ogrtelefon.Location = new System.Drawing.Point(11, 350);
             this.ogrtelefon.Name = "ogrtelefon";
             this.ogrtelefon.Size = new System.Drawing.Size(58, 20);
             this.ogrtelefon.TabIndex = 16;
@@ -208,7 +209,7 @@
             // ogrno
             // 
             this.ogrno.AutoSize = true;
-            this.ogrno.Location = new System.Drawing.Point(11, 217);
+            this.ogrno.Location = new System.Drawing.Point(14, 133);
             this.ogrno.Name = "ogrno";
             this.ogrno.Size = new System.Drawing.Size(85, 20);
             this.ogrno.TabIndex = 18;
@@ -250,7 +251,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(52)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
             this.ClientSize = new System.Drawing.Size(933, 567);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.aramakutucuk);

@@ -55,16 +55,15 @@ namespace Library
         {
             if (MessageBox.Show("Öğrenci Güncellenecek Onaylıyor Musunuz?", "Success", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
+                Int32 ogrno = Int32.Parse(txt_no3.Text);
                 string ograd = txt_ad.Text;
                 string ogrsoyad = txt_soyad.Text;
-                Int64 ogrno = Int64.Parse(txt_no3.Text);
-                string ogrBolumAd = txt_blm.Text;
                 Int64 ogrtelefon = Int64.Parse(txt_tlf.Text);
                 string ogrPosta = txt_mail.Text;
+                string ogrBolumAd = txt_blm.Text;
                 cmd.Connection = baglanti;
-                cmd.CommandText = "update tbl_ogrenci set ograd='" + ograd + "',ogrno='" + ogrno + "',ogrtelefon ='" + ogrtelefon + "',ogrBolumAd='" + ogrBolumAd + "',ogrsoyad='" + ogrsoyad + "',ogrPosta='" + ogrPosta + "' WHERE ogrno='" + ogrno + "'";
+                cmd.CommandText = ("update tbl_ogrenci set ogrno='" + ogrno + "',ograd='" + ograd +"'ogrsoyad='"+ ogrsoyad+ "',ogrtelefon ='" + ogrtelefon + "',ogrPosta='" + ogrPosta + "',ogrBolumAd='" + ogrBolumAd + "' WHERE ogrno='" + ogrno + "'");
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmd);
-
                 da.Fill(ds);
             }
             baglanti.Open();
@@ -319,6 +318,11 @@ namespace Library
                     griddoldur();
                 }
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

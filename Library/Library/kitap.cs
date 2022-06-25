@@ -24,6 +24,7 @@ namespace Library
             InitializeComponent();
         }
         MySqlConnection baglanti=new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
+
         /*  public static MySqlConnection GetConnection()
           {
               string sql = "Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;";
@@ -109,7 +110,7 @@ namespace Library
         private void button1_Click(object sender, EventArgs e)
         {
             baglanti.Open   ();
-            MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(kitapAdi,kategori,basimyili,yayinevi,sayfasayisi,yazaradi,dolap,stoksayisi,dil,rafno) values (@k1,@k2,@k3,@k4,@k5,@k6,@k7,@k8,@k9,@k10) ", baglanti);
+            MySqlCommand komut = new MySqlCommand("insert into tbl_kitap(kitapAdi,kategori,basimyili,yayinevi,sayfasayisi,yazaradi,dil,stoksayisi,dolapno,rafno) values (@k1,@k2,@k3,@k4,@k5,@k6,@k7,@k8,@k9,@k10) ", baglanti);
             komut.Parameters.AddWithValue("@k1", txt_kitap.Text);
             komut.Parameters.AddWithValue("@k2", kategori_Box.Text);
             komut.Parameters.AddWithValue("@k3", txt_Tarih.Text);
@@ -234,6 +235,11 @@ namespace Library
         }
 
         private void dil_Box_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
