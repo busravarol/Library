@@ -45,6 +45,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.panel1.Controls.Add(this.GirisYap_btn);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.textBox4);
@@ -56,16 +57,16 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(49, 68);
+            this.panel1.Location = new System.Drawing.Point(125, 57);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(473, 475);
+            this.panel1.Size = new System.Drawing.Size(449, 486);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // GirisYap_btn
             // 
-            this.GirisYap_btn.Location = new System.Drawing.Point(246, 393);
+            this.GirisYap_btn.Location = new System.Drawing.Point(261, 365);
             this.GirisYap_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GirisYap_btn.Name = "GirisYap_btn";
             this.GirisYap_btn.Size = new System.Drawing.Size(86, 31);
@@ -124,7 +125,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 308);
+            this.label5.Location = new System.Drawing.Point(26, 312);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 20);
             this.label5.TabIndex = 4;
@@ -133,25 +134,25 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 127);
+            this.label4.Location = new System.Drawing.Point(26, 123);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 20);
+            this.label4.Size = new System.Drawing.Size(53, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Kullanıcı Soyadı:";
+            this.label4.Text = "Soyad:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 181);
+            this.label3.Location = new System.Drawing.Point(26, 184);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 20);
+            this.label3.Size = new System.Drawing.Size(95, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Kullanıcı Mail Adresi:";
+            this.label3.Text = "Kullanıcı Adı:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 248);
+            this.label2.Location = new System.Drawing.Point(26, 251);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 20);
             this.label2.TabIndex = 1;
@@ -160,18 +161,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 71);
+            this.label1.Location = new System.Drawing.Point(26, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 20);
+            this.label1.Size = new System.Drawing.Size(35, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Kullanıcı Adı:";
+            this.label1.Text = "Adı:";
             // 
             // Kaydol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
-            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.ClientSize = new System.Drawing.Size(794, 600);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Kaydol";

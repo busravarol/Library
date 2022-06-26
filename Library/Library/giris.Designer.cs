@@ -45,10 +45,10 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(177, 134);
+            this.pictureBox1.Location = new System.Drawing.Point(273, 131);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 161);
+            this.pictureBox1.Size = new System.Drawing.Size(178, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -56,11 +56,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(177, 346);
+            this.label1.Location = new System.Drawing.Point(156, 291);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 34);
@@ -72,11 +71,11 @@
             // 
             this.txtUsername.BackColor = System.Drawing.Color.White;
             this.txtUsername.Font = new System.Drawing.Font("Perpetua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUsername.Location = new System.Drawing.Point(177, 404);
+            this.txtUsername.Location = new System.Drawing.Point(350, 291);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(5);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "admin";
-            this.txtUsername.Size = new System.Drawing.Size(244, 34);
+            this.txtUsername.Size = new System.Drawing.Size(169, 34);
             this.txtUsername.TabIndex = 2;
             this.txtUsername.Text = "admin";
             this.txtUsername.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtUsername_MouseClick);
@@ -85,11 +84,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(249)))), ((int)(((byte)(253)))));
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(177, 458);
+            this.label2.Location = new System.Drawing.Point(237, 346);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 34);
@@ -101,12 +99,12 @@
             // 
             this.txtSifre.BackColor = System.Drawing.Color.White;
             this.txtSifre.Font = new System.Drawing.Font("Perpetua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSifre.Location = new System.Drawing.Point(177, 509);
+            this.txtSifre.Location = new System.Drawing.Point(350, 346);
             this.txtSifre.Margin = new System.Windows.Forms.Padding(5);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '*';
             this.txtSifre.PlaceholderText = "sifre";
-            this.txtSifre.Size = new System.Drawing.Size(244, 34);
+            this.txtSifre.Size = new System.Drawing.Size(169, 34);
             this.txtSifre.TabIndex = 4;
             this.txtSifre.Text = "admin";
             this.txtSifre.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSifre_MouseClick_1);
@@ -114,12 +112,13 @@
             // 
             // btngiris
             // 
-            this.btngiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
-            this.btngiris.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btngiris.Location = new System.Drawing.Point(213, 575);
+            this.btngiris.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btngiris.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btngiris.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btngiris.Location = new System.Drawing.Point(292, 428);
             this.btngiris.Margin = new System.Windows.Forms.Padding(5);
             this.btngiris.Name = "btngiris";
-            this.btngiris.Size = new System.Drawing.Size(173, 66);
+            this.btngiris.Size = new System.Drawing.Size(126, 55);
             this.btngiris.TabIndex = 5;
             this.btngiris.Text = "Giriş Yap";
             this.btngiris.UseVisualStyleBackColor = false;
@@ -127,10 +126,10 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.SystemColors.GrayText;
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClose.ForeColor = System.Drawing.Color.Red;
-            this.btnClose.Location = new System.Drawing.Point(540, 14);
+            this.btnClose.Location = new System.Drawing.Point(631, 14);
             this.btnClose.Margin = new System.Windows.Forms.Padding(5);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(29, 35);
@@ -141,9 +140,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.textBox1.Font = new System.Drawing.Font("Sitka Small", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(66, 69);
+            this.textBox1.Location = new System.Drawing.Point(131, 41);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(461, 42);
@@ -155,7 +154,10 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(255, 671);
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
+            this.linkLabel1.ForeColor = System.Drawing.Color.Red;
+            this.linkLabel1.LinkColor = System.Drawing.Color.MidnightBlue;
+            this.linkLabel1.Location = new System.Drawing.Point(311, 500);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(86, 32);
             this.linkLabel1.TabIndex = 8;
@@ -168,8 +170,8 @@
             this.AcceptButton = this.btngiris;
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
-            this.ClientSize = new System.Drawing.Size(583, 763);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
+            this.ClientSize = new System.Drawing.Size(717, 669);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnClose);

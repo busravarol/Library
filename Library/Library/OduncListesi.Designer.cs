@@ -42,13 +42,13 @@
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(169, 194);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(835, 324);
+            this.dataGridView1.Size = new System.Drawing.Size(922, 324);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.AllowUserToAddRowsChanged += new System.EventHandler(this.OduncListesi_Load);
             this.dataGridView1.AllowUserToDeleteRowsChanged += new System.EventHandler(this.OduncListesi_Load);
@@ -59,10 +59,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(471, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 31);
+            this.label1.Size = new System.Drawing.Size(309, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "Teslim Verilen Kitaplar";
             // 
@@ -77,7 +77,7 @@
             // 
             this.lbl_Kitap.AutoSize = true;
             this.lbl_Kitap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Kitap.Location = new System.Drawing.Point(207, 120);
+            this.lbl_Kitap.Location = new System.Drawing.Point(171, 92);
             this.lbl_Kitap.Name = "lbl_Kitap";
             this.lbl_Kitap.Size = new System.Drawing.Size(69, 28);
             this.lbl_Kitap.TabIndex = 3;
@@ -93,7 +93,7 @@
             "Öğrenci Soyad",
             "Öğrenci Bölüm",
             "Kitap Adı"});
-            this.comboBox2.Location = new System.Drawing.Point(323, 117);
+            this.comboBox2.Location = new System.Drawing.Point(273, 92);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(199, 28);
@@ -102,7 +102,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(581, 117);
+            this.textBox1.Location = new System.Drawing.Point(531, 92);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(189, 27);
@@ -113,8 +113,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
-            this.ClientSize = new System.Drawing.Size(1202, 777);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.ClientSize = new System.Drawing.Size(1198, 558);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.lbl_Kitap);

@@ -61,7 +61,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label9);
@@ -80,7 +80,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(96, 88);
+            this.panel1.Location = new System.Drawing.Point(139, 88);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(429, 408);
             this.panel1.TabIndex = 0;
@@ -266,7 +266,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.txt_no2);
@@ -274,7 +274,7 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(578, 88);
+            this.panel2.Location = new System.Drawing.Point(625, 88);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(317, 408);
             this.panel2.TabIndex = 1;
@@ -330,7 +330,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
             this.ClientSize = new System.Drawing.Size(1047, 623);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

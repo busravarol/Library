@@ -143,9 +143,9 @@
             // 
             // btnOgrenciEkle
             // 
-            this.btnOgrenciEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.btnOgrenciEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.btnOgrenciEkle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnOgrenciEkle.Location = new System.Drawing.Point(62, 475);
+            this.btnOgrenciEkle.Location = new System.Drawing.Point(250, 466);
             this.btnOgrenciEkle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOgrenciEkle.Name = "btnOgrenciEkle";
             this.btnOgrenciEkle.Size = new System.Drawing.Size(170, 65);
@@ -156,9 +156,9 @@
             // 
             // btnİptal
             // 
-            this.btnİptal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.btnİptal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.btnİptal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnİptal.Location = new System.Drawing.Point(262, 475);
+            this.btnİptal.Location = new System.Drawing.Point(426, 466);
             this.btnİptal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnİptal.Name = "btnİptal";
             this.btnİptal.Size = new System.Drawing.Size(173, 65);
@@ -178,7 +178,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.panel1.Controls.Add(this.OgrenciNo);
             this.panel1.Controls.Add(this.bolum_Box);
             this.panel1.Controls.Add(this.txt_no);
@@ -191,7 +191,7 @@
             this.panel1.Controls.Add(this.BolumAdi);
             this.panel1.Controls.Add(this.Ad);
             this.panel1.Controls.Add(this.Soyad);
-            this.panel1.Location = new System.Drawing.Point(62, 88);
+            this.panel1.Location = new System.Drawing.Point(226, 88);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(373, 353);
@@ -201,8 +201,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
-            this.ClientSize = new System.Drawing.Size(507, 729);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.ClientSize = new System.Drawing.Size(692, 617);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnİptal);
             this.Controls.Add(this.btnOgrenciEkle);

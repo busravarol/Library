@@ -237,5 +237,52 @@ namespace Library
                 istatistikformDurum = false;
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+        /*
+private void tESLİMVERALToolStripMenuItem_Click(object sender, EventArgs e)
+{
+    Odunc2 odunc = new Odunc2();
+    odunc.Show();
+}
+
+private void kİTAPEKLEToolStripMenuItem_Click(object sender, EventArgs e)
+{
+    kitap form = new kitap();
+    form.Show();
+
+}
+
+private void kİTAPLİSTESİToolStripMenuItem_Click(object sender, EventArgs e)
+{
+    kitaplistesi vb = new kitaplistesi();
+    vb.Show();
+}
+
+private void öĞRENCİEKLEToolStripMenuItem_Click(object sender, EventArgs e)
+{
+    OgrenciEkle ogrenciEkle = new OgrenciEkle();
+    ogrenciEkle.Show();
+}
+
+private void öĞRENCİLİSTESİToolStripMenuItem_Click(object sender, EventArgs e)
+{
+    UyeListesi uyeListesi = new UyeListesi();
+    uyeListesi.Show();
+}
+
+private void öDÜNÇKİTAPLARToolStripMenuItem_Click(object sender, EventArgs e)
+{
+    OduncListesi oduncListesi = new OduncListesi();
+    oduncListesi.Show();
+}
+
+private void iSTATİSTİKLERToolStripMenuItem_Click(object sender, EventArgs e)
+{
+
+}*/
     }
 }

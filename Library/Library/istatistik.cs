@@ -19,9 +19,11 @@ namespace Library
         public istatistik()
         {
             InitializeComponent();
+          
+
         }
         MySqlConnection baglanti = new MySqlConnection("Server=172.21.54.3; Uid=Banipal; pwd=Banipal12345.; database=Banipal;");
-        MySqlCommand komut = new MySqlCommand();
+        
 
         private void istatistik_Load(object sender, EventArgs e)
             
@@ -49,24 +51,30 @@ namespace Library
             }
             baglanti.Close();
             //select count(kitapAdi) from tbl_odunc group by kitapAdi order by count(kitapAdi) limit 1
-            baglanti.Open();
-            MySqlCommand komuti1 = new MySqlCommand("select count(kitapAdi) from tbl_odunc group by kitapAdi order by count(kitapAdi) limit 1", baglanti);
-            MySqlDataReader dri1 = komuti1.ExecuteReader();
-            while (dri1.Read());
-            {
-               lblCokOkunan.Text = dri1[0].ToString();
-            }
-            baglanti.Close();
+            /*  baglanti.Open();
+              MySqlCommand komuti1 = new MySqlCommand("select count(kitapAdi) from tbl_odunc group by kitapAdi order by count(kitapAdi) limit 1", baglanti);
+              MySqlDataReader dri1 = komuti1.ExecuteReader();
+              while (dri1.Read());
+              {
+                 lblCokOkunan.Text = dri1[0].ToString();
+              }
+              baglanti.Close();
+
+              baglanti.Open();
+              MySqlCommand komuti2 = new MySqlCommand("select count(ogrno) from tbl_odunc group by ogrno", baglanti);
+              MySqlDataReader dri2 = komuti1.ExecuteReader();
+              while (dri2.Read()) ;
+              {
+                  lblCokOkuyan.Text = dri2[0].ToString();
+              }
+              baglanti.Close();*/
 
             baglanti.Open();
-            MySqlCommand komuti2 = new MySqlCommand("select count(ogrno) from tbl_odunc group by ogrno", baglanti);
-            MySqlDataReader dri2 = komuti1.ExecuteReader();
-            while (dri2.Read()) ;
-            {
-                lblCokOkuyan.Text = dri2[0].ToString();
-            }
+            MySqlDataAdapter komuti1 = new MySqlDataAdapter(" SELECT tbl_kitap.kitapAdi from tbl_odunc INNER JOIN tbl_kitap ON tbl_odunc.oduncID = tbl_kitap.kitapID GROUP BY tbl_odunc.oduncID ORDER BY COUNT (kitapID) DESC LİMİT 5", baglanti);
+            DataTable dt = new DataTable();
+            komuti1.Fill(dt);
+            dataGridView1.DataSource = dt;
             baglanti.Close();
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -80,6 +88,16 @@ namespace Library
         }
 
         private void lblCokOkunan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

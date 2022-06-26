@@ -56,7 +56,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 13);
+            this.label2.Location = new System.Drawing.Point(102, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 1;
@@ -66,7 +66,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(203, 13);
+            this.label3.Location = new System.Drawing.Point(291, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 20);
             this.label3.TabIndex = 2;
@@ -75,7 +75,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(203, 80);
+            this.label4.Location = new System.Drawing.Point(291, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 20);
             this.label4.TabIndex = 3;
@@ -84,7 +84,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 80);
+            this.label5.Location = new System.Drawing.Point(102, 104);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 20);
             this.label5.TabIndex = 4;
@@ -93,7 +93,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 148);
+            this.label7.Location = new System.Drawing.Point(102, 172);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 20);
             this.label7.TabIndex = 6;
@@ -102,7 +102,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(14, 212);
+            this.label8.Location = new System.Drawing.Point(102, 236);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(76, 20);
             this.label8.TabIndex = 7;
@@ -110,26 +110,27 @@
             // 
             // txt_Yazar
             // 
-            this.txt_Yazar.Location = new System.Drawing.Point(203, 36);
+            this.txt_Yazar.Location = new System.Drawing.Point(291, 60);
             this.txt_Yazar.Name = "txt_Yazar";
             this.txt_Yazar.Size = new System.Drawing.Size(158, 27);
             this.txt_Yazar.TabIndex = 10;
             // 
             // txt_Ss
             // 
-            this.txt_Ss.Location = new System.Drawing.Point(203, 103);
+            this.txt_Ss.Location = new System.Drawing.Point(291, 127);
             this.txt_Ss.Name = "txt_Ss";
             this.txt_Ss.Size = new System.Drawing.Size(158, 27);
             this.txt_Ss.TabIndex = 11;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(203, 287);
+            this.button1.Font = new System.Drawing.Font("Perpetua", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(214, 395);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 61);
+            this.button1.Size = new System.Drawing.Size(129, 51);
             this.button1.TabIndex = 16;
             this.button1.Text = "KİTAP EKLE";
             this.button1.UseVisualStyleBackColor = false;
@@ -137,7 +138,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(46)))), ((int)(((byte)(99)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.panel1.Controls.Add(this.dil_Box);
             this.panel1.Controls.Add(this.txtstok);
             this.panel1.Controls.Add(this.label10);
@@ -159,16 +160,16 @@
             this.panel1.Controls.Add(this.txt_Yazar);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(306, 27);
+            this.panel1.Location = new System.Drawing.Point(144, 37);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(409, 472);
+            this.panel1.Size = new System.Drawing.Size(548, 472);
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dil_Box
             // 
             this.dil_Box.FormattingEnabled = true;
-            this.dil_Box.Location = new System.Drawing.Point(14, 310);
+            this.dil_Box.Location = new System.Drawing.Point(102, 334);
             this.dil_Box.Name = "dil_Box";
             this.dil_Box.Size = new System.Drawing.Size(158, 28);
             this.dil_Box.TabIndex = 32;
@@ -176,7 +177,7 @@
             // 
             // txtstok
             // 
-            this.txtstok.Location = new System.Drawing.Point(203, 235);
+            this.txtstok.Location = new System.Drawing.Point(291, 259);
             this.txtstok.Name = "txtstok";
             this.txtstok.Size = new System.Drawing.Size(158, 27);
             this.txtstok.TabIndex = 31;
@@ -184,7 +185,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 287);
+            this.label10.Location = new System.Drawing.Point(102, 311);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(31, 20);
             this.label10.TabIndex = 30;
@@ -192,7 +193,7 @@
             // 
             // txtdolap
             // 
-            this.txtdolap.Location = new System.Drawing.Point(203, 171);
+            this.txtdolap.Location = new System.Drawing.Point(291, 195);
             this.txtdolap.Name = "txtdolap";
             this.txtdolap.Size = new System.Drawing.Size(158, 27);
             this.txtdolap.TabIndex = 29;
@@ -200,7 +201,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(203, 212);
+            this.label9.Location = new System.Drawing.Point(291, 236);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 20);
             this.label9.TabIndex = 28;
@@ -208,7 +209,7 @@
             // 
             // txtraf
             // 
-            this.txtraf.Location = new System.Drawing.Point(14, 372);
+            this.txtraf.Location = new System.Drawing.Point(291, 335);
             this.txtraf.Name = "txtraf";
             this.txtraf.Size = new System.Drawing.Size(158, 27);
             this.txtraf.TabIndex = 27;
@@ -216,7 +217,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(14, 349);
+            this.label6.Location = new System.Drawing.Point(291, 312);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 20);
             this.label6.TabIndex = 26;
@@ -225,7 +226,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(203, 148);
+            this.label1.Location = new System.Drawing.Point(291, 172);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 24;
@@ -233,7 +234,7 @@
             // 
             // txt_kitap
             // 
-            this.txt_kitap.Location = new System.Drawing.Point(14, 36);
+            this.txt_kitap.Location = new System.Drawing.Point(102, 60);
             this.txt_kitap.Name = "txt_kitap";
             this.txt_kitap.Size = new System.Drawing.Size(158, 27);
             this.txt_kitap.TabIndex = 22;
@@ -243,7 +244,7 @@
             // 
             this.yayın_Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.yayın_Box.FormattingEnabled = true;
-            this.yayın_Box.Location = new System.Drawing.Point(14, 103);
+            this.yayın_Box.Location = new System.Drawing.Point(102, 127);
             this.yayın_Box.Name = "yayın_Box";
             this.yayın_Box.Size = new System.Drawing.Size(158, 28);
             this.yayın_Box.TabIndex = 22;
@@ -253,7 +254,7 @@
             // 
             this.kategori_Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kategori_Box.FormattingEnabled = true;
-            this.kategori_Box.Location = new System.Drawing.Point(14, 171);
+            this.kategori_Box.Location = new System.Drawing.Point(102, 195);
             this.kategori_Box.Name = "kategori_Box";
             this.kategori_Box.Size = new System.Drawing.Size(158, 28);
             this.kategori_Box.TabIndex = 23;
@@ -261,7 +262,7 @@
             // 
             // txt_Tarih
             // 
-            this.txt_Tarih.Location = new System.Drawing.Point(14, 235);
+            this.txt_Tarih.Location = new System.Drawing.Point(102, 259);
             this.txt_Tarih.Name = "txt_Tarih";
             this.txt_Tarih.Size = new System.Drawing.Size(158, 27);
             this.txt_Tarih.TabIndex = 22;
@@ -271,8 +272,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
-            this.ClientSize = new System.Drawing.Size(1381, 695);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
+            this.ClientSize = new System.Drawing.Size(981, 588);
             this.Controls.Add(this.panel1);
             this.Name = "kitap";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

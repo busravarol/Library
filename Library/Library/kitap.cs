@@ -117,9 +117,9 @@ namespace Library
             komut.Parameters.AddWithValue("@k4", yayın_Box.Text);
             komut.Parameters.AddWithValue("@k5", txt_Ss.Text);
             komut.Parameters.AddWithValue("@k6", txt_Yazar.Text);
-            komut.Parameters.AddWithValue("@k7", txtdolap.Text);
+            komut.Parameters.AddWithValue("@k7", dil_Box.Text);
             komut.Parameters.AddWithValue("@k8", txtstok.Text);
-            komut.Parameters.AddWithValue("@k9", dil_Box.Text);
+            komut.Parameters.AddWithValue("@k9", txtdolap.Text);
             komut.Parameters.AddWithValue("@k10",txtraf.Text);
             komut.ExecuteNonQuery();
             baglanti.Close();
