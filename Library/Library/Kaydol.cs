@@ -47,5 +47,10 @@ namespace Library
         {
 
         }
+
+        private void Kaydol_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

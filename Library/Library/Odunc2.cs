@@ -33,14 +33,14 @@ namespace Library
             {
                 for(int i = 0; i < dr.FieldCount; i++)
                 {
-                    comboBox1.Text = dr[i].ToString();
+                    txt_Kitap.Text = dr[i].ToString();
                 }
             }
             dr.Close();
             baglanti.Close();
 
 
-            object[] kitapadi = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra",
+           /* object[] kitapadi = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra",
                 "Elveda Güzel Vatanım", "Saatleri Ayarlama Enstitüsü", "İtiraflarım","Momo","Hamlet","Yunan Mitolojisi","Seyir" };
             comboBox1.Items.AddRange(kitapadi);
             comboBox1.Text = "Seçiniz...";
@@ -48,7 +48,7 @@ namespace Library
             object[] kitapadi1 = new object[] { "Yaban", "Açık Ufuk", "İçimizdeki Şeytan", "İrade Terbiyesi", "1984", "Çocukluk", "Kinyas ve Kayra",
                 "Elveda Güzel Vatanım", "Saatleri Ayarlama Enstitüsü", "İtiraflarım","Momo","Hamlet","Yunan Mitolojisi","Seyir" };
             comboBox2.Items.AddRange(kitapadi1);
-            comboBox2.Text = "Seçiniz...";
+            comboBox2.Text = "Seçiniz...";*/
         }
 
         private void txt_No_TextChanged(object sender, EventArgs e)
@@ -138,7 +138,7 @@ namespace Library
                 Int64 contact = Int64.Parse(txt_tlf.Text);
                 string posta = txt_posta.Text;
                 string blm = txt_blm.Text;
-                string kitap = comboBox1.Text;
+                string kitap = txt_Kitap.Text;
                 //DateTime tarih = DateTime.Now;
                 //Console.WriteLine(tarih.ToString("d"));
                 string odunc = dateTimePicker1.Text;
@@ -211,7 +211,7 @@ namespace Library
             secilen_kitap_sayisi = 0;
             con2.Open();
             cmd2 = new MySqlCommand("select count(*) from tbl_odunc where kitapAdi=@seckitap and teslimver is null",con2);
-            cmd2.Parameters.AddWithValue("@seckitap",comboBox1.Text);
+            cmd2.Parameters.AddWithValue("@seckitap",txt_Kitap.Text);
             secilen_kitap_sayisi = int.Parse(cmd2.ExecuteScalar().ToString());
             con2.Close();
             if (secilen_kitap_sayisi==0)
@@ -222,8 +222,13 @@ namespace Library
             {
                 kitap_verildi = false;
                 MessageBox.Show("TEKRAR KİTAP SEÇİNİZ");
-                comboBox1.Text = "";
+                txt_Kitap.Text = "";
             }
+        }
+
+        private void txt_Ad_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

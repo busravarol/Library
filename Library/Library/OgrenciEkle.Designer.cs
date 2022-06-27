@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OgrenciEkle));
             this.txt_no = new System.Windows.Forms.TextBox();
             this.txt_soyad = new System.Windows.Forms.TextBox();
             this.txt_ad = new System.Windows.Forms.TextBox();
@@ -43,12 +44,14 @@
             this.btnİptal = new System.Windows.Forms.Button();
             this.bolum_Box = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_no
             // 
-            this.txt_no.Location = new System.Drawing.Point(149, 35);
+            this.txt_no.Location = new System.Drawing.Point(166, 196);
             this.txt_no.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_no.Name = "txt_no";
             this.txt_no.Size = new System.Drawing.Size(172, 27);
@@ -56,7 +59,7 @@
             // 
             // txt_soyad
             // 
-            this.txt_soyad.Location = new System.Drawing.Point(149, 132);
+            this.txt_soyad.Location = new System.Drawing.Point(166, 293);
             this.txt_soyad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_soyad.Name = "txt_soyad";
             this.txt_soyad.Size = new System.Drawing.Size(172, 27);
@@ -64,7 +67,7 @@
             // 
             // txt_ad
             // 
-            this.txt_ad.Location = new System.Drawing.Point(149, 85);
+            this.txt_ad.Location = new System.Drawing.Point(166, 246);
             this.txt_ad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_ad.Name = "txt_ad";
             this.txt_ad.Size = new System.Drawing.Size(172, 27);
@@ -73,7 +76,7 @@
             // 
             // txt_mail
             // 
-            this.txt_mail.Location = new System.Drawing.Point(149, 220);
+            this.txt_mail.Location = new System.Drawing.Point(166, 381);
             this.txt_mail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_mail.Name = "txt_mail";
             this.txt_mail.Size = new System.Drawing.Size(172, 27);
@@ -81,7 +84,7 @@
             // 
             // txt_tlf
             // 
-            this.txt_tlf.Location = new System.Drawing.Point(149, 265);
+            this.txt_tlf.Location = new System.Drawing.Point(166, 426);
             this.txt_tlf.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_tlf.Name = "txt_tlf";
             this.txt_tlf.Size = new System.Drawing.Size(172, 27);
@@ -90,7 +93,7 @@
             // Ad
             // 
             this.Ad.AutoSize = true;
-            this.Ad.Location = new System.Drawing.Point(32, 92);
+            this.Ad.Location = new System.Drawing.Point(49, 253);
             this.Ad.Name = "Ad";
             this.Ad.Size = new System.Drawing.Size(28, 20);
             this.Ad.TabIndex = 6;
@@ -99,7 +102,7 @@
             // Soyad
             // 
             this.Soyad.AutoSize = true;
-            this.Soyad.Location = new System.Drawing.Point(32, 139);
+            this.Soyad.Location = new System.Drawing.Point(49, 300);
             this.Soyad.Name = "Soyad";
             this.Soyad.Size = new System.Drawing.Size(50, 20);
             this.Soyad.TabIndex = 7;
@@ -108,7 +111,7 @@
             // OgrenciNo
             // 
             this.OgrenciNo.AutoSize = true;
-            this.OgrenciNo.Location = new System.Drawing.Point(32, 39);
+            this.OgrenciNo.Location = new System.Drawing.Point(49, 200);
             this.OgrenciNo.Name = "OgrenciNo";
             this.OgrenciNo.Size = new System.Drawing.Size(85, 20);
             this.OgrenciNo.TabIndex = 8;
@@ -117,7 +120,7 @@
             // BolumAdi
             // 
             this.BolumAdi.AutoSize = true;
-            this.BolumAdi.Location = new System.Drawing.Point(32, 183);
+            this.BolumAdi.Location = new System.Drawing.Point(49, 344);
             this.BolumAdi.Name = "BolumAdi";
             this.BolumAdi.Size = new System.Drawing.Size(79, 20);
             this.BolumAdi.TabIndex = 9;
@@ -126,7 +129,7 @@
             // Email
             // 
             this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(32, 223);
+            this.Email.Location = new System.Drawing.Point(49, 384);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(46, 20);
             this.Email.TabIndex = 10;
@@ -135,7 +138,7 @@
             // Telefon
             // 
             this.Telefon.AutoSize = true;
-            this.Telefon.Location = new System.Drawing.Point(32, 269);
+            this.Telefon.Location = new System.Drawing.Point(49, 430);
             this.Telefon.Name = "Telefon";
             this.Telefon.Size = new System.Drawing.Size(58, 20);
             this.Telefon.TabIndex = 11;
@@ -145,7 +148,7 @@
             // 
             this.btnOgrenciEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.btnOgrenciEkle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnOgrenciEkle.Location = new System.Drawing.Point(250, 466);
+            this.btnOgrenciEkle.Location = new System.Drawing.Point(132, 514);
             this.btnOgrenciEkle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOgrenciEkle.Name = "btnOgrenciEkle";
             this.btnOgrenciEkle.Size = new System.Drawing.Size(170, 65);
@@ -158,7 +161,7 @@
             // 
             this.btnİptal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.btnİptal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnİptal.Location = new System.Drawing.Point(426, 466);
+            this.btnİptal.Location = new System.Drawing.Point(336, 514);
             this.btnİptal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnİptal.Name = "btnİptal";
             this.btnİptal.Size = new System.Drawing.Size(173, 65);
@@ -170,7 +173,7 @@
             // bolum_Box
             // 
             this.bolum_Box.FormattingEnabled = true;
-            this.bolum_Box.Location = new System.Drawing.Point(149, 175);
+            this.bolum_Box.Location = new System.Drawing.Point(166, 336);
             this.bolum_Box.Name = "bolum_Box";
             this.bolum_Box.Size = new System.Drawing.Size(172, 28);
             this.bolum_Box.TabIndex = 15;
@@ -179,6 +182,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.OgrenciNo);
             this.panel1.Controls.Add(this.bolum_Box);
             this.panel1.Controls.Add(this.txt_no);
@@ -191,11 +195,21 @@
             this.panel1.Controls.Add(this.BolumAdi);
             this.panel1.Controls.Add(this.Ad);
             this.panel1.Controls.Add(this.Soyad);
-            this.panel1.Location = new System.Drawing.Point(226, 88);
+            this.panel1.Location = new System.Drawing.Point(132, 13);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(373, 353);
+            this.panel1.Size = new System.Drawing.Size(386, 493);
             this.panel1.TabIndex = 16;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(129, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 134);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // OgrenciEkle
             // 
@@ -209,9 +223,11 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "OgrenciEkle";
             this.Text = "OgrenciEkle";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.OgrenciEkle_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -234,5 +250,6 @@
         private Button btnİptal;
         private ComboBox bolum_Box;
         private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }

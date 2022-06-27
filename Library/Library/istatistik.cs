@@ -51,16 +51,16 @@ namespace Library
             }
             baglanti.Close();
             //select count(kitapAdi) from tbl_odunc group by kitapAdi order by count(kitapAdi) limit 1
-            /*  baglanti.Open();
-              MySqlCommand komuti1 = new MySqlCommand("select count(kitapAdi) from tbl_odunc group by kitapAdi order by count(kitapAdi) limit 1", baglanti);
+             /* baglanti.Open();
+              MySqlCommand komuti1 = new MySqlCommand("select tbl_odunc from tbl_ogrenci order by count(kitapAdi) limit 5", baglanti);
               MySqlDataReader dri1 = komuti1.ExecuteReader();
               while (dri1.Read());
               {
                  lblCokOkunan.Text = dri1[0].ToString();
               }
-              baglanti.Close();
+              baglanti.Close();*/
 
-              baglanti.Open();
+              /*baglanti.Open();
               MySqlCommand komuti2 = new MySqlCommand("select count(ogrno) from tbl_odunc group by ogrno", baglanti);
               MySqlDataReader dri2 = komuti1.ExecuteReader();
               while (dri2.Read()) ;
@@ -69,13 +69,21 @@ namespace Library
               }
               baglanti.Close();*/
 
-            baglanti.Open();
-            MySqlDataAdapter komuti1 = new MySqlDataAdapter(" SELECT tbl_kitap.kitapAdi from tbl_odunc INNER JOIN tbl_kitap ON tbl_odunc.oduncID = tbl_kitap.kitapID GROUP BY tbl_odunc.oduncID ORDER BY COUNT (kitapID) DESC LİMİT 5", baglanti);
+            /*baglanti.Open();
+            MySqlDataAdapter komuti1 = new MySqlDataAdapter(" SELECT tbl_kitap.kitapAdi from tbl_odunc INNER JOIN tbl_kitap ON tbl_odunc.oduncID = tbl_kitap.kitapAdi GROUP BY tbl_odunc.oduncID ORDER BY COUNT (kitapID) DESC LİMİT 5", baglanti);
             DataTable dt = new DataTable();
             komuti1.Fill(dt);
             dataGridView1.DataSource = dt;
-            baglanti.Close();
+            baglanti.Close();*/
+
+           /* baglanti.Open();
+            MySqlDataAdapter komuti2 = new MySqlDataAdapter(" SELECT tbl_odunc.oduncID FROM tbl_kitap INNER JOIN tbl_odunc on tbl_kitap.kitapAdi = tbl_odunc.odunID GROUP BY tbl_ogrenci.ogrenciID ORDER BY COUNT(ograd) DESC LİMİT 5", baglanti);
+            DataTable dt2 = new DataTable();
+            komuti2.Fill(dt2);
+            dataGridView2.DataSource = dt2;
+            baglanti.Close();*/
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {

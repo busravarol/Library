@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txt_Kitap = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -50,11 +50,12 @@
             this.txt_no2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txt_Kitap1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +63,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.txt_Kitap);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
@@ -86,14 +87,12 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // comboBox1
+            // txt_Kitap
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(273, 244);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(146, 28);
-            this.comboBox1.TabIndex = 20;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.txt_Kitap.Location = new System.Drawing.Point(271, 248);
+            this.txt_Kitap.Name = "txt_Kitap";
+            this.txt_Kitap.Size = new System.Drawing.Size(146, 27);
+            this.txt_Kitap.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
@@ -143,10 +142,10 @@
             // 
             // btn_Teslim
             // 
-            this.btn_Teslim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.btn_Teslim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
             this.btn_Teslim.Location = new System.Drawing.Point(271, 340);
             this.btn_Teslim.Name = "btn_Teslim";
-            this.btn_Teslim.Size = new System.Drawing.Size(146, 37);
+            this.btn_Teslim.Size = new System.Drawing.Size(146, 50);
             this.btn_Teslim.TabIndex = 13;
             this.btn_Teslim.Text = "Teslim Ver";
             this.btn_Teslim.UseVisualStyleBackColor = false;
@@ -154,10 +153,10 @@
             // 
             // btnarama
             // 
-            this.btnarama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.btnarama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
             this.btnarama.Location = new System.Drawing.Point(0, 111);
             this.btnarama.Name = "btnarama";
-            this.btnarama.Size = new System.Drawing.Size(146, 36);
+            this.btnarama.Size = new System.Drawing.Size(145, 46);
             this.btnarama.TabIndex = 12;
             this.btnarama.Text = "Arama";
             this.btnarama.UseVisualStyleBackColor = false;
@@ -202,6 +201,7 @@
             this.txt_Ad.ReadOnly = true;
             this.txt_Ad.Size = new System.Drawing.Size(143, 27);
             this.txt_Ad.TabIndex = 7;
+            this.txt_Ad.TextChanged += new System.EventHandler(this.txt_Ad_TextChanged);
             // 
             // label6
             // 
@@ -267,7 +267,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.txt_Kitap1);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.txt_no2);
             this.panel2.Controls.Add(this.dateTimePicker2);
@@ -279,20 +279,19 @@
             this.panel2.Size = new System.Drawing.Size(317, 408);
             this.panel2.TabIndex = 1;
             // 
-            // comboBox2
+            // txt_Kitap1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(144, 65);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(147, 28);
-            this.comboBox2.TabIndex = 25;
+            this.txt_Kitap1.Location = new System.Drawing.Point(144, 69);
+            this.txt_Kitap1.Name = "txt_Kitap1";
+            this.txt_Kitap1.Size = new System.Drawing.Size(146, 27);
+            this.txt_Kitap1.TabIndex = 26;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
             this.button1.Location = new System.Drawing.Point(144, 159);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 37);
+            this.button1.Size = new System.Drawing.Size(146, 48);
             this.button1.TabIndex = 24;
             this.button1.Text = "Teslim Al";
             this.button1.UseVisualStyleBackColor = false;
@@ -325,6 +324,13 @@
             this.label1.Size = new System.Drawing.Size(71, 20);
             this.label1.TabIndex = 24;
             this.label1.Text = "Kitap Adı";
+            // 
+            // mySqlDataAdapter1
+            // 
+            this.mySqlDataAdapter1.DeleteCommand = null;
+            this.mySqlDataAdapter1.InsertCommand = null;
+            this.mySqlDataAdapter1.SelectCommand = null;
+            this.mySqlDataAdapter1.UpdateCommand = null;
             // 
             // Odunc2
             // 
@@ -372,7 +378,8 @@
         protected internal DateTimePicker dateTimePicker2;
         private Label label11;
         private Label label1;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
+        private TextBox txt_Kitap;
+        private TextBox txt_Kitap1;
     }
 }

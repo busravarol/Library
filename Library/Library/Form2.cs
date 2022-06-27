@@ -242,42 +242,59 @@ namespace Library
         {
 
         }
+        private ogrenciİsleri ogrenciİsleriform;
+        private bool ogrenciİsleriformDurum;
+        private void ogrİsleri_Click(object sender, EventArgs e)
+        { if(ogrenciİsleriformDurum == false)
+            {
+                ogrenciİsleriform = new ogrenciİsleri();
+                ogrenciİsleriform.MdiParent = this;
+                ogrenciİsleriform.Show();
+                ogrenciİsleriformDurum = true;
+            }
+            else
+            {
+                ogrenciİsleriform.Close();
+                ogrenciİsleriformDurum=false;
+            }
+            
+        }
         /*
 private void tESLİMVERALToolStripMenuItem_Click(object sender, EventArgs e)
 {
-    Odunc2 odunc = new Odunc2();
-    odunc.Show();
+Odunc2 odunc = new Odunc2();
+odunc.Show();
 }
 
 private void kİTAPEKLEToolStripMenuItem_Click(object sender, EventArgs e)
 {
-    kitap form = new kitap();
-    form.Show();
+kitap form = new kitap();
+form.Show();
 
 }
 
 private void kİTAPLİSTESİToolStripMenuItem_Click(object sender, EventArgs e)
 {
-    kitaplistesi vb = new kitaplistesi();
-    vb.Show();
+kitaplistesi vb = new kitaplistesi();
+vb.Show();
 }
 
 private void öĞRENCİEKLEToolStripMenuItem_Click(object sender, EventArgs e)
 {
-    OgrenciEkle ogrenciEkle = new OgrenciEkle();
-    ogrenciEkle.Show();
+OgrenciEkle ogrenciEkle = new OgrenciEkle();
+ogrenciEkle.Show();
 }
 
 private void öĞRENCİLİSTESİToolStripMenuItem_Click(object sender, EventArgs e)
 {
-    UyeListesi uyeListesi = new UyeListesi();
-    uyeListesi.Show();
+UyeListesi uyeListesi = new UyeListesi();
+uyeListesi.Show();
 }
 
 private void öDÜNÇKİTAPLARToolStripMenuItem_Click(object sender, EventArgs e)
 {
-    OduncListesi oduncListesi = new OduncListesi();
-    oduncListesi.Show();
+OduncListesi oduncListesi = new OduncListesi();
+oduncListesi.Show();
 }
 
 private void iSTATİSTİKLERToolStripMenuItem_Click(object sender, EventArgs e)

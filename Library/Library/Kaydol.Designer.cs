@@ -66,10 +66,10 @@
             // 
             // GirisYap_btn
             // 
-            this.GirisYap_btn.Location = new System.Drawing.Point(261, 365);
+            this.GirisYap_btn.Location = new System.Drawing.Point(246, 359);
             this.GirisYap_btn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GirisYap_btn.Name = "GirisYap_btn";
-            this.GirisYap_btn.Size = new System.Drawing.Size(86, 31);
+            this.GirisYap_btn.Size = new System.Drawing.Size(110, 47);
             this.GirisYap_btn.TabIndex = 10;
             this.GirisYap_btn.Text = "Kaydol";
             this.GirisYap_btn.UseVisualStyleBackColor = true;
@@ -177,6 +177,8 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Kaydol";
             this.Text = "Kaydol";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Kaydol_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

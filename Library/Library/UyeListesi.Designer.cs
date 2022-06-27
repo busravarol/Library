@@ -136,12 +136,12 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(91)))), ((int)(((byte)(160)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(562, 113);
+            this.dataGridView1.Location = new System.Drawing.Point(496, 120);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(555, 347);
+            this.dataGridView1.Size = new System.Drawing.Size(764, 347);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
@@ -265,7 +265,7 @@
             this.panel1.Controls.Add(this.ograd);
             this.panel1.Controls.Add(this.ogrbolumad);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(179, 30);
+            this.panel1.Location = new System.Drawing.Point(116, 30);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(346, 472);
             this.panel1.TabIndex = 23;
@@ -287,6 +287,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UyeListesi";
             this.Text = "UyeListesi";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UyeListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

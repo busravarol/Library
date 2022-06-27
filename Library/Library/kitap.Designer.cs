@@ -160,7 +160,7 @@
             this.panel1.Controls.Add(this.txt_Yazar);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(144, 37);
+            this.panel1.Location = new System.Drawing.Point(224, 39);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(548, 472);
             this.panel1.TabIndex = 20;
@@ -273,7 +273,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(115)))));
-            this.ClientSize = new System.Drawing.Size(981, 588);
+            this.ClientSize = new System.Drawing.Size(1020, 640);
             this.Controls.Add(this.panel1);
             this.Name = "kitap";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
