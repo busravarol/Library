@@ -32,6 +32,7 @@ Otomasyonumuzda;
  Bu proje;
  
 •	Öğrenci ekle-sil işlemlerini yapar.
+
 •	Kitap ekle-sil işlemlerini yapar.
 •	Teslim alma işlemlerini yönetir.
 •	Üye Listesi’ne erişim sağlar.
