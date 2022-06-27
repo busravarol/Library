@@ -57,7 +57,8 @@ USE CASE DİAGRAMI
 Kullanıcı adı ve şifre girişi yapılarak uygulamaya girilir. Eğer giriş yapacak kişi sisteme kayıtlı değilse kayıt ol butonuna tıklayıp gerekli alanlar doldurulunca kayıt işlemi tamamlanacak ve sisteme giriş yapılacaktır.
 
 
-![giriş](https://user-images.githubusercontent.com/102472911/171624655-04091910-3ec3-4b50-bdab-78c7addd7973.png)
+![giris](https://user-images.githubusercontent.com/102472911/175900531-9ec318d0-5387-4c0b-a22e-02c0c5d32c9a.png)
+
 
 
 Anasayfa  giriş  ekranı
@@ -65,7 +66,8 @@ Anasayfa  giriş  ekranı
 Anasayfa kısmında Kitap ekleme-çıkarma, öğrenci ekleme-çıkarma,  istatistikler, kitap listesi, üye listesi, teslim alma bölümleri bulunmaktadır. Ekranlarda kullanıcı pratikliği açısından isime göre, öğrenci numarasına göre, kategoriye göre..vb arama butonları bulunacaktır.
 
 
-![anasayfa](https://user-images.githubusercontent.com/102472911/171624973-0e4e4a4d-fae8-48f4-80e2-6ce207c912d4.png)
+![anasayfa](https://user-images.githubusercontent.com/102472911/175900621-9b5c4b9c-5586-4bf0-bf6e-cebf963f023b.png)
+
 
 
 Öğrenci Ekle Ekranı
@@ -74,7 +76,8 @@ Anasayfa kısmında Kitap ekleme-çıkarma, öğrenci ekleme-çıkarma,  istatis
 Aynı öğrenci bir kez eklenecek, iki kez eklenmeye çalışıldığı fark edildiği taktirde aynı öğrencinin sisteme zaten kayıtlı olduğu hakkında bir uyarı verilecektir.
 
 
-![öğrenci ekle](https://user-images.githubusercontent.com/102472911/171625137-cabc67be-b844-4559-82ff-8465b8a70291.png)
+![ogrekle](https://user-images.githubusercontent.com/102472911/175900699-a1f7d5dd-2ca1-40a8-9054-4f0896871434.png)
+
 
 
 Üye Listesi
@@ -84,7 +87,8 @@ Eklenen öğrencilerin liste şeklinde bulunduğu kısımdır. Güncelle ve sil 
 Bu kısımda da kullanıcıya öğrenci ismine, kullanıcı adına, telefon numarasına göre arama gibi bir imkan sağlanacaktır.
 
 
-![üye listesi](https://user-images.githubusercontent.com/102472911/171625283-5c356b40-154f-4bf2-b819-ca8c705f7b6c.png)
+![ogrlist](https://user-images.githubusercontent.com/102472911/175900760-60f2eccc-1173-41a1-a125-e6cb52629b6c.png)
+
 
 
 
@@ -95,7 +99,8 @@ Aynı kitap bilgileri eklenmesi durumunda bu kitabın zaten sistemde kayıtlı o
 
 
 
-![kitap ekle](https://user-images.githubusercontent.com/102472911/171625590-62b0db02-32a5-47c2-a612-ebffe628e526.png)
+![kitapekle](https://user-images.githubusercontent.com/102472911/175900855-51c4b4c4-612a-4a26-b0d8-693d7f6ce750.png)
+
 
 
 Kitap Listesi 
@@ -105,7 +110,33 @@ Kitapların mevcut stok durumuna göre güncellemesi bu kısımdan yapılabilece
 Kitaplar bu kısımda görüntülenecek ve kitap adı, yazar adı, tür ve yayınevi gibi kategoriler için ayrı arama kutucukları bulunacaktır.
 
 
-![kitap listesi](https://user-images.githubusercontent.com/102472911/171625768-eef68eda-aa59-4a6c-b75a-11fbcde00182.png)
+
+![kitaplist](https://user-images.githubusercontent.com/102472911/175901116-0513f586-3e88-4dce-a5f3-cbb7ce6c037e.png)
+
+
+
+
+
+Teslim alma ve ödünç verme
+
+
+
+Gerekli bilgiler dolduruldukan sonra öğrenci kitabı teslim alabilir ve aynı şekilde teslim edebilir.
+Teslim alınan kitaplar görüntülenebilir ve hangi kitabın hangi öğrencide olduğu bilgisi kolayca anlaşılabilir.
+Kitap teslim tarihleri yaklaşmış ve dolmuş kişileri yine buradan ayırt edebileceğiz.
+
+
+![oduncver](https://user-images.githubusercontent.com/102472911/175901269-ca8728de-e737-4ab0-93d0-88aa02897819.png)
+
+
+
+Ödünç Listesi
+
+Ödünç verilmiş kitapların bilgilerine ve ödünç verilen kişilerin bilgilerine ulaşabildiğimiz sayfadır.
+
+
+![odunclist](https://user-images.githubusercontent.com/102472911/175901956-ce4dd021-9bdd-4c73-8762-d29cec2c6fe2.png)
+
 
 
 
@@ -120,25 +151,13 @@ Hiç kitap okumayan,
 gibi bilgilere istatistikler kısmından ulaşabileceğiz.
 
 
-
-![istatistik](https://user-images.githubusercontent.com/102472911/171625833-ff8ced3a-9fdd-4fb0-8190-e8f940287ae1.png)
-
+![istatistik](https://user-images.githubusercontent.com/102472911/175901207-c6b0079e-2774-419d-9652-dcd52f27d15f.png)
 
 
-Teslim alma ve ödünç verme
+Öğrenci İşleri
 
 
-Gerekli bilgiler dolduruldukan sonra öğrenci kitabı teslim alabilir ve aynı şekilde teslim edebilir.
-Teslim alınan kitaplar görüntülenebilir ve hangi kitabın hangi öğrencide olduğu bilgisi kolayca anlaşılabilir.
-Kitap teslim tarihleri yaklaşmış ve dolmuş kişileri yine buradan ayırt edebileceğiz.
-
-
-![ödünç](https://user-images.githubusercontent.com/102472911/171625970-281ae9f5-16f4-4286-bae1-5aa169bcb3d5.png)
-
-
-
-
-
+![ogris](https://user-images.githubusercontent.com/102472911/175902311-3c3e3364-46ad-4dac-a415-7a5433524a12.png)
 
 
 
