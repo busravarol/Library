@@ -69,19 +69,19 @@ namespace Library
               }
               baglanti.Close();*/
 
-            /*baglanti.Open();
-            MySqlDataAdapter komuti1 = new MySqlDataAdapter(" SELECT tbl_kitap.kitapAdi from tbl_odunc INNER JOIN tbl_kitap ON tbl_odunc.oduncID = tbl_kitap.kitapAdi GROUP BY tbl_odunc.oduncID ORDER BY COUNT (kitapID) DESC LİMİT 5", baglanti);
+            baglanti.Open();
+            MySqlDataAdapter komuti1 = new MySqlDataAdapter(" SELECT kitapAdi,ograd from tbl_odunc ORDER BY kitapAdi DESC LİMİT 7", baglanti);
             DataTable dt = new DataTable();
             komuti1.Fill(dt);
             dataGridView1.DataSource = dt;
-            baglanti.Close();*/
+            baglanti.Close();
 
-           /* baglanti.Open();
-            MySqlDataAdapter komuti2 = new MySqlDataAdapter(" SELECT tbl_odunc.oduncID FROM tbl_kitap INNER JOIN tbl_odunc on tbl_kitap.kitapAdi = tbl_odunc.odunID GROUP BY tbl_ogrenci.ogrenciID ORDER BY COUNT(ograd) DESC LİMİT 5", baglanti);
+            baglanti.Open();
+            MySqlDataAdapter komuti2 = new MySqlDataAdapter(" SELECT ograd,ogrsoyad FROM tbl_odunc ORDER BY oduncID DESC LİMİT 7", baglanti);
             DataTable dt2 = new DataTable();
             komuti2.Fill(dt2);
             dataGridView2.DataSource = dt2;
-            baglanti.Close();*/
+            baglanti.Close();
         }
 
 
